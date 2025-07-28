@@ -1,27 +1,48 @@
 html{
     font-size:16px;
     font-family: 'Lato', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Robotto', sans-serif; */
+
+
 }
 body{
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0;
 }
+a{
+    text-decoration: none;
+}
 header{
     display:flex;
-    align-items:center;
-    justify-content:space-between;
+    /* align-items:center; */
+    justify-content:flex-end;
     /* border: 2px solid black; */
     
-    position: absolute;
+    position: fixed;
     top:0;
     left:0;
     right:0;
     height:135px;
 
 }
+.logo{
+    width:12rem;
+    margin-top:3rem;
+    align-self:center;
+    position:fixed;
+    left:0;
+}
+
+nav{
+    align-self:center;
+    justify-self:flex-end;
+    margin-right:5rem;
+    
+}
 nav a{
-    margin:2rem;
+    margin-right:4rem;
     font-size:1.8rem;
     font-weight:600;
     
@@ -32,11 +53,8 @@ nav a.desactive{
     text-shadow: 3px 8px 10px white;
     color:rgb(109, 3, 3);
 }
-.logo{
-    width:12rem;
-    margin-top:3rem;
-}
-.home{
+
+.home-first{
     height:100vh;
     background:url('../images/accueil.jpg');
     background-size:cover;
@@ -46,30 +64,120 @@ nav a.desactive{
     justify-content:flex-start;
     
 
+    
+
+}
+/*
+Le rgba(0,0,0,0.45) assombrit uniformément sans cacher l’image.
+Le z-index sépare proprement l’image, l’overlay, et le contenu.
+Le contenu reste lisible sans sacrifier l’image de fond.
+
+PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
+*/
+.overlay {
+
+    position: absolute;
+    inset: 0;
+    /* Assombrissement élégant */
+    /* background-color: rgba(0, 0, 0, 0.45); */
+    z-index: 1;
+    /* box-shadow: rgba(0, 0, 0, 0.44) 0px 0px 0px 0px; */
+    background-color: rgba(0, 0, 0, 0.25);
+      pointer-events: none;
+
+
 }
 .home-catchphrase{
     align-self: center;
-    width:60rem;
+    width:55rem;
     /* height:30rem; */
     /* border: 2px solid black; */
-    padding:5rem;
+    padding:3rem;
+    padding-bottom:9rem;
+
     box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.45);
+    border-radius:2rem;
+    margin-left:4rem;
+    margin-top:8rem;
+
     
 }
 .home-catchphrase h1{
-    font-size:8rem;
+    font-size:8.3rem;
     color:white;
     text-shadow: 3px 8px 20px black;
     margin:0;
 
 }
+
+
 .home-catchphrase p{
     font-size:2.4rem;
     color:white;
     text-shadow: 3px 8px 20px black;
-    margin:0;
+    width:50rem;
+    
 
 }
 .localisation-gif{
     width:6rem;
+}
+
+.home-devis{
+    position:absolute;
+    top:1.5rem;
+    right:0rem;
+    width:8rem;
+    height:3;
+    background:linear-gradient(60deg,rgb(96, 22, 22),rgb(96, 22, 22), rgb(179, 119, 119));
+
+    /* color:rgb(205, 204, 204); */
+    color:white;
+    text-align:center;
+    padding:20px 12px 20px 20px;
+    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
+
+
+}
+.home-devis:hover{
+    background:linear-gradient(60deg,rgb(111, 43, 43),rgb(98, 45, 45), rgb(224, 224, 224));
+    background:linear-gradient(60deg,rgb(96, 22, 22),rgb(96, 22, 22), rgb(96, 22, 22));
+
+
+}
+
+.button-red{
+    background:linear-gradient(90deg,rgb(96, 22, 22),rgb(96, 22, 22), rgb(188, 137, 137));
+    /* color:rgb(222, 221, 221); */
+    color:white;
+    padding:13px 18px 13px 18px;
+    box-shadow: 6px 6px 7px rgb(24, 23, 23);
+    transition: all 0.5 ease;
+    cursor:pointer;
+    border-radius:3px;
+
+}
+.button-red.home{
+    position:absolute;
+    font-size:2rem;
+    font-weight: 500;
+    bottom:7rem;
+}
+.button-red:hover{
+    background:linear-gradient(60deg,rgb(96, 22, 22),rgb(96, 22, 22), rgb(96, 22, 22));
+
+}
+.button-red.home:active{
+
+    font-size:1.9rem;
+    box-shadow:none;
+    bottom:calc(7rem - 6px);
+    margin-left:15px;
+
+    
+}
+.button-green{
+    background:linear-gradient(to right,#165049,#266c64, white);
+    color:white;
 }
