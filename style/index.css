@@ -13,6 +13,7 @@ body{
 }
 a{
     text-decoration: none;
+    cursor:pointer;
 }
 header{
     display:flex;
@@ -28,7 +29,7 @@ header{
 
 }
 .logo{
-    width:12rem;
+    width:15rem;
     margin-top:3rem;
     align-self:center;
     position:fixed;
@@ -43,7 +44,7 @@ nav{
 }
 nav a{
     margin-right:4rem;
-    font-size:1.8rem;
+    font-size:1.6rem;
     font-weight:600;
     
     
@@ -62,6 +63,8 @@ nav a.desactive{
     /* background-position: center center; */
     display:flex;
     justify-content:flex-start;
+    position: relative;
+    overflow: hidden;
     
 
     
@@ -82,35 +85,47 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     /* background-color: rgba(0, 0, 0, 0.45); */
     z-index: 1;
     /* box-shadow: rgba(0, 0, 0, 0.44) 0px 0px 0px 0px; */
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(1, 192, 255, 0.10);
       pointer-events: none;
 
 
 }
 .home-catchphrase{
     align-self: center;
-    width:55rem;
-    /* height:30rem; */
+    width:50rem;
+    height:35rem;
     /* border: 2px solid black; */
     padding:3rem;
     padding-bottom:9rem;
 
     box-sizing: border-box;
-    background-color: rgba(255, 255, 255, 0.45);
-    border-radius:2rem;
+    background-color: rgba(230, 179, 179, 0.45);
+    border-radius:1rem;
     margin-left:4rem;
-    margin-top:8rem;
+    margin-top:12rem;
+
+    box-shadow: 6px 6px 7px rgb(24, 23, 23);
+
+
 
     
 }
 .home-catchphrase h1{
-    font-size:8.3rem;
+    font-size:7rem;
     color:white;
     text-shadow: 3px 8px 20px black;
     margin:0;
 
 }
 
+@keyframes blink{
+    0%, 50%{
+        opacity:1;
+    }
+    51%,100%{
+        opacity:0;
+    }
+}
 
 .home-catchphrase p{
     font-size:2.4rem;
@@ -120,6 +135,46 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     
 
 }
+.anime-pub{
+    width:38rem;
+
+    padding:25px 0 25px 0;
+    align-self: flex-end;
+    position: absolute;
+
+    /* right:12px; */
+    /* bottom: 100px;
+    right:-10px;
+    border-radius: 1rem; */
+
+    bottom: 60px;
+    right:-160px;
+    transform:rotate(-45deg);
+    background:linear-gradient(90deg,rgb(96, 22, 22),rgb(96, 22, 22), rgb(188, 137, 137));
+
+    display:flex;
+    justify-content: center;
+    border-top: 20px solid #0a3833;
+    border-bottom: 20px solid #0a3833;
+}
+.anime-text{
+    width:28rem;
+    font-size:2rem;
+    color:rgb(236, 229, 229);
+    font-weight:600;
+    text-align: center;
+}
+.writing-slogan,.blinking{
+    font-size:2.5rem;
+    background-color: #165049;
+}
+.blinking{
+    display:inline-block;
+    animation: blink 0.5s infinite;
+    font-weight:100;
+    padding:2px
+}
+
 .localisation-gif{
     width:6rem;
 }
@@ -151,7 +206,7 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     background:linear-gradient(90deg,rgb(96, 22, 22),rgb(96, 22, 22), rgb(188, 137, 137));
     /* color:rgb(222, 221, 221); */
     color:white;
-    padding:13px 18px 13px 18px;
+    padding:13px 28px 13px 28px;
     box-shadow: 6px 6px 7px rgb(24, 23, 23);
     transition: all 0.5 ease;
     cursor:pointer;
@@ -162,7 +217,8 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     position:absolute;
     font-size:2rem;
     font-weight: 500;
-    bottom:7rem;
+    bottom:5rem;
+    left:7.5rem;
 }
 .button-red:hover{
     background:linear-gradient(60deg,rgb(96, 22, 22),rgb(96, 22, 22), rgb(96, 22, 22));
@@ -172,7 +228,7 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
 
     font-size:1.9rem;
     box-shadow:none;
-    bottom:calc(7rem - 6px);
+    bottom:calc(5rem - 6px);
     margin-left:15px;
 
     
