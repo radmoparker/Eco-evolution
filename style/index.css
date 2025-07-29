@@ -26,6 +26,7 @@ header{
     left:0;
     right:0;
     height:135px;
+    /* box-shadow: 5px 5px 20px black; */
 
 }
 .logo{
@@ -85,7 +86,7 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     /* background-color: rgba(0, 0, 0, 0.45); */
     z-index: 1;
     /* box-shadow: rgba(0, 0, 0, 0.44) 0px 0px 0px 0px; */
-    background-color: rgba(1, 192, 255, 0.10);
+    /* background-color: rgba(1, 192, 255, 0.10); */
       pointer-events: none;
 
 

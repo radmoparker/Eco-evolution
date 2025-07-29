@@ -77,7 +77,7 @@ function typeWrite(buffer, elements, currentElement, currentLetter, deleting) {
         if(currentLetter >=0){
             buffer.textContent = elements[currentElement].substring(0, currentLetter );
             currentLetter-=1;
-            setTimeout(typeWrite,100,buffer, elements, currentElement, currentLetter, deleting);
+            setTimeout(typeWrite,50,buffer, elements, currentElement, currentLetter, deleting);
 
         }else{
             deleting = false;
