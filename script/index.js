@@ -1,13 +1,16 @@
 const citySpan = document.getElementById("writing-slogan");
-const nav = document.querySelectorAll("nav a");
+const navElements = document.querySelectorAll("nav a");
+const nav = document.getElementById("navigation");
 
+console.log("test data-page",nav.dataset.page);
+// const activePage = document.getElementById(nav.dataset.page);
+// activePage.firstChild.classList.add("nav-active");
 // nav.forEach(element => {console.log("dezd",element);});
-for(let i=0; i< nav.length-1; i++){
-        // console.log(window.location.pathname,nav[i].getAttribute("href"));
+for(let i=0; i< navElements.length-1; i++){
 
-    if(window.location.pathname == "/"+nav[i].getAttribute("href")){
-            console.log(window.location.pathname,"/"+nav[i].getAttribute("href"));
-            nav[i].firstChild.classList.add("nav-active");
+    if(window.location.pathname == "/"+navElements[i].getAttribute("href")){
+            console.log(window.location.pathname,"/"+navElements[i].getAttribute("href"));
+            navElements[i].firstChild.classList.add("nav-active");
 
     }
 }
