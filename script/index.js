@@ -1,4 +1,16 @@
 const citySpan = document.getElementById("writing-slogan");
+const nav = document.querySelectorAll("nav a");
+
+// nav.forEach(element => {console.log("dezd",element);});
+for(let i=0; i< nav.length-1; i++){
+        // console.log(window.location.pathname,nav[i].getAttribute("href"));
+
+    if(window.location.pathname == "/"+nav[i].getAttribute("href")){
+            console.log(window.location.pathname,"/"+nav[i].getAttribute("href"));
+            nav[i].firstChild.classList.add("nav-active");
+
+    }
+}
 // citySpan.textContent = "dedze";
 
 // const cities = [
@@ -50,15 +62,6 @@ const cities = [
     "Neufchâteau"
 ];
 
-// const conjonction = [
-//   "Mais",
-//   "Ou",
-//   "Est",
-//   "Donc",
-//   "Or",
-//   "Ni",
-//   "Car"
-// ];
 console.log(cities[0][cities[0].length-1]);
 
 
@@ -89,5 +92,8 @@ function typeWrite(buffer, elements, currentElement, currentLetter, deleting) {
     }
 
 }
+
+
+
 
 typeWrite(citySpan, cities, 0, 0, false);
