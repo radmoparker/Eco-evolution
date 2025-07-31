@@ -119,6 +119,7 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     position:relative;
     z-index:10;
     align-self: center;
+    /* justify-self: center; */
     width:45rem;
     /* height:35rem; */
     height:30rem;
@@ -517,7 +518,9 @@ nav.active{
 @media(max-width:1000px){
     .home-catchphrase{
         width:35rem;
-        margin-top: 0;
+        margin-top: 5rem;
+        
+
     }
     .home-catchphrase h1{
         font-size:4rem;
@@ -534,7 +537,8 @@ nav.active{
         max-height:25rem;
         width:25rem;
         margin-left:1rem;
-        margin-top: 0px;
+        margin-top: 2rem;
+        padding:3rem 2rem 3rem 2rem;
     }
     .home-catchphrase h1{
         font-size:3.5rem;
