@@ -80,7 +80,7 @@ function typeWrite(buffer, elements, currentElement, currentLetter, deleting) {
   var nbElements = elements.length - 1;
     if(!deleting){
         if ( currentLetter <= elements[currentElement].length - 1) {
-            buffer.textContent = elements[currentElement].substring(0, currentLetter + 1);
+            buffer.innerHTML = "&nbsp;"+elements[currentElement].substring(0, currentLetter + 1);
             setTimeout(typeWrite,150,buffer, elements, currentElement, currentLetter + 1, deleting);
         }else{
             deleting=true;
@@ -89,7 +89,7 @@ function typeWrite(buffer, elements, currentElement, currentLetter, deleting) {
         }
     }else{
         if(currentLetter >=0){
-            buffer.textContent = elements[currentElement].substring(0, currentLetter );
+            buffer.innerHTML = "&nbsp;"+elements[currentElement].substring(0, currentLetter );
             currentLetter-=1;
             setTimeout(typeWrite,50,buffer, elements, currentElement, currentLetter, deleting);
 
