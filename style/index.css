@@ -64,6 +64,7 @@ nav{
     /* margin-right:10rem; */
     display:flex;
     
+    
 }
 nav a{
     /* margin-right:4rem; */
@@ -400,4 +401,16 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
 }
 .nav a:not(.nav-active)::before{
     
+}
+
+
+@media(max-width:1150px){
+    nav{
+        /* position:absolute; */
+        display:block;
+        border: 2px solid black;
+        position:absolute;
+        /* z-index:10; */
+        /* top:-2000px; */
+    }
 }
