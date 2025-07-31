@@ -83,7 +83,7 @@ nav a.desactive{
 .home-first{
     display:flex;
     
-    height:100vh;
+    height:95vh;
     background:url('../images/accueil.jpg');
     background-size:cover;
     background-position: center center;
