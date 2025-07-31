@@ -61,7 +61,7 @@ header{
 nav{
     /* align-self:center;
     justify-self:center; */
-    /* margin-right:10rem; */
+    margin-right:15rem;
     display:flex;
     
     
@@ -76,7 +76,6 @@ nav a{
     
 }
 nav a.desactive{
-    color:black;
     text-shadow: 3px 8px 10px white;
     color:rgb(88, 5, 5);
 }
@@ -292,15 +291,20 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     width:5.5rem;
 }
 
+
 .home-devis{
-    /* position:absolute; */
-    /* top:0.8rem; */
+    position:fixed;
+    position:fixed;
+    top:0.8rem;
+    right:0rem;
+    
     display:flex;
     align-items:center;
-    right:0rem;
+    
     width:8rem;
-    z-index:1000;
-    /* margin-left:5rem; */
+    /* z-index:1000; */
+    font-size:1.5rem;
+    margin-left:5rem;
 
     /* height:3; */
     
@@ -310,15 +314,16 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     color:white;
     text-align:center;
     /* padding:20px 12px 20px 20px; */
-    clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
     height: 100px;
     padding: 0 35px 0 35px;
+    border-radius: 3px;
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+
 
     
 
-
 }
+
 .home-devis:hover{
     background:linear-gradient(60deg,rgb(111, 43, 43),rgb(98, 45, 45), rgb(224, 224, 224));
     background:linear-gradient(60deg,rgb(96, 22, 22),rgb(96, 22, 22), rgb(96, 22, 22));
@@ -399,18 +404,184 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     background: rgb(166, 194, 197) !important;
 
 }
-.nav a:not(.nav-active)::before{
+/* .nav a:not(.nav-active)::before{
     
+} */
+
+.desactive{
+    left: -2000px;
+    transition: left 0.5s ease;
+    }
+.active{
+    left: 0px !important;
+    transition: left 0.5s ease;
+    
+}
+nav.active{
+    /* justify-content: flex-start; */
+    /* padding-top:12rem;
+    gap:1rem; */
+
+    /* background-position: bottom;
+    background-size: 150%;
+    background-repeat:no-repeat; */
+    background-color: white;
+    
+
+}
+.nav.desactive{
+    background-color:none !important;
+    background-color: white;
+
+}
+.burger-icon{
+    width: 4rem;
+    left:0px;
+
+    margin:5px;
+    padding-right:1rem;
+
+    margin-bottom:0.3rem;
+    display: none;
+    z-index:3000;
+
+}
+.burger-icon:hover{
+    cursor: pointer;
+}
+.body-unscroll{
+    overflow: hidden !important;
+}
+.nav-scroll{
+    overflow: scroll;
+}
+.logo-visible{
+    width: 7rem;
+    padding-top:0;
+    margin-left:0px;
+
 }
 
 
 @media(max-width:1150px){
     nav{
-        /* position:absolute; */
-        display:block;
-        border: 2px solid black;
+        width:100%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        position: fixed;
+
+        margin-right:20px;
+        padding-top:2rem;
+        top: 0px;
+        bottom:0;
+        background-color: rgb(239, 170, 170);
+        margin-top:120px;
+        margin-right:0;
+
+    }
+    .burger-icon{
+        display: block;
+    }
+    .home-devis{
+        position:fixed;
+        top:0.8rem;
+        right:0rem;
+        right:7rem;
+        /* border-radius: 0  1rem 1rem 0; */
+
+    }
+    /* .home-devis::after{
         position:absolute;
-        /* z-index:10; */
-        /* top:-2000px; */
+        content:"";
+        height:100%;
+        width:1rem;
+        background:rgb(6, 55, 55);
+        top:0;
+        right:-2px
+
+
+    } */
+    .localisation-gif{
+        position:fixed;
+        right:20rem;
+        top:1rem;
+        /* border-radius:1rem;
+        border:5px dashed rgb(12, 87, 75);
+        border-right:5px dashed rgb(12, 87, 75); */
+
     }
 }
+@media(max-width:1000px){
+    .home-catchphrase{
+        width:35rem;
+        margin-top: 0;
+    }
+    .home-catchphrase h1{
+        font-size:4rem;
+    }
+    .home-catchphrase p{
+        font-size:1.8rem;
+        width:25rem;
+    }
+}
+
+@media(max-width:800px){
+    .home-catchphrase{
+        /* max-width:30rem; */
+        max-height:25rem;
+        width:25rem;
+        margin-left:1rem;
+        margin-top: 0px;
+    }
+    .home-catchphrase h1{
+        font-size:3.5rem;
+    }
+    .home-catchphrase p{
+        font-size:1.5rem;
+        /* width:30rem; */
+    }
+}
+
+@media(max-width:500px){
+    html{
+        font-size:12px;
+    }
+    .anime-pub{
+        bottom: 30px;
+        right:-120px;
+    }
+
+}
+/* @media(max-width:400px){
+    html{
+        font-size:12px;
+    }   
+} */
+@media(max-width:340px){
+    html{
+        font-size:10px;
+    }
+    .anime-pub{
+        bottom: 25px;
+        right:-110px;
+        width:40rem;
+    }
+
+
+}
+
+/* nav.active .home-devis{
+    display: flex;
+    align-items: center;
+
+    height: 100px;
+    padding: 0 35px 0 35px;
+    margin:0;
+        
+
+    clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
+    transition: all 0.3s ease;
+} */
