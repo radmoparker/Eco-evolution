@@ -77,7 +77,6 @@ console.log(cities[0][cities[0].length-1]);
 
 
 function typeWrite(buffer, elements, currentElement, currentLetter, deleting) {
-  var nbElements = elements.length - 1;
     if(!deleting){
         if ( currentLetter <= elements[currentElement].length - 1) {
             buffer.innerHTML = "&nbsp;"+elements[currentElement].substring(0, currentLetter + 1);
