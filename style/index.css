@@ -131,13 +131,13 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     /* background-color: rgba(241, 241, 241, 0.45); */
     /* background-color: rgba(0, 0, 0, 0.15); */
     background-color: rgba(241, 241, 241, 0.15);
-        background-color: rgba(76, 73, 73, 0.45);
+    background-color: rgba(76, 73, 73, 0.45);
 
 
     border-radius:1rem;
     /* border-radius: 50px 400px 40px 100px; */
     /* margin-left:10rem; */
-    margin-left:3rem;
+    margin-left:10vw;
     margin-top:12rem;
 
     /* box-shadow: 6px 6px 7px rgb(24, 23, 23); */
@@ -195,7 +195,7 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     color:rgb(255, 255, 255);
     /* text-shadow: 3px 8px 20px black; */
     margin:0 0 0.5rem 0;
-    /* text-shadow: 3px 8px 10px rgb(60, 59, 59),-3px -8px 10px rgb(70, 70, 70); */
+    text-shadow: 3px 8px 20px rgb(60, 59, 59),-3px -8px 20px rgb(70, 70, 70);
 
 
 }
@@ -204,7 +204,7 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     color:rgb(255, 255, 255);
     /* text-shadow: 3px 8px 20px black; */
     margin:0;
-    /* text-shadow: 3px 8px 10px rgb(60, 59, 59),-3px -8px 10px rgb(70, 70, 70); */
+    text-shadow: 3px 8px 10px rgb(60, 59, 59),-3px -8px 10px rgb(70, 70, 70);
 
 
 }
@@ -220,6 +220,7 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     border-radius: 2px;
     box-shadow: 2px 0px 5px rgb(74, 62, 62);
 } */
+
 
 @keyframes blink{
     0%, 50%{
@@ -246,6 +247,7 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
         height:100%;
         /* background-color: rgba(241, 241, 241, 0.15); */
         background-color: rgba(76, 73, 73, 0.55);
+        background-color: rgba(76, 73, 73, 0.45);
 
     }
 }
@@ -455,7 +457,7 @@ nav.active{
 
 }
 .burger-icon{
-    width: 4rem;
+    width: 3.8rem;
     left:0px;
 
     margin:5px;
@@ -481,7 +483,11 @@ nav.active{
     margin-left:0px;
 
 }
-
+/* @media(min-width:1300px){
+    .home-catchphrase{
+        margin-left:10vw;
+    }
+} */
 
 @media(max-width:1150px){
     nav{
@@ -522,33 +528,29 @@ nav.active{
         top:0.8rem;
         right:0rem;
         right:7rem;
-        /* border-radius: 0  1rem 1rem 0; */
 
     }
-    /* .home-devis::after{
-        position:absolute;
-        content:"";
-        height:100%;
-        width:1rem;
-        background:rgb(6, 55, 55);
-        top:0;
-        right:-2px
+    .anime-pub{
+        padding:15px 0 15px 0;
 
+    }
 
-    } */
     .localisation-gif{
         position:fixed;
         right:20rem;
         top:1rem;
-        /* border-radius:1rem;
-        border:5px dashed rgb(12, 87, 75);
-        border-right:5px dashed rgb(12, 87, 75); */
+
 
     }
+    .link div:not(.nav-active):hover{
+        background: none !important;
+    }
+    /* .home-catchphrase{
+        margin-left:5vw;
+    } */
 }
 @media(max-width:1300px){
      .home-catchphrase{
-        /* max-width:30rem; */
         max-height:28rem;
         width:45rem;
         margin-left:3rem;
@@ -560,7 +562,6 @@ nav.active{
 @media(max-width:1000px){
 
      .home-catchphrase{
-        /* max-width:30rem; */
         max-height:23rem;
         width:33rem;
         margin-left:5vw;
@@ -600,16 +601,8 @@ nav.active{
      
         font-size: 1.4rem;
         height:60px;
-        /* border-radius: 0  1rem 1rem 0; */
+    }
 
-    }
-    /* .home-catchphrase h1{
-        font-size:4rem;
-    }
-    .home-catchphrase p{
-        font-size:1.8rem;
-        width:25rem;
-    } */
 }
 
 @media(max-width:800px){
@@ -617,7 +610,7 @@ nav.active{
      .home-catchphrase{
         align-self: flex-start;
         max-height:22rem;
-        width:25rem;
+        width:30rem;
         margin-left:10vw !important;
         margin-top: 20vh;
         padding:3rem 2rem 3rem 2rem;
@@ -636,14 +629,6 @@ nav.active{
         width:18rem;
         margin-left:4px ;
     }
-    /* .anime-text{
-        width:27rem;
-        font-size:1.3rem;
-    }
-    .writing-slogan,.blinking{
-        font-size:1.7rem;
-    } */
-
 }
 
 @media(max-width:600px){
@@ -651,7 +636,7 @@ nav.active{
         /* max-width:30rem; */
         align-self: flex-start;
         max-height:22rem;
-        width:18rem;
+        width:20rem;
         margin-left:5vw !important;
         margin-top: 20vh;
         padding:3rem 2rem 3rem 2rem;
@@ -663,25 +648,21 @@ nav.active{
      .home-catchphrase h2{
         font-size:1.5rem;
     }
-    /* .home-catchphrase h1::before{
-        width:7rem;
-        left:4px;
-        height:4px;
-    } */
+
     .home-catchphrase p{
         font-size:1rem;
         width:15rem;
         margin-left:4px ;
     }
     .anime-pub{
-        bottom: 15px;
-        right:-200px;
+        bottom: 20px;
+        right:-210px;
         border-top: 15px solid #0a3833;
         border-bottom: 15px solid #0a3833;
     }
     .anime-text{
         width:27rem;
-        font-size:1rem;
+        font-size:1.1rem;
     }
     .writing-slogan,.blinking{
         font-size:1.3rem;
@@ -689,19 +670,22 @@ nav.active{
 
 
 }
-/* @media(max-width:400px){
-    html{
-        font-size:12px;
-    }   
-} */
+
 @media(max-width:400px){
     html{
         font-size:14px;
     }
     .anime-pub{
-        bottom: 20px;
-        right:-190px;
+        bottom: 25px;
+        right:-200px;
         width:40rem;
+    }
+    .anime-text{
+        width:27rem;
+        font-size:1.4rem;
+    }
+    .writing-slogan,.blinking{
+        font-size:1.4rem;
     }
 
 
