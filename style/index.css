@@ -131,6 +131,8 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     /* background-color: rgba(241, 241, 241, 0.45); */
     /* background-color: rgba(0, 0, 0, 0.15); */
     background-color: rgba(241, 241, 241, 0.15);
+        background-color: rgba(76, 73, 73, 0.45);
+
 
     border-radius:1rem;
     /* border-radius: 50px 400px 40px 100px; */
@@ -138,7 +140,7 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     margin-left:3rem;
     margin-top:12rem;
 
-    box-shadow: 6px 6px 7px rgb(24, 23, 23);
+    /* box-shadow: 6px 6px 7px rgb(24, 23, 23); */
     overflow: hidden;
 
     animation: unfold 2s;
@@ -193,7 +195,7 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     color:rgb(255, 255, 255);
     /* text-shadow: 3px 8px 20px black; */
     margin:0 0 0.5rem 0;
-    text-shadow: 3px 8px 10px rgb(60, 59, 59),-3px -8px 10px rgb(70, 70, 70);
+    /* text-shadow: 3px 8px 10px rgb(60, 59, 59),-3px -8px 10px rgb(70, 70, 70); */
 
 
 }
@@ -202,7 +204,7 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     color:rgb(255, 255, 255);
     /* text-shadow: 3px 8px 20px black; */
     margin:0;
-    text-shadow: 3px 8px 10px rgb(60, 59, 59),-3px -8px 10px rgb(70, 70, 70);
+    /* text-shadow: 3px 8px 10px rgb(60, 59, 59),-3px -8px 10px rgb(70, 70, 70); */
 
 
 }
@@ -232,7 +234,9 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     0%{
         padding-top:0rem;
         height:0%;
-        background-color: rgba(0, 3, 3, 0.45);
+        /* background-color: rgba(0, 3, 3, 0.45); */
+        background-color: rgba(6, 6, 6, 0.65);
+
 
 
 
@@ -240,10 +244,8 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     100%{
         padding-top:3rem;
         height:100%;
-        background-color: rgba(241, 241, 241, 0.15);
-            /* background-color: rgba(0, 0, 0, 0.15); */
-
-
+        /* background-color: rgba(241, 241, 241, 0.15); */
+        background-color: rgba(76, 73, 73, 0.55);
 
     }
 }
