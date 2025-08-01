@@ -1,8 +1,7 @@
 html{
     font-size:16px;
-    font-family: 'Lato', sans-serif;
-    /* font-family: 'Montserrat', sans-serif; */
-    /* font-family: 'Robotto', sans-serif; */
+    font-family: sans-serif;
+
 
 
 }
@@ -129,7 +128,10 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     /* padding-bottom:9rem; */
 
     box-sizing: border-box;
-    background-color: rgba(241, 241, 241, 0.45);
+    /* background-color: rgba(241, 241, 241, 0.45); */
+    /* background-color: rgba(0, 0, 0, 0.15); */
+    background-color: rgba(241, 241, 241, 0.15);
+
     border-radius:1rem;
     /* border-radius: 50px 400px 40px 100px; */
     /* margin-left:10rem; */
@@ -187,7 +189,16 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
 }
 .home-catchphrase h1{
     position:relative;
-    font-size:6rem;
+    font-size:5rem;
+    color:rgb(255, 255, 255);
+    /* text-shadow: 3px 8px 20px black; */
+    margin:0 0 0.5rem 0;
+    text-shadow: 3px 8px 10px rgb(60, 59, 59),-3px -8px 10px rgb(70, 70, 70);
+
+
+}
+.home-catchphrase h2{
+    font-size:2.5rem;
     color:rgb(255, 255, 255);
     /* text-shadow: 3px 8px 20px black; */
     margin:0;
@@ -195,19 +206,18 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
 
 
 }
-.home-catchphrase h1::before{
+/* .home-catchphrase h1::before{
     position:absolute;
     content:"";
     height:7px;
     width:15rem;;
     bottom:-20px;
     left:15px;
-    /* background:#601616;
-    background:rgb(11, 78, 77); */
+
     background:rgb(255, 255, 255);
     border-radius: 2px;
     box-shadow: 2px 0px 5px rgb(74, 62, 62);
-}
+} */
 
 @keyframes blink{
     0%, 50%{
@@ -230,7 +240,9 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     100%{
         padding-top:3rem;
         height:100%;
-        background-color: rgba(241, 241, 241, 0.45);
+        background-color: rgba(241, 241, 241, 0.15);
+            /* background-color: rgba(0, 0, 0, 0.15); */
+
 
 
     }
@@ -548,15 +560,22 @@ nav.active{
      .home-catchphrase{
         /* max-width:30rem; */
         max-height:23rem;
-        width:25rem;
+        width:33rem;
         margin-left:5vw;
         margin-top: 7rem;
         padding:3rem 2rem 3rem 2rem;
     }
+    .home-catchphrase::after,.home-catchphrase::before{
+        height:1.4rem;
+    }
 
      .home-catchphrase h1{
-        font-size:3.5rem;
+        font-size:3.6rem;
     }
+    .home-catchphrase h2{
+        font-size:2rem;
+    }
+
     .home-catchphrase p{
         font-size:1.3rem;
         width:21rem;
@@ -595,7 +614,7 @@ nav.active{
   
      .home-catchphrase{
         align-self: flex-start;
-        max-height:20rem;
+        max-height:22rem;
         width:25rem;
         margin-left:10vw !important;
         margin-top: 20vh;
@@ -629,7 +648,7 @@ nav.active{
      .home-catchphrase{
         /* max-width:30rem; */
         align-self: flex-start;
-        max-height:20rem;
+        max-height:22rem;
         width:18rem;
         margin-left:10vw !important;
         margin-top: 20vh;
@@ -639,11 +658,14 @@ nav.active{
      .home-catchphrase h1{
         font-size:2.3rem;
     }
-    .home-catchphrase h1::before{
+     .home-catchphrase h2{
+        font-size:1.5rem;
+    }
+    /* .home-catchphrase h1::before{
         width:7rem;
         left:4px;
         height:4px;
-    }
+    } */
     .home-catchphrase p{
         font-size:1rem;
         width:15rem;
