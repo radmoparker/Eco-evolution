@@ -1,16 +1,16 @@
 const citySpan = document.getElementById("writing-slogan");
 const navElements = document.querySelectorAll("nav a");
 const nav = document.getElementById("navigation");
-
 const menu = document.getElementById("menu");
 
 var slided = false;
 menu.classList.add("desactive");
-
+const menuSrc = "../images/barre-de-menu-2.png"
+const cancelSrc = "images/cancel.png";
 menu.addEventListener("click", menuSlide);
 
 
-console.log("test data-page",nav.dataset.page);
+// console.log("test data-page",nav.dataset.page);
 const activePage = document.getElementById(nav.dataset.page);
 activePage.firstChild.classList.add("nav-active");
 // nav.forEach(element => {console.log("dezd",element);});
@@ -110,7 +110,7 @@ function menuSlide(){
         nav.classList.add("active");
         document.body.classList.add('body-unscroll');
         nav.classList.add("nav-scroll");
-        menu.src = "images/cancel.png";
+        menu.src = cancelSrc;
         // logo.classList.remove("logo-visible");  //increase logo size
         // title.classList.remove("title-visible");
         slided = true;
@@ -120,7 +120,7 @@ function menuSlide(){
         nav.classList.remove("active");
         document.body.classList.remove('body-unscroll');
         nav.classList.remove("nav-scroll");
-        menu.src = "images/menu-2.png";
+        menu.src = menuSrc;
         // logo.classList.add("logo-visible");
         
         // if(parseInt(window.scrollY) > 100){

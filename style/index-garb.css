@@ -341,11 +341,11 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     /* background: linear-gradient(90deg, #a03434,#d75353,#c76060); */
 
     /* background: linear-gradient(90deg, #a03434,#d75353,#ec8989); */
-    background:#ea4545;
+    /* background:#ea4545; */
 
     /* color:rgb(205, 204, 204); */
     color:white;
-    text-shadow: 3px 3px 5px rgb(62, 55, 55);
+    /* text-shadow: 3px 3px 5px black; */
     text-align:center;
     /* padding:20px 12px 20px 20px; */
     height: 100px;
@@ -469,7 +469,7 @@ nav.active{
 
 }
 .burger-icon{
-    width: 3.3rem;
+    width: 3.8rem;
     left:0px;
 
     margin:5px;
