@@ -7,12 +7,12 @@
 }
 @font-face {
   font-family: 'Lato-blackitalic';
-  src: url('../assets/font/Lato/Lato-Blackitalic.woff2') format('woff2');
+  src: url('../assets/font/Lato/Lato-BlackItalic.woff2') format('woff2');
 
 }
 @font-face {
   font-family: 'Lato-italic';
-  src: url('../assets/font/Lato/Lato-italic.woff2') format('woff2');
+  src: url('../assets/font/Lato/Lato-Italic.woff2') format('woff2');
 }
 @font-face {
   font-family: 'Lato-black';
@@ -240,7 +240,7 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
 }
 .home-catchphrase h1{
     position:relative;
-    font-family: "Lato-blackitalic";
+    font-family: 'Lato-blackitalic';
     font-size:5rem;
     color:rgb(255, 255, 255);
     /* text-shadow: 3px 8px 20px black; */
@@ -402,12 +402,14 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     color:white;
     /* text-shadow: 3px 3px 5px rgb(62, 55, 55); */
     text-shadow: 6px 5px 5px rgb(0, 0, 0);    
+    text-shadow: 4px 3px 5px rgb(0, 0, 0); 
     text-align:center;
     /* padding:20px 12px 20px 20px; */
     height: 80px;
     padding: 0 20px 0 20px;
     border-radius: 3px;
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+ 
 
 
     
