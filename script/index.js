@@ -2,17 +2,23 @@ const citySpan = document.getElementById("writing-slogan");
 const navElements = document.querySelectorAll("nav a");
 const nav = document.getElementById("navigation");
 const menu = document.getElementById("menu");
+const activePage = document.getElementById(nav.dataset.page);
 
-var slided = false;
-menu.classList.add("desactive");
 const menuSrc = "../images/barre-de-menu-2.png"
 const cancelSrc = "images/cancel.png";
+
+
+
 menu.addEventListener("click", menuSlide);
+window.addEventListener('resize',manageResize);
 
 
-// console.log("test data-page",nav.dataset.page);
-const activePage = document.getElementById(nav.dataset.page);
+var slided = false;
+
+menu.classList.add("desactive");
 activePage.firstChild.classList.add("nav-active");
+// console.log("test data-page",nav.dataset.page);
+
 // nav.forEach(element => {console.log("dezd",element);});
 // for(let i=0; i< navElements.length-1; i++){
 
@@ -73,7 +79,7 @@ const cities = [
     "Neufchâteau"
 ];
 
-console.log(cities[0][cities[0].length-1]);
+// console.log(cities[0][cities[0].length-1]);
 
 
 function typeWrite(buffer, elements, currentElement, currentLetter, deleting) {
@@ -134,6 +140,25 @@ function menuSlide(){
         console.log("Menu désactivé");
     }
 
+}
+function manageResize(){
+    if (slided){
+        nav.classList.remove("active");
+        nav.classList.add("desactive");
+        nav.classList.remove("nav-scroll");
+        menu.src = "images/menu-2.png";
+        document.body.classList.remove('body-unscroll');
+        
+        if(parseInt(window.scrollY) > 100){
+            // logo.classList.add("logo-visible"); //decrease logo size
+            // title.classList.add("title-visible");
+        }
+        
+        slided = false;
+        // console.log("Navbar : Menu désactivé");
+
+    }
+    
 }
 
 typeWrite(citySpan, cities, 0, 0, false);
