@@ -1,9 +1,24 @@
+/* @font-face {
+  font-family: 'Lato';
+  src: url('../assets/font/Lato/Lato-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+} */
+ /* @font-face {
+font-family: Gentium;
+src: url(http://example.com/fonts/Gentium.woff);
+} */
+
 html{
     font-size:16px;
     font-family: sans-serif;
+    /* font-family: Gentium */
+    /* font-family: 'Lato'; */
+    
+    /* src: url("../assets/font/Lato.woff2") format('woff2'); */
 
-
-
+    
 }
 body{
     margin-left: 0px;
@@ -29,7 +44,7 @@ header{
     /* background:linear-gradient(90deg,rgb(96, 22, 22),rgb(96, 22, 22), rgb(188, 137, 137)); */
 /* clip-path: polygon(0 0, 100% 0, 100% 82%, 44% 82%, 31% 100%, 0 100%); */
     /* box-shadow: 5px 5px 20px black; */
-    background-color: rgb(243, 243, 243);
+    background-color: rgba(243, 243, 243, 1);
     box-shadow:5px 0 20px black;
 
     /* clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 85%, 25% 100%, 0 100%); */
@@ -62,12 +77,24 @@ nav{
     justify-self:center; */
     margin-right:15rem;
     display:flex;
+    align-self:flex-end;
+    margin-bottom:1rem;
     
     
 }
 nav a{
     /* margin-right:4rem; */
-    font-size:1.6rem;
+    position:relative;
+    font-size:1.3rem;
+    font-weight:600;
+    color:black;
+    color: #601616;
+    
+    
+}
+nav a{
+    /* margin-right:4rem; */
+    font-size:1.3rem;
     font-weight:600;
     color:black;
     color: #601616;
@@ -326,7 +353,7 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
 .home-devis{
     position:fixed;
     position:fixed;
-    top:0.8rem;
+    top:1rem;
     right:0rem;
     
     display:flex;
@@ -351,8 +378,8 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     text-shadow: 6px 5px 5px rgb(0, 0, 0);    
     text-align:center;
     /* padding:20px 12px 20px 20px; */
-    height: 100px;
-    padding: 0 35px 0 35px;
+    height: 80px;
+    padding: 0 20px 0 20px;
     border-radius: 3px;
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
 
@@ -427,7 +454,7 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     align-items: center;
     /* background-color: red !important; */
     /* border:2px solid black; */
-    height: 100px;
+    height: 50px;
     padding: 0 35px 0 35px;
     margin:0;
         
