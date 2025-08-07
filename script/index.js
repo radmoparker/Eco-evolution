@@ -4,7 +4,7 @@ const nav = document.getElementById("navigation");
 const menu = document.getElementById("menu");
 const activePage = document.getElementById(nav.dataset.page);
 
-const menuSrc = "../images/barre-de-menu-2.png"
+const menuSrc = "images/barre-de-menu-2.png"
 const cancelSrc = "images/cancel.png";
 
 

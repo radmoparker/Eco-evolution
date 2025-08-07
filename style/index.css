@@ -142,7 +142,7 @@ nav a.desactive{
     justify-content: center;
     
     /* height:85vh; */
-    height:90vh;
+    height:80vh;
     background:url('../images/accueil.jpg');
     background-size:cover;
     background-position: center center;
@@ -186,8 +186,8 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     text-align: center;
     /* height:35rem; */
     /* height:30rem; */
-    height:100vh;
-    max-height:90%;
+    height:90vh;
+    /* max-height:90%; */
     /* border: 2px solid black; */
     padding:3rem;
     /* padding-bottom:9rem; */
@@ -212,6 +212,7 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     
 
     animation: unfold 2s;
+    overflow: hidden;
     /* animation-duration: 1s; */
     /* animation-delay:0s; */
     /* max-height:35rem; */
@@ -314,7 +315,7 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
 @keyframes unfold{
     0%{
         /* padding-top:0rem; */
-        height:0%;
+        height:0;
         /* background-color: rgba(0, 3, 3, 0.45); */
         /* background-color: rgba(6, 6, 6, 0.65); */
 
@@ -673,7 +674,7 @@ nav.active{
     }
 
      .home-catchphrase h1{
-        font-size:3.6rem;
+        /* font-size:3.6rem; */
     }
     .home-catchphrase h2{
         /* font-size:2rem; */
@@ -733,6 +734,7 @@ nav.active{
 
 @media(max-width:600px){
      .home-catchphrase{
+        
         /* max-width:30rem; */
         /* align-self: flex-start;
         max-height:22rem;
@@ -771,14 +773,26 @@ nav.active{
 
 
 }
-@media(max-height:500px){
+@media(max-width:400px){
     .home-catchphrase{
-        margin-right: 10rem;;
-        margin-bottom:10rem;
-        margin-top: 0;;
-        /* overflow: scroll; */
+        margin-top: 0;
     }
-
+}
+@media(max-height:500px) and (max-width: 1000px) {
+    .home-catchphrase{
+        padding-right: 10rem;;
+        margin-bottom:10rem;
+        margin-top: 0;
+        /* overflow: scroll; */
+        /* width:80%; */
+        height:80vh
+    }
+    .home-catchphrase h1{
+        font-size: 3rem;
+    }
+    .home-catchphrase h2{
+        font-size: 2rem;
+    }
 }
 
 /* @media(max-width:400px){
