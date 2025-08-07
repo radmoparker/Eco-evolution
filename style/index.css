@@ -649,41 +649,10 @@ nav.active{
         margin-left:5vw;
     } */
 }
-@media(max-width:1300px){
-     .home-catchphrase{
-        /* max-height:28rem; */
-        /* width:45rem; */
-        /* margin-left:3rem;
-        margin-top: 7rem; */
-        /* padding:3rem 2rem 3rem 2rem; */
-        /* margin-top:12rem; */
-    }
-}
+
 
 @media(max-width:1000px){
 
-     .home-catchphrase{
-        /* max-height:23rem;
-        width:33rem;
-        margin-left:5vw;
-        margin-top: 7rem;
-        padding:3rem 2rem 3rem 2rem; */
-    }
-    .home-catchphrase::after,.home-catchphrase::before{
-        /* height:1.4rem; */
-    }
-
-     .home-catchphrase h1{
-        /* font-size:3.6rem; */
-    }
-    .home-catchphrase h2{
-        /* font-size:2rem; */
-    }
-
-    .home-catchphrase p{
-        font-size:1.3rem;
-        width:21rem;
-    }
     .anime-pub{
         width:35rem;
         bottom: 30px;
@@ -705,44 +674,15 @@ nav.active{
     }
 
 }
+/* @media(min-height:730px) and (min-height:800px){
+    .home-first{
+        height:50vh;
+    }
+} */
 
-@media(max-width:800px){
-  
-     .home-catchphrase{
-        /* align-self: flex-start;
-        max-height:22rem;
-        width:30rem;
-        margin-left:10vw !important;
-        margin-top: 20vh;
-        padding:3rem 2rem 3rem 2rem; */
-    }
-
-     .home-catchphrase h1{
-        /* font-size:2.7rem; */
-    }
-    .home-catchphrase h1::before{
-        width:7rem;
-        left:4px;
-        height:4px;
-    }
-    .home-catchphrase p{
-        font-size:1.3rem;
-        width:18rem;
-        margin-left:4px ;
-    }
-}
 
 @media(max-width:600px){
-     .home-catchphrase{
-        
-        /* max-width:30rem; */
-        /* align-self: flex-start;
-        max-height:22rem;
-        width:20rem;
-        margin-left:5vw !important;
-        margin-top: 20vh;
-        padding:3rem 2rem 3rem 2rem; */
-    }
+
 
      .home-catchphrase h1{
         font-size:3.2rem;
@@ -783,8 +723,6 @@ nav.active{
         padding-right: 10rem;;
         margin-bottom:10rem;
         margin-top: 0;
-        /* overflow: scroll; */
-        /* width:80%; */
         height:80vh
     }
     .home-catchphrase h1{
@@ -794,36 +732,3 @@ nav.active{
         font-size: 2rem;
     }
 }
-
-/* @media(max-width:400px){
-    html{
-        font-size:14px;
-    }
-    .anime-pub{
-        bottom: 25px;
-        right:-200px;
-        width:40rem;
-    }
-    .anime-text{
-        width:27rem;
-        font-size:1.4rem;
-    }
-    .writing-slogan,.blinking{
-        font-size:1.4rem;
-    }
-
-
-} */
-
-/* nav.active .home-devis{
-    display: flex;
-    align-items: center;
-
-    height: 100px;
-    padding: 0 35px 0 35px;
-    margin:0;
-        
-
-    clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
-    transition: all 0.3s ease;
-} */
