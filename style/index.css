@@ -119,6 +119,7 @@ nav a.desactive{
 
 .home-first{
     display:flex;
+    justify-content: center;
     
     /* height:85vh; */
     height:90vh;
@@ -130,6 +131,8 @@ nav a.desactive{
     /* justify-content:flex-start; */
     position: relative;
     overflow: hidden;
+    align-items: center;
+
     
 
 }
@@ -156,8 +159,8 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
 .home-catchphrase{
     position:relative;
     z-index:10;
-    align-self: center;
-    /* justify-self: center; */
+    /* align-self: center; */
+    /* justify-self: flex-end; */
     width:45rem;
     /* height:35rem; */
     height:30rem;
@@ -178,13 +181,13 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
 
     /* border-radius: 50px 400px 40px 100px; */
     /* margin-left:10rem; */
-    margin-left:10vw;
-    margin-top:12rem;
+    /* margin-left:10vw; */
+    /* margin-top:12rem; */
 
     /* box-shadow: 6px 6px 7px rgb(24, 23, 23); */
     overflow: hidden;
 
-    animation: unfold 2s;
+    animation: sunfold 2s;
     /* animation-duration: 1s; */
     /* animation-delay:0s; */
     /* max-height:35rem; */
@@ -340,7 +343,8 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     transform:rotate(-45deg);
     background:linear-gradient(90deg,rgb(96, 22, 22),rgb(96, 22, 22), rgb(188, 137, 137));
     background:#dd3434;
-    
+    background:linear-gradient(270deg,#dd3434,#c81c1c,#090000);
+
     border-top: 20px solid rgb(9, 67, 66);
     border-bottom: 20px solid rgb(9, 67, 66);
     position:absolute;
@@ -594,6 +598,9 @@ nav.active{
         height:90px;
 
     }
+     .home-catchphrase{
+        /* margin-top:14vw; */
+    }
     .burger-icon{
         display: block;
     }
@@ -625,32 +632,33 @@ nav.active{
 }
 @media(max-width:1300px){
      .home-catchphrase{
-        max-height:28rem;
-        width:45rem;
-        margin-left:3rem;
-        margin-top: 7rem;
-        padding:3rem 2rem 3rem 2rem;
+        /* max-height:28rem; */
+        /* width:45rem; */
+        /* margin-left:3rem;
+        margin-top: 7rem; */
+        /* padding:3rem 2rem 3rem 2rem; */
+        /* margin-top:12rem; */
     }
 }
 
 @media(max-width:1000px){
 
      .home-catchphrase{
-        max-height:23rem;
+        /* max-height:23rem;
         width:33rem;
         margin-left:5vw;
         margin-top: 7rem;
-        padding:3rem 2rem 3rem 2rem;
+        padding:3rem 2rem 3rem 2rem; */
     }
     .home-catchphrase::after,.home-catchphrase::before{
-        height:1.4rem;
+        /* height:1.4rem; */
     }
 
      .home-catchphrase h1{
         font-size:3.6rem;
     }
     .home-catchphrase h2{
-        font-size:2rem;
+        /* font-size:2rem; */
     }
 
     .home-catchphrase p{
@@ -682,16 +690,16 @@ nav.active{
 @media(max-width:800px){
   
      .home-catchphrase{
-        align-self: flex-start;
+        /* align-self: flex-start;
         max-height:22rem;
         width:30rem;
         margin-left:10vw !important;
         margin-top: 20vh;
-        padding:3rem 2rem 3rem 2rem;
+        padding:3rem 2rem 3rem 2rem; */
     }
 
      .home-catchphrase h1{
-        font-size:2.7rem;
+        /* font-size:2.7rem; */
     }
     .home-catchphrase h1::before{
         width:7rem;
@@ -708,19 +716,19 @@ nav.active{
 @media(max-width:600px){
      .home-catchphrase{
         /* max-width:30rem; */
-        align-self: flex-start;
+        /* align-self: flex-start;
         max-height:22rem;
         width:20rem;
         margin-left:5vw !important;
         margin-top: 20vh;
-        padding:3rem 2rem 3rem 2rem;
+        padding:3rem 2rem 3rem 2rem; */
     }
 
      .home-catchphrase h1{
-        font-size:2.3rem;
+        /* font-size:2.3rem; */
     }
      .home-catchphrase h2{
-        font-size:1.5rem;
+        /* font-size:1.5rem; */
     }
 
     .home-catchphrase p{
