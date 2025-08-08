@@ -60,7 +60,7 @@ header{
     /* border: 2px solid black; */
     
     /* position: fixed; */
-    position: sticky;
+    position: fixed;
     top:0;
     z-index:2000;
 
@@ -139,6 +139,7 @@ nav a.desactive{
     transition: all 0.3s ease;
 }
 .home-first{
+    padding-top:100px;
     display:flex;
     justify-content: center;
     
