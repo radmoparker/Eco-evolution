@@ -53,9 +53,7 @@ function manageScroll(){
         logo.src = srcBlackLogo;
         
         navElements.forEach(link => {
-            if(!nav.classList.contains("active")){
                 link.classList.add("link-visible");
-            }
         });
         console.log("OHOHIHIH !! ");
     }
