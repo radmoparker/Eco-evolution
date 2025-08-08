@@ -3,14 +3,62 @@ const navElements = document.querySelectorAll("nav a");
 const nav = document.getElementById("navigation");
 const menu = document.getElementById("menu");
 const activePage = document.getElementById(nav.dataset.page);
+const header = document.getElementById("header");
+const logo = document.getElementById("logo");
+
+const homeDevis = document.getElementById("home-devis");
 
 const menuSrc = "images/barre-de-menu-2.png"
 const cancelSrc = "images/cancel.png";
+const srcLogo = "images/ecoevolution-logo-ver4-new.png";
+// const srcBlackLogo = "./images/ecoevolution-logo-black.png";
+// const srcBlackLogo = "images/ecoevolution-logo-green-white-2.png";
+// const srcBlackLogo = "images/ecoevolution-logo-red-white.png";
+const srcBlackLogo = "images/ecoevolution-logo-green-red-white.png";
+
 
 
 
 menu.addEventListener("click", menuSlide);
 window.addEventListener('resize',manageResize);
+
+let isScrollManaged = false;
+window.addEventListener("scroll",()=> {
+    if(!isScrollManaged){
+        isScrollManaged = true;
+        manageScroll();
+    }else{
+        
+        setTimeout(()=>{isScrollManaged =false;},200);
+    }
+
+});
+
+function manageScroll(){
+    if(window.scrollY>100){
+        header.classList.add("header-visible");
+        logo.classList.remove("logo-visible");
+        homeDevis.classList.add("home-devis-active");
+        logo.src = srcLogo;
+        navElements.forEach(link => {
+            link.classList.remove("link-visible");
+        });
+        console.log("Eh oui mon gars, on appelle ca l'experience !! ");
+
+    }else{
+        header.classList.remove("header-visible");
+        logo.classList.add("logo-visible");
+        homeDevis.classList.remove("home-devis-active");
+        logo.src = srcBlackLogo;
+        
+        navElements.forEach(link => {
+            if(!nav.classList.contains("active")){
+                link.classList.add("link-visible");
+            }
+        });
+        console.log("OHOHIHIH !! ");
+    }
+}
 
 
 var slided = false;
@@ -146,7 +194,7 @@ function manageResize(){
         nav.classList.remove("active");
         nav.classList.add("desactive");
         nav.classList.remove("nav-scroll");
-        menu.src = "images/menu-2.png";
+        menu.src = menuSrc;
         document.body.classList.remove('body-unscroll');
         
         if(parseInt(window.scrollY) > 100){

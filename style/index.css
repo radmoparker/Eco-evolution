@@ -58,7 +58,7 @@ header{
     align-items:center;
     justify-content:space-between;
     /* border: 2px solid black; */
-    
+
     /* position: fixed; */
     position: fixed;
     top:0;
@@ -78,6 +78,11 @@ header{
 
 
 }
+.header-visible{
+    background-color: rgba(243, 243, 243, 1);
+    box-shadow:5px 0 20px black;
+    border-bottom:7px solid #ea4545;
+}
 
 .logo{
     position:relative;
@@ -87,6 +92,24 @@ header{
     /* position:fixed; */
     left:1rem;
     z-index:3000;
+    transition: all 0.4s ease;
+}
+.logo-visible{
+    height:10rem !important;
+    width:auto !important;
+    top:1.5rem;
+    left:-1rem;
+    /* background: linear-gradient(110deg,rgba(255, 255, 255, 0.5),rgba(255, 255, 255, 0.3),rgba(217, 208, 208,0));
+    background: white;
+    border-radius: 0 20rem 20rem 13rem; */
+    /* clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%); */
+    /* border-radius:20rem;
+    padding: 1rem;; */
+    /* padding-top:0; */
+    /* margin-left:0px; */
+    
+
+
 }
 /* header::before{
     position:absolute;
@@ -115,10 +138,9 @@ nav a{
     font-size:1.3rem;
     /* font-weight:600; */
     color:black;
-    /* color:rgb(255, 255, 255); */
+
     /* color: #04322d; */
-    
-    
+ 
 }
 
 nav a.desactive{
@@ -139,6 +161,21 @@ nav a.desactive{
     clip-path: polygon(15% 0, 100% 0, 85% 100%, 0 100%);
     transition: all 0.3s ease;
 }
+.link-visible{
+    color:white !important;
+    font-size: 20rem m !important;
+    text-shadow: 3px 2px 8px black;
+    font-size: 1.5;
+}
+.first{
+
+    background:url('../images/accueil.jpg');
+    background:url('../images/house-constructor.jpg');
+    background-size:cover;
+    background-position: center center;
+    overflow: hidden;
+    position: relative;
+}
 .home-first{
     padding-top:100px;
     display:flex;
@@ -146,17 +183,16 @@ nav a.desactive{
     
     /* height:85vh; */
     height:80vh;
-    background:url('../images/accueil.jpg');
-        background:url('../images/house-constructor.jpg');
+
         /* background:url('../images/house-constructor-2.jpg'); */
 
-    background-size:cover;
-    background-position: center center;
+
     /* background-position: center center; */
     /* display:flex; */
     /* justify-content:flex-start; */
-    position: relative;
-    overflow: hidden;
+    
+    overflow: scroll;
+    
     align-items: flex-start;
 
     
@@ -196,6 +232,8 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     /* height:35rem; */
     /* height:30rem; */
     height:90vh;
+    height:fit-content;
+    padding-bottom:20rem;
     /* max-height:90%; */
     /* border: 2px solid black; */
     padding:3rem;
@@ -211,6 +249,7 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
 
     /* border-radius:1rem; */
     border-radius:4px;
+    /* overflow: visible; */
 
     /* border-radius: 50px 400px 40px 100px; */
     /* margin-left:10rem; */
@@ -221,7 +260,7 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     
 
     animation: unfold 2s;
-    overflow: hidden;
+    /* overflow: hidden; */
     /* animation-duration: 1s; */
     /* animation-delay:0s; */
     /* max-height:35rem; */
@@ -416,7 +455,7 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
 
 
 .home-devis{
-    opacity: ;
+    /* opacity: ; */
     position:fixed;
     position:fixed;
     top:1rem;
@@ -456,7 +495,11 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
     font-family: 'Lato-blackitalic';
     top:1.5rem;
-
+    pointer-events: none;
+    opacity:0;
+}
+.home-devis-active{
+    opacity:1;
 }
 
 .home-devis:hover{
@@ -581,12 +624,7 @@ nav.active{
 .nav-scroll{
     overflow: scroll;
 }
-.logo-visible{
-    width: 15rem;
-    padding-top:0;
-    margin-left:0px;
 
-}
 /* @media(min-width:1300px){
     .home-catchphrase{
         margin-left:10vw;
