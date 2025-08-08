@@ -33,8 +33,9 @@ html{
     font-family: sans-serif;
     /* font-family: Gentium */
     /* font-family: 'Roboto'; */
-    /* font-family: 'Lato'; */
-    font-family: 'Rubik-light';
+    font-family: 'Lato';
+    font-weight: 00;
+    /* font-family: 'Rubik-light'; */
     
     
     
@@ -182,7 +183,10 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     /* align-self: center; */
     /* justify-self: flex-end; */
     /* width:45rem; */
-    width:95%;
+    max-width:40rem;
+    /* width:70%; */
+    
+
     text-align: center;
     /* height:35rem; */
     /* height:30rem; */
@@ -684,18 +688,14 @@ nav.active{
 @media(max-width:600px){
 
 
-     .home-catchphrase h1{
+     /* .home-catchphrase h1{
         font-size:3.2rem;
     }
      .home-catchphrase h2{
         font-size:2rem;
-    }
+    } */
 
-    .home-catchphrase p{
-        font-size:1rem;
-        width:15rem;
-        margin-left:4px ;
-    }
+   
     .anime-pub{
         bottom: 20px;
         right:-210px;
@@ -713,9 +713,15 @@ nav.active{
 
 
 }
-@media(max-width:400px){
+@media(max-width:500px){
     .home-catchphrase{
         margin-top: 0;
+    }
+     .home-catchphrase h1{
+        font-size:3.2rem;
+    }
+     .home-catchphrase h2{
+        font-size:2rem;
     }
 }
 @media(max-height:500px) and (max-width: 1000px) {
