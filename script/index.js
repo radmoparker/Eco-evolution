@@ -23,16 +23,17 @@ menu.addEventListener("click", menuSlide);
 window.addEventListener('resize',manageResize);
 
 let isScrollManaged = false;
-window.addEventListener("scroll",()=> {
-    if(!isScrollManaged){
-        isScrollManaged = true;
-        manageScroll();
-    }else{
+// window.addEventListener("scroll",()=> {
+//     if(!isScrollManaged){
+//         isScrollManaged = true;
+//         manageScroll();
+//     }else{
         
-        setTimeout(()=>{isScrollManaged =false;},200);
-    }
+//         setTimeout(()=>{isScrollManaged =false;},200);
+//     }
 
-});
+// });
+window.addEventListener("scroll",manageScroll);
 
 function manageScroll(){
     if(window.scrollY>100){
