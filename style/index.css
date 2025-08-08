@@ -70,9 +70,9 @@ header{
     /* background:linear-gradient(90deg,rgb(96, 22, 22),rgb(96, 22, 22), rgb(188, 137, 137)); */
 /* clip-path: polygon(0 0, 100% 0, 100% 82%, 44% 82%, 31% 100%, 0 100%); */
     /* box-shadow: 5px 5px 20px black; */
-    background-color: rgba(243, 243, 243, 1);
+    /* background-color: rgba(243, 243, 243, 1);
     box-shadow:5px 0 20px black;
-    border-bottom:7px solid #ea4545;
+    border-bottom:7px solid #ea4545; */
 
     /* clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 85%, 25% 100%, 0 100%); */
 
@@ -115,6 +115,7 @@ nav a{
     font-size:1.3rem;
     /* font-weight:600; */
     color:black;
+    /* color:rgb(255, 255, 255); */
     /* color: #04322d; */
     
     
@@ -146,6 +147,9 @@ nav a.desactive{
     /* height:85vh; */
     height:80vh;
     background:url('../images/accueil.jpg');
+        background:url('../images/house-constructor.jpg');
+        /* background:url('../images/house-constructor-2.jpg'); */
+
     background-size:cover;
     background-position: center center;
     /* background-position: center center; */
@@ -412,6 +416,7 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
 
 
 .home-devis{
+    opacity: ;
     position:fixed;
     position:fixed;
     top:1rem;
