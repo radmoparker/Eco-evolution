@@ -424,12 +424,14 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     background:#dd3434;
     background:linear-gradient(270deg,#dd3434,#c81c1c,#090000);
 
-    border-top: 20px solid rgb(11, 58, 57);
-    border-bottom: 20px solid rgb(11, 58, 57);
+    border-top: 20px solid white;
+    border-bottom: 20px solid white;
     position:absolute;
     z-index:1000;
     text-shadow: 2px 3px 5px rgb(0, 0, 0); 
     font-family: "Lato-black";
+    box-shadow: 0 0 0 13px rgb(11, 58, 57), 
+              2px 2px 2px 12px black; 
     /* font-family: "Lato-Black"; */
 
     /* box-shadow: 5px 5px 10px rgb(198, 193, 193); */
@@ -784,6 +786,12 @@ nav.active a{
     
         border-top: 15px solid rgb(9, 67, 66);
         border-bottom: 15px solid rgb(9, 67, 66);
+
+    border-top: 12px solid white;
+    border-bottom: 12px solid white;
+
+    box-shadow: 0 0 0 8px rgb(11, 58, 57), 
+              2px 2px 2px 10px black; 
     }
     .anime-text{
         width:27rem;
