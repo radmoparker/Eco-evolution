@@ -112,7 +112,7 @@ let observer = new IntersectionObserver((entries) =>{
     entries.forEach((entry)=>{
         
         if(entry.isIntersecting){
-            setTimeout(manageExperiences,100,entry,0,entry.target.dataset.limit);
+            setTimeout(manageExperiences,100,entry,1,entry.target.dataset.limit);
             observer.unobserve(entry.target);
         }
     });

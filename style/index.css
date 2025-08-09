@@ -80,9 +80,12 @@ header{
 }
 .header-visible{
     background-color: rgba(243, 243, 243, 1);
+    /* background:linear-gradient(270deg,rgb(218, 211, 211),rgba(243, 243, 243, 1),rgb(218, 211, 211)); */
+
     box-shadow:5px 0 20px black;
     border-bottom:7px solid #ea4545;
     border-bottom:7px solid #0b3f3d;
+    
 
 }
 
@@ -421,8 +424,8 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     background:#dd3434;
     background:linear-gradient(270deg,#dd3434,#c81c1c,#090000);
 
-    border-top: 20px solid rgb(9, 67, 66);
-    border-bottom: 20px solid rgb(9, 67, 66);
+    border-top: 20px solid rgb(11, 58, 57);
+    border-bottom: 20px solid rgb(11, 58, 57);
     position:absolute;
     z-index:1000;
     text-shadow: 2px 3px 5px rgb(0, 0, 0); 
@@ -757,6 +760,10 @@ nav.active a{
             max-width:100% !important;
             clip-path: none !important;
         }
+    .experience:not(.first,.second-experience){
+        border-top: 20px solid black !important;
+        border-bottom: 20px solid black !important;
+    }
 }
 
 
@@ -858,7 +865,8 @@ nav.active a{
 }
 .experience:not(.first){
     background:rgb(7, 71, 72);
-    background:linear-gradient(270deg,rgb(6, 64, 65),rgb(7, 71, 72),rgb(4, 49, 50));
+    background:linear-gradient(270deg,rgb(2, 27, 28),rgb(7, 71, 72),rgb(2, 22, 22));
+
 }
 
 .experience.first{
@@ -867,7 +875,8 @@ nav.active a{
     text-shadow:  2px 3px 8px black;
 }
 .experience.second-experience{
-    background:linear-gradient(270deg,#711313,#c81c1c,#5a0606);
+    background:linear-gradient(270deg,#300808,#c81c1c,#300808);
+    
 }
 .experience span{
     width:80%;
@@ -892,7 +901,6 @@ span#experience{
     width:100%;
     border-radius: 2px;
     margin-top: 0px;
-    overflow-x:hidden;
     font-family: 'Lato-blackitalic';
     text-shadow: 4px 3px 5px rgb(0, 0, 0); 
 
