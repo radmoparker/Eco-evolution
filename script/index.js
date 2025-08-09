@@ -2,11 +2,12 @@ const citySpan = document.getElementById("writing-slogan");
 const navElements = document.querySelectorAll("nav a");
 const nav = document.getElementById("navigation");
 const menu = document.getElementById("menu");
+
 const activePage = document.getElementById(nav.dataset.page);
 const header = document.getElementById("header");
 const logo = document.getElementById("logo");
-
 const homeDevis = document.getElementById("home-devis");
+
 
 const menuSrc = "images/barre-de-menu-2.png"
 const cancelSrc = "images/cancel.png";
@@ -17,12 +18,26 @@ const srcLogo = "images/ecoevolution-logo-ver4-new.png";
 const srcBlackLogo = "images/ecoevolution-logo-green-red-white.png";
 
 
+const experiences = document.querySelector("#exp-1");
+const allExperiences = document.querySelectorAll(".experience");
+
+// experiences.textContent = 5;
 
 
 menu.addEventListener("click", menuSlide);
 window.addEventListener('resize',manageResize);
+window.addEventListener("scroll",manageScroll);
+
 
 let isScrollManaged = false;
+var slided = false;
+
+menu.classList.add("desactive");
+activePage.firstChild.classList.add("nav-active");
+
+//ON INIT FUNCTION FIRST CALL
+manageScroll();
+manageResize();
 // window.addEventListener("scroll",()=> {
 //     if(!isScrollManaged){
 //         isScrollManaged = true;
@@ -33,7 +48,6 @@ let isScrollManaged = false;
 //     }
 
 // });
-window.addEventListener("scroll",manageScroll);
 
 function manageScroll(){
     if(window.scrollY>100){
@@ -44,7 +58,7 @@ function manageScroll(){
         navElements.forEach(link => {
             link.classList.remove("link-visible");
         });
-        console.log("Eh oui mon gars, on appelle ca l'experience !! ");
+        // console.log("Eh oui mon gars, on appelle ca l'experience !! ");
 
     }else{
         header.classList.remove("header-visible");
@@ -55,15 +69,70 @@ function manageScroll(){
         navElements.forEach(link => {
                 link.classList.add("link-visible");
         });
-        console.log("OHOHIHIH !! ");
+        // console.log("OHOHIHIH !! ");
     }
+
+    //Expérience part
+    // if(parseInt(experiences.getBoundingClientRect().top) +10 <= parseInt(window.innerHeight)){
+    //     experiences.textContent = "9";
+    // }else{
+    //      experiences.textContent = "0";
+    // }
+    // console.log(experiences.getBoundingClientRect().top,window.innerHeight)
 }
 
 
-var slided = false;
+// experiences = document.querySelector("#exp-1"); 
+// let valors = [247,329,163,215];
 
-menu.classList.add("desactive");
-activePage.firstChild.classList.add("nav-active");
+// const observer = new IntersectionObserver((entries) => {
+//     let i = 0;
+//     entries.forEach(entry => {
+//         if (entry.isIntersecting) {
+//             console.log("Visible !");
+//             // manageExperiences(entry,0,256);
+//             setTimeout(manageExperiences,100,entry,0,entry.target.dataset.limit);
+//             i+=1;
+
+//         }
+//     });
+// }, { threshold: 0.1 });
+
+// observer.observe(experiences);
+// console.log(experiences.dataset.limit);
+// const experiences = document.querySelector("#exp-1");
+    let options = {
+        root:null,
+        rootMargin: "-20px",
+        scrollMargin: "0px",
+        threshold: 1.0,
+    };
+
+let observer = new IntersectionObserver((entries) =>{
+    entries.forEach((entry)=>{
+        
+        if(entry.isIntersecting){
+            setTimeout(manageExperiences,100,entry,0,entry.target.dataset.limit);
+            observer.unobserve(entry.target);
+        }
+    });
+},options);
+
+allExperiences.forEach((experience)=>{
+    console.log("Experience",experience.children[0],experience.children[0].dataset.limit);
+    observer.observe(experience.children[0]);
+    
+})
+
+function manageExperiences(entry,a,b){
+    entry.target.textContent = a;
+    let factor = (b-(b-a))/b*20;
+    if(parseInt(entry.target.textContent)<b){
+        setTimeout(manageExperiences,+factor,entry,a+2,b);
+    }
+
+}
+
 // console.log("test data-page",nav.dataset.page);
 
 // nav.forEach(element => {console.log("dezd",element);});
@@ -209,3 +278,12 @@ function manageResize(){
 }
 
 typeWrite(citySpan, cities, 0, 0, false);
+
+// Maisons rénovées
+
+
+// Calorifugeage
+
+
+// Audit énergétique RGE
+
