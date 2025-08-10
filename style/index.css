@@ -85,6 +85,7 @@ header{
     box-shadow:5px 0 20px black;
     border-bottom:7px solid #ea4545;
     border-bottom:7px solid #0b3f3d;
+    border-bottom:7px solid black;
     
 
 }
@@ -143,6 +144,8 @@ nav a{
     font-size:1.3rem;
     /* font-weight:600; */
     color:black;
+    font-family: 'Lato-Black';
+    
 
     /* color: #04322d; */
  
@@ -180,6 +183,7 @@ nav a.desactive{
     background-position: center center;
     overflow: hidden;
     position: relative;
+    /* border-bottom: 20px solid black; */
 }
 .home-first{
     padding-top:100px;
@@ -196,7 +200,8 @@ nav a.desactive{
     /* display:flex; */
     /* justify-content:flex-start; */
     
-    overflow: scroll;
+    /* overflow: scroll; */
+    overflow: hidden;
     
     align-items: flex-start;
 
@@ -430,7 +435,7 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     z-index:1000;
     text-shadow: 2px 3px 5px rgb(0, 0, 0); 
     font-family: "Lato-black";
-    box-shadow: 0 0 0 13px rgb(11, 58, 57), 
+    box-shadow: 0 0 0 13px rgb(0, 0, 0), 
               2px 2px 2px 12px black; 
     /* font-family: "Lato-Black"; */
 
@@ -651,6 +656,14 @@ nav.active a{
         margin-left:10vw;
     }
 } */
+@media(min-width:1800px){
+    .experiences{
+        justify-content: center !important;
+    }
+    .experience.first{
+        clip-path: polygon(15% 0, 100% 0, 85% 100%, 0% 100%) !important;
+    }
+}
 
 @media(min-width:1000px){
     .home-devis{
@@ -787,11 +800,11 @@ nav.active a{
         border-top: 15px solid rgb(9, 67, 66);
         border-bottom: 15px solid rgb(9, 67, 66);
 
-    border-top: 12px solid white;
-    border-bottom: 12px solid white;
+        border-top: 12px solid white;
+        border-bottom: 12px solid white;
 
-    box-shadow: 0 0 0 8px rgb(11, 58, 57), 
-              2px 2px 2px 10px black; 
+        box-shadow: 0 0 0 13px rgb(0, 0, 0), 
+                2px 2px 2px 10px black; 
     }
     .anime-text{
         width:27rem;
@@ -881,6 +894,7 @@ nav.active a{
     clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
     color:white;
     text-shadow:  2px 3px 8px black;
+    border-bottom: none;
 }
 .experience.second-experience{
     background:linear-gradient(270deg,#300808,#c81c1c,#300808);
@@ -915,9 +929,12 @@ span#experience{
     text-shadow: 2px 3px 5px rgb(0, 0, 0); 
     /* font-family: "Lato-black"; */
     background:linear-gradient(270deg,#dd3434,#c81c1c,#090000);
+    background:linear-gradient(270deg,#240404,#c81c1c,#240404);
+
         /* background:linear-gradient(270deg,rgb(9, 85, 86),rgb(7, 71, 72),rgb(4, 49, 50)); */
 
 
     border-top: 20px solid black;
     border-bottom: 20px solid black;
+    margin-top:1rem;
 }
