@@ -206,7 +206,7 @@ nav a.desactive{
     justify-content: center;
     
     /* height:85vh; */
-    height:80vh;
+    min-height:80vh;
 
         /* background:url('../images/house-constructor-2.jpg'); */
 
@@ -216,33 +216,14 @@ nav a.desactive{
     /* justify-content:flex-start; */
     
     /* overflow: scroll; */
-    overflow: hidden;
+    /* overflow: hidden; */
     
     align-items: flex-start;
 
     
 
 }
-/*
-Le rgba(0,0,0,0.45) assombrit uniformément sans cacher l’image.
-Le z-index sépare proprement l’image, l’overlay, et le contenu.
-Le contenu reste lisible sans sacrifier l’image de fond.
 
-PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
-*/
-.overlay {
-
-    position: absolute;
-    inset: 0;
-    /* Assombrissement élégant */
-    /* background-color: rgba(0, 0, 0, 0.45); */
-    z-index: 1;
-    /* box-shadow: rgba(0, 0, 0, 0.44) 0px 0px 0px 0px; */
-    /* background-color: rgba(1, 192, 255, 0.10); */
-      pointer-events: none;
-
-
-}
 .home-catchphrase{
     position:relative;
     z-index:10;
@@ -256,8 +237,8 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     text-align: center;
     /* height:35rem; */
     /* height:30rem; */
-    height:90vh;
-    height:fit-content;
+    min-height:80vh;
+    /* height:fit-content; */
     padding-bottom:20rem;
     /* max-height:90%; */
     /* border: 2px solid black; */
@@ -363,7 +344,7 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
     text-shadow: 3px 3px 10px rgb(60, 59, 59),-3px -3px 10px rgb(70, 70, 70);
     text-shadow: 3px 3px 10px rgb(136, 5, 5),-3px -3px 10px rgb(70, 70, 70);
     text-shadow: 3px 3px 10px rgb(44, 44, 44),-3px -3px 10px rgb(46, 45, 45);
-    margin-bottom:30px;
+    margin-bottom:3.5rem;
 }
 /* .home-catchphrase h1::before{
     position:absolute;
@@ -449,8 +430,8 @@ PS: inset équivalent à top: 0; right: 0; bottom: 0; left: 0;
 
     border-top: 20px solid white;
     border-bottom: 20px solid white;
-    border-top: 20px solid black;
-    border-bottom: 20px solid black;
+    border-top: 20px solid rgb(17, 16, 16);
+    border-bottom: 20px solid rgb(17, 16, 16);
     position:absolute;
     z-index:1000;
     text-shadow: 2px 3px 5px rgb(0, 0, 0); 
@@ -686,7 +667,7 @@ nav.active a{
         margin-left:10vw;
     }
 } */
-@media(min-width:1800px){
+@media(min-width:1500px){
     .experiences{
         justify-content: center !important;
     }
@@ -806,8 +787,8 @@ nav.active a{
             clip-path: none !important;
         }
     .experience:not(.first,.second-experience){
-        border-top: 20px solid black !important;
-        border-bottom: 20px solid black !important;
+        border-top: 20px solid rgb(17, 16, 16) !important;
+        border-bottom: 20px solid rgb(17, 16, 16) !important;
     }
 }
 
@@ -827,13 +808,13 @@ nav.active a{
         bottom: 20px;
         right:-210px;
     
-        border-top: 15px solid rgb(9, 67, 66);
+        /* border-top: 15px solid rgb(9, 67, 66);
         border-bottom: 15px solid rgb(9, 67, 66);
 
         border-top: 12px solid white;
         border-bottom: 12px solid white;
-        border-top: 12px solid black;
-        border-bottom: 12px solid black;
+        border-top: 12px solid rgb(17, 16, 16);;
+        border-bottom: 12px solid rgb(17, 16, 16);; */
 
         /* box-shadow: 0 0 0 13px rgb(0, 0, 0), 
                 2px 2px 2px 10px black;  */
@@ -979,10 +960,10 @@ span#experience{
 
     /* border-top: 20px solid black;
     border-bottom: 20px solid black; */
-    /* margin-top:1rem;
-    margin-bottom:1rem; */
-    border-top: 20px solid black;
-    border-bottom: 20px solid black;
+    /* margin-top:1rem; */
+    /* margin-bottom:1rem; */
+    border-top: 20px solid rgb(17, 16, 16);
+    border-bottom: 20px solid rgb(17, 16, 16);
 
 }
 
