@@ -36,10 +36,10 @@ function onScroll() {
 
   if (currentScrollY > lastScrollY) {
     // On descend
-    currentTranslateX += 5; // décale vers la droite
+    currentTranslateX += 2; // décale vers la droite
   } else if (currentScrollY < lastScrollY) {
     // On monte
-    currentTranslateX -= 5; // décale vers la gauche
+    currentTranslateX -= 2; // décale vers la gauche
   }
 
   infinitePicture.style.transform = `translateX(${currentTranslateX}px)`;
