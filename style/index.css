@@ -428,14 +428,18 @@ nav a.desactive{
     background:#dd3434;
     background:linear-gradient(270deg,#dd3434,#c81c1c,#090000);
 
-    border-top: 20px solid white;
+    /* border-top: 20px solid white;
     border-bottom: 20px solid white;
     border-top: 20px solid rgb(17, 16, 16);
-    border-bottom: 20px solid rgb(17, 16, 16);
+    border-bottom: 20px solid rgb(17, 16, 16); */
+        border-top: 20px solid white;
+        border-bottom: 20px solid white; 
     position:absolute;
     z-index:1000;
     text-shadow: 2px 3px 5px rgb(0, 0, 0); 
     font-family: "Lato-black";
+        background:linear-gradient(270deg,#240404,#c81c1c,#240404);
+
     /* box-shadow: 0 0 0 13px rgb(0, 0, 0), 
               2px 2px 2px 12px black;  */
     /* font-family: "Lato-Black"; */
@@ -787,8 +791,8 @@ nav.active a{
             clip-path: none !important;
         }
     .experience:not(.first,.second-experience){
-        border-top: 20px solid rgb(17, 16, 16) !important;
-        border-bottom: 20px solid rgb(17, 16, 16) !important;
+        border-top: 20px solid white !important;
+        border-bottom: 20px solid white !important;
     }
 }
 
@@ -815,6 +819,7 @@ nav.active a{
         border-bottom: 12px solid white;
         border-top: 12px solid rgb(17, 16, 16);;
         border-bottom: 12px solid rgb(17, 16, 16);; */
+
 
         /* box-shadow: 0 0 0 13px rgb(0, 0, 0), 
                 2px 2px 2px 10px black;  */
@@ -964,6 +969,8 @@ span#experience{
     /* margin-bottom:1rem; */
     border-top: 20px solid rgb(17, 16, 16);
     border-bottom: 20px solid rgb(17, 16, 16);
+    border-top: 20px solid white;
+    border-bottom: 20px solid white;
 
 }
 
@@ -979,6 +986,7 @@ a.button{
     border-radius: 2px;
     border-radius: 20px 0;
     text-shadow: 2px 3px 5px rgb(0, 0, 0); 
+    text-align: center;
 
 }
 a.button:active{
