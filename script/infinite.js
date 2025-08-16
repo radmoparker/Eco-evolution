@@ -32,7 +32,7 @@ let observerInfinite = new IntersectionObserver((entries) => {
 observerInfinite.observe(infinitePicture);
 function onScroll() {
   const currentScrollY = window.scrollY;
-  console.log(currentScrollY);
+  // console.log(Math.abs(currentScrollY-lastScrollY));
 
   if (currentScrollY > lastScrollY) {
     // On descend

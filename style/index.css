@@ -43,6 +43,9 @@ html{
 
     
 }
+p{
+    line-height:1.8rem;
+}
 body{
     margin-left: 0px;
     margin-right: 0px;
@@ -206,6 +209,7 @@ nav a.desactive{
     justify-content: center;
     
     /* height:85vh; */
+    /* min-height:80vh; */
     min-height:80vh;
 
         /* background:url('../images/house-constructor-2.jpg'); */
