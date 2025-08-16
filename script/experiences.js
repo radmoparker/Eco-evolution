@@ -3,7 +3,7 @@ const allExperiences = document.querySelectorAll(".experience");
 
 let options = {
     root:null,
-    rootMargin: "-20px",
+    rootMargin: "0px",
     scrollMargin: "0px",
     threshold: 1.0,
 };
@@ -26,7 +26,7 @@ allExperiences.forEach((experience)=>{
 
 function manageExperiences(entry,a,b){
     entry.target.textContent = a;
-    let factor = (b-(b-a))/b*20;
+    let factor = (b-(b-a))/b*30;
     if(parseInt(entry.target.textContent)<b){
         setTimeout(manageExperiences,+factor,entry,a+2,b);
     }
