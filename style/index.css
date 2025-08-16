@@ -34,6 +34,7 @@ html{
     /* font-family: Gentium */
     /* font-family: 'Roboto'; */
     font-family: 'Lato';
+        margin-bottom: 0;
     /* font-weight: 00; */
     /* font-family: 'Rubik-light'; */
     
@@ -50,6 +51,8 @@ body{
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0;
+    margin-bottom: 0;
+
 }
 a{
     text-decoration: none;
