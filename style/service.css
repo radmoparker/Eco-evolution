@@ -39,16 +39,28 @@
     /* align-items: center; */
     /* justify-content:center; */
     border-radius: 10px;
+    transition:all 0.3s ease;
+}
+.half-part:hover{
+    transform: scale(1.1); 
+    transform-origin: center; 
 }
 .half-part.first{
     background: rgb(251, 250, 250);
     background:linear-gradient(70deg,rgb(179, 181, 181),rgb(235, 238, 238),rgb(179, 181, 181));
 }
+.half-part.first:hover{
+background:linear-gradient(130deg,rgb(120, 124, 124),rgb(235, 238, 238),rgb(120, 124, 124));
+}
 .half-part.second{
     background: rgb(4, 73, 72);
-    background:linear-gradient(70deg,rgb(2, 27, 28),rgb(7, 71, 72),rgb(2, 22, 22));
-}
+    background:linear-gradient(270deg,rgb(2, 27, 28),rgb(7, 71, 72),rgb(2, 22, 22));
 
+}
+.half-part.second:hover{
+    background:linear-gradient(320deg,rgb(0, 7, 7),rgb(9, 95, 96),rgb(0, 5, 5));
+
+}
 .half-part h1{
     font-family: 'Lato-blackitalic';
     align-self:center;
@@ -95,7 +107,7 @@
 }
 .half-part-two{
     background: rgb(22, 193, 48);
-    background:linear-gradient(45deg,#5a0d0d,#c81c1c,#5a0d0d);
+    background:linear-gradient(45deg,#450707,#c81c1c,#5a0d0d);
 
     /* border:2px solid black; */
     height:80%;
@@ -104,7 +116,14 @@
     flex-direction: column;
     justify-content:space-between ;
     border-radius: 10px;
+    transition:all 0.3s ease;
 }
+.half-part-two:hover{
+    background:linear-gradient(100deg,#450707,#b31818,#450707);
+    transform: scale(1.05); 
+    transform-origin: center;
+}
+
 .half-part-one h1{
     align-self:center;
     margin: auto;
@@ -193,6 +212,9 @@
     .half-part h1{
         font-size:2.5rem;
         margin:50px 0 0 20px;
+    }
+    .service-title{
+        margin:0rem 0 2rem 0;
     }
 
 }
