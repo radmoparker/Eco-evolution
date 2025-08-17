@@ -13,6 +13,7 @@ footer{
   
     overflow-x: hidden;
     margin-top:3rem;
+    
 }
 .contenu-footer{
 
@@ -24,6 +25,7 @@ footer{
     flex:1 0 auto;
     width:100vw;
     gap:2rem;
+
     
     
 }
@@ -43,6 +45,7 @@ footer{
 .footer-part ul{
     list-style-type: none;
     padding: 0;
+
 
 }
 .footer-part a {
@@ -100,11 +103,20 @@ footer{
     width:12rem !important;
     color:white;
 }
-@media(max-width:1149px){
-    .home-worker{
-        margin-top:5rem;
-        min-width:80%;
+
+footer a,footer p,footer span, footer li{
+        /* font-family: 'Rubik-light'; */
+        font-family: 'Roboto';
+        font-weight: bold;
+
+        
     }
+    footer h3{
+
+        font-family: 'Lato-blackitalic';
+    }
+@media(max-width:1149px){
+
 
      .footer-part{
         flex-wrap: wrap;
@@ -123,3 +135,39 @@ footer{
     
 
 }
+@media(max-width:800px){
+    footer a,footer p,footer span, footer li{
+        font-size: 18px;
+        
+    }
+    footer h3{
+        font-weight: bold;
+        font-size: 27px !important;
+    }
+}
+/* @font-face {
+  font-family: 'Lato';
+  src: url('../assets/font/Lato/Lato-Regular.woff2') format('woff2');
+
+}
+@font-face {
+  font-family: 'Lato-blackitalic';
+  src: url('../assets/font/Lato/Lato-BlackItalic.woff2') format('woff2');
+
+}
+@font-face {
+  font-family: 'Lato-italic';
+  src: url('../assets/font/Lato/Lato-Italic.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Lato-black';
+  src: url('../assets/font/Lato/Lato-Black.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/font/Roboto/Roboto-Regular.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'Rubik-light';
+  src: url('../assets/font/Rubik/Rubik-Medium.woff2') format('woff2');
+} */
