@@ -816,7 +816,7 @@ nav.active a{
 
    
     .anime-pub{
-        bottom: 20px;
+        bottom: 30px;
         right:-210px;
     
         /* border-top: 15px solid rgb(9, 67, 66);
@@ -836,7 +836,13 @@ nav.active a{
         font-size:1.1rem;
     }
     .writing-slogan,.blinking{
-        font-size:1.3rem;
+        font-size:1.5rem;
+    }
+    .home-first{
+        min-height:75vh;
+    }
+    .home-catchphrase{
+        min-height:75vh;
     }
 
 
