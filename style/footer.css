@@ -144,6 +144,12 @@ footer a,footer p,footer span, footer li{
         font-weight: bold;
         font-size: 27px !important;
     }
+    .footer-part li{
+        margin:0rem;
+    }
+    .h-line{
+        margin:0.4rem;
+    }
 }
 /* @font-face {
   font-family: 'Lato';
