@@ -69,9 +69,9 @@ background:linear-gradient(130deg,rgb(120, 124, 124),rgb(235, 238, 238),rgb(120,
     margin: auto;
     text-shadow: 2px 2px 5px rgb(46, 45, 45), -2px -2px 5px rgb(46, 45, 45); 
 }
-.half-part.first::before{
+.first-plus{
     position:absolute;
-    content:"+";
+    /* content:"+"; */
     line-height: 25px;
     padding:3px 7px 3px 7px;
 
@@ -81,11 +81,14 @@ background:linear-gradient(130deg,rgb(120, 124, 124),rgb(235, 238, 238),rgb(120,
     color:white;
     background: rgb(194, 6, 6);
     border-radius:200rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
 
 }
-.half-part.second::before{
+
+.second-plus{
     position:absolute;
-    content:"+";
+    /* content:"+"; */
     line-height: 25px;
     padding:3px 7px 3px 7px;
 
@@ -93,9 +96,31 @@ background:linear-gradient(130deg,rgb(120, 124, 124),rgb(235, 238, 238),rgb(120,
     top:10px;
     font-size: 30px;
     color:rgb(3, 47, 42);
-    background: rgb(221, 218, 218);
+    background: rgb(218, 221, 221);
     border-radius:200rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
 
+}
+.second-plus:hover{
+    padding:4px 7px 4px 7px;
+
+    font-size: 35px;
+    color:rgb(3, 47, 42);
+    background: rgb(221, 218, 218);
+    color:white;
+    background: rgb(194, 6, 6);
+
+}
+.first-plus:hover{
+
+    padding:4px 7px 4px 7px;
+
+    font-size: 35px;
+    color:white;
+    background: rgb(194, 6, 6);
+    /* color:rgb(3, 47, 42); */
+    background: rgb(2, 48, 48);
 }
 .half-part-one{
     /* background: rgb(255, 255, 255); */
@@ -152,6 +177,15 @@ background:linear-gradient(130deg,rgb(120, 124, 124),rgb(235, 238, 238),rgb(120,
     width:60px;
     height:60px;
     margin: 0 0 20px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity:0.8;
+
+}
+.service-arrow:hover{
+    width:70px;
+    height:70px;
+    opacity:1;
 
 }
 
@@ -217,4 +251,208 @@ background:linear-gradient(130deg,rgb(120, 124, 124),rgb(235, 238, 238),rgb(120,
         margin:0rem 0 2rem 0;
     }
 
+}
+
+
+.service-first{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+
+}
+
+/* Pancarte post acceuil */
+.accroche-large{
+    max-width: 70%;
+    text-align:center;
+    color:#b10a0a;
+    font-weight: none;
+    font-size:1.5rem;
+    position:relative;
+
+}
+.ecrito{
+  font-family: 'Lato-italic';
+    margin:2rem;
+
+
+}
+.accroche-large h2{
+    font-family: 'Lato-blackitalic';
+
+}
+.accroche-large p{
+
+    color:#024746;
+    font-family: sans-serif;
+
+
+}
+.second-accroche-large{
+    margin-top: 2rem;;
+}
+.accroche-large span{
+    font-weight: bold;
+    max-width: 100%;
+}
+
+.accroche-large h2::after{
+    position:absolute;
+    content:"";
+    width:8rem !important;
+    top:5px;
+    left: calc(50% - 4rem);
+    padding:2px;
+    background-color:#165049;
+
+}
+/* Fin*/
+
+/* Englobe le service-intro et  les service-card */
+.service-parts{
+    margin-top: 5rem;
+
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    overflow-x: hidden;
+
+}
+
+
+/* .service-intro{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+    width:90%;
+
+    margin: 3rem 5% 3rem 5% ;
+    padding: 5px;
+    box-sizing: border-box;
+    line-height: 2rem;
+    overflow-x:hidden;
+} */
+
+
+
+
+/* Partie card */
+.service-card{
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:5%;
+    margin-bottom:2rem;
+
+    margin:2rem;
+    border: 3px dashed #165049;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-top:0;
+    overflow-x:hidden;
+}
+
+.second-service-card{
+    flex-wrap: wrap-reverse;
+}
+.second-service-card-button{
+    background: linear-gradient(45deg,#ffb300, #fdc951 , #ffe3a2);
+    color:#165049;
+    font-weight: bold;
+    flex-wrap: wrap-reverse;
+}
+
+.service-card-text{
+
+    width:45%;
+    background: none;
+    color:#165049;
+    box-sizing: border-box;
+    padding-bottom: 2rem;
+}
+.service-card-text-h1{
+    font-size:3rem ;
+    position:relative;
+    margin-bottom: 5rem;
+    color:#b10a0a;
+    font-family: 'Lato-blackitalic';
+}
+.service-card-text-h1::after{
+    content: "";
+    padding:2px;
+    width:10rem;
+    background-color: #165049;
+    position: absolute;
+    bottom:-1rem;
+    left:0rem;
+}
+
+.card-img-container{
+    width:48%;
+
+}
+
+.service-card-img{
+    width:100%;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.service-card-content{
+    font-family: sans-serif;
+    text-align:left;
+    color:#0c443d;
+    font-weight: none;
+    font-size:1.5rem;
+
+    margin-bottom:4rem;
+
+}
+.service-card-content span{
+    font-weight:bold;
+}
+
+
+
+
+@media(min-width: 1001px){
+    .service-card-img{
+        object-fit: cover;
+        object-position: center;
+        width:100%;
+        height:35rem;
+    }
+}
+
+@media(max-width:1000px){
+    .service-card-text{
+        background-color: white;
+        width:90%;
+        background: none;
+    }
+    .card-img-container{
+        width:90%
+    }
+
+    .intro-service-content{
+        width :100%;
+    }
+
+    .intro-service-img{
+        width:30rem;
+    }
+
+
+}
+
+@media(min-width:700px){
+    .ecrito-bottom-service p{
+        width:60% !important;
+    }
 }
