@@ -1,3 +1,30 @@
+const holeService = document.getElementById("hole-service");
+
+
+window.addEventListener("scroll",holeEffect);
+uptaded = false;
+function updatePicture(){
+    
+    holeService.style.backgroundPosition = `center calc(50% - ${window.scrollY * 0.3}px)`;
+    scrollRate=0.15;
+
+
+    uptaded = false;
+}
+
+function holeEffect(){
+    
+    if(!uptaded){
+        window.requestAnimationFrame(updatePicture);
+        uptaded = true;
+
+    }
+    
+
+}
+
+
+
 const renovationGlobale = {
   title: `<h1 class="prestation-title" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Rénovation Globale</h1>`,
   content: `<div class="intro">
@@ -276,6 +303,21 @@ const pompeAirEau = {
             </div>`};
 
 
-document.querySelector(".slogan").innerHTML = pompeAirEau.title;
-document.querySelector(".service-section").innerHTML =pompeAirEau.content;
 
+const prestations = {0:isolation,1:renovationGlobale,2:auditEnergetique,3:calorifugeage,4:ballonThermodynamique,5:pompeAirAir,6:pompeAirEau};
+// document.querySelector(".slogan").innerHTML = prestations[5].title;
+// document.querySelector(".service-section").innerHTML =prestations[5].content;
+
+let params = new URLSearchParams(document.location.search);
+let prestation = params.get("prestation");
+if( prestation !=null){
+    if(prestations[prestation] != undefined){
+        console.log(prestation);
+        document.querySelector(".slogan").innerHTML = prestations[prestation].title;
+        document.querySelector(".service-section").innerHTML =prestations[prestation].content;
+    }else{
+        console.log("Pas de clés valide");
+    }
+}else{
+    console.log("Url invalide");
+}

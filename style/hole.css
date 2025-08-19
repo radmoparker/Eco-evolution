@@ -18,7 +18,8 @@
     overflow-x:hidden;
 }
 .hole.service{
-    background: url("../images/house-constructor.jpg");
+    background: url("../images/renovation.jpg");
+
     background-position: center center;
     background-attachment: scroll;
     
@@ -43,7 +44,10 @@
 } */
 
 .hole-service-bottom{
-    background: url("../images/isolation.jpg");
+    
+    background: url("../images/house-constructor.jpg");
+    background: url("../images/isolation-2.jpg");
+
     min-height: 50vh;
     
     background-repeat: no-repeat;

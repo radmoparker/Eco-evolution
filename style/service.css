@@ -497,4 +497,14 @@ background:linear-gradient(130deg,rgb(120, 124, 124),rgb(235, 238, 238),rgb(120,
 
         margin-bottom:3rem;   
     }
+    .accroche-large p{
+
+        font-size:1.4rem;
+
+    }
+    .ecrito{
+
+        /* font-size:1.3rem; */
+
+    }
 }
