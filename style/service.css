@@ -275,6 +275,9 @@ background:linear-gradient(130deg,rgb(120, 124, 124),rgb(235, 238, 238),rgb(120,
 }
 .ecrito{
   font-family: 'Lato-italic';
+  font-family: 'Lato-black';
+  font-family: sans-serif;
+
     margin:2rem;
 
 
@@ -312,7 +315,7 @@ background:linear-gradient(130deg,rgb(120, 124, 124),rgb(235, 238, 238),rgb(120,
 
 /* Englobe le service-intro et  les service-card */
 .service-parts{
-    margin-top: 5rem;
+    margin-top: 2rem;
 
     display:flex;
     align-items: center;
@@ -418,6 +421,16 @@ background:linear-gradient(130deg,rgb(120, 124, 124),rgb(235, 238, 238),rgb(120,
     font-weight:bold;
 }
 
+.number{
+    border-radius:20rem;
+    padding:3px 10px 3px 10px;
+    margin-right: 10px;
+    background: rgb(5, 62, 70);
+    /* background: rgb(168, 3, 3); */
+
+    color:white;
+}
+
 
 
 
@@ -454,5 +467,34 @@ background:linear-gradient(130deg,rgb(120, 124, 124),rgb(235, 238, 238),rgb(120,
 @media(min-width:700px){
     .ecrito-bottom-service p{
         width:60% !important;
+    }
+}
+@media(max-width:600px){
+    .service-card{
+
+
+
+        margin:0 1rem 2rem 1rem;
+        border: 3px dashed #165049;
+        /* padding: 2rem; */
+        border-radius: 1rem;
+        /* margin-top:0; */
+        overflow-x:hidden;
+
+
+        padding:30px 5px 10px 5px;
+    }
+    .service-card-text-h1{
+        font-size:2rem ;
+        position:relative;
+        margin-bottom: 3rem;
+        margin-top:0rem;
+        /* text-align: cebnter; */
+    }
+    .service-card-content p{
+        text-align:left;
+        font-size:1.2rem;
+
+        margin-bottom:3rem;   
     }
 }
