@@ -16,7 +16,7 @@
 
 .card{
     border-radius:2px;
-    max-width: 320px;
+    width: 320px;
     min-height: 40rem;
     margin-bottom: 50px;
     
@@ -134,7 +134,7 @@
 
 @media(max-width:1499px){
     .card{
-        max-width: 270px;
+        width: 270px;
 
  
     }
@@ -142,8 +142,8 @@
 @media(max-width:1000px){
     .card{
 
-        max-width:28rem;;
-        /* margin: 2rem 5rem 2rem 5rem; */
+        width:28rem;
+        margin: 2rem 5rem 2rem 5rem;
         height:auto !important;
         min-height:auto !important;
         height:auto !important;
@@ -152,6 +152,7 @@
         justify-content: center !important;
 
         /* margin:auto; */
+ 
     }
     .card p {
         font-size: 1rem;
@@ -161,10 +162,10 @@
     }
 }
 @media(max-width:900px){
-    .card{
+    /* .card{
 
       
-    }
+    } */
     .second.second-card{
         padding-top:2rem;
     }
