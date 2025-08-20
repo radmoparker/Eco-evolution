@@ -57,7 +57,7 @@ footer{
 .footer-part li {
 
     margin: 0.4rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 
 }
 .h-line{
@@ -105,17 +105,19 @@ footer{
 }
 
 footer a,footer p,footer span, footer li{
-        /* font-family: 'Rubik-light'; */
-        font-family: 'Roboto';
-        font-weight: bold;
+    color:beige;
+    font-family: 'Lato';
+    /* font-weight: bold;      
+      font-family: 'Lato-italic';
+        font-family: 'Lato'; */
 
-        
-    }
-    footer h3{
 
-        font-family: 'Lato-blackitalic';
-    }
-@media(max-width:1149px){
+}
+footer h3{
+
+    font-family: 'Lato-blackitalic';
+}
+@media(max-width:1000px){
 
 
      .footer-part{
