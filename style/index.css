@@ -34,7 +34,7 @@ html{
     /* font-family: Gentium */
     /* font-family: 'Roboto'; */
     font-family: 'Lato';
-        margin-bottom: 0;
+    margin-bottom: 0;
     /* font-weight: 00; */
     /* font-family: 'Rubik-light'; */
     
@@ -944,9 +944,6 @@ nav.active a{
 }
 .experience span{
     width:80%;
-}
-span#experience{
-
 }
 
 .bande{

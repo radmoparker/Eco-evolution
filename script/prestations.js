@@ -27,280 +27,516 @@ function holeEffect(){
 
 const renovationGlobale = {
   title: `<h1 class="prestation-title" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Rénovation Globale</h1>`,
+  backgroundImage: "url('../images/renovation.jpg')",
+  content: `
+    <div class="intro">
+        <h2>Améliorez durablement votre habitat</h2>
+        <p>La rénovation globale est la solution idéale pour optimiser la performance énergétique de votre logement tout en bénéficiant des aides financières les plus avantageuses.</p>
+    </div>
+
+    <div class="expertise">
+        <p>
+        Chez <strong>Eco Evolution</strong>, nous vous accompagnons de A à Z dans votre projet de rénovation globale. 
+        Nos experts certifiés RGE basés à Nancy et dans toute la Lorraine assurent des travaux de qualité, 
+        conformes aux normes en vigueur et pensés pour maximiser vos économies d’énergie.
+        </p>
+    </div>
+
+    <div class="description">
+        <p>
+        La <strong>rénovation globale</strong> consiste à regrouper plusieurs actions de rénovation énergétique 
+        en un seul projet cohérent : isolation thermique, chauffage performant, ventilation… 
+        Cette approche permet d’obtenir des gains énergétiques importants et d’accéder 
+        aux aides les plus élevées comme <em>MaPrimeRénov’ Sérénité</em> et les <em>Certificats d’Économies d’Énergie (CEE)</em>. 
+        Résultat : un logement plus confortable, plus économe et valorisé sur le marché immobilier.
+        </p>
+    </div>
+
+    <h1>Pourquoi Rénover ?</h1>
+    <div class="second second-card">
+        
+        <div class="card red" data-aos="fade-right" data-aos-duration="1000">
+            <div class="title-card">
+                <h1>Aides financières renforcées</h1>
+                <hr>
+                <span class="legend">Profitez d’un cumul d’aides nationales et locales pour financer vos travaux</span>
+                <hr>
+            </div>
+            <div class="card-description">
+                <p>Avec <span>MaPrimeRénov’ Sérénité</span>, les <span>CEE</span> et certaines aides <span>locales en Lorraine</span>, vos travaux peuvent être <span>subventionnés jusqu’à 50 %</span>. 
+                C’est l’opportunité idéale pour réduire fortement votre <span>reste à charge</span> et engager des travaux complets sans compromis.</p>
+            </div>
+            <a class="button button-first" href="contact.html#devis">Demander une estimation</a>
+        </div>
+
+        <div class="card yellow" data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="title-card">
+                <h1>Économies d’énergie durables</h1>
+                <hr>
+                <span class="legend">Des travaux qui réduisent vos factures dès la première année</span>
+                <hr>
+            </div>
+            <div class="card-description">
+                <p>Une <span>maison rénovée globalement</span> peut diviser par deux ses <span>dépenses de chauffage</span>. 
+                Cela signifie plus de <span>pouvoir d’achat</span>, une <span>maîtrise</span> de vos consommations et une <span>résilience</span> face à l’augmentation des prix de l’énergie.</p>
+            </div>
+            <a class="button" href="contact.html#eco">Découvrir les économies</a>
+        </div>
+
+        <div class="card yellow" data-aos="fade-left" data-aos-duration="1000">
+            <div class="title-card">
+                <h1>Confort et valorisation</h1>
+                <hr>
+                <span class="legend">Un logement agréable et mieux coté sur le marché immobilier</span>
+                <hr>
+            </div>
+            <div class="card-description">
+                <p>Grâce à une <span>isolation renforcée</span> et un <span>système de chauffage performant</span>, votre habitat garde une <span>température stable</span> toute l’année. 
+                De plus, une rénovation globale augmente la <span>valeur patrimoniale</span> de votre bien et améliore son <span>étiquette énergétique</span>.</p>
+            </div>
+            <a class="button" href="contact.html#confort">Améliorer mon confort</a>
+        </div>
+    </div>`
+};
+const auditEnergetique = {
+  title: `<h1 class="prestation-title" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Audit Énergétique RGE</h1>`,
+  backgroundImage:"url('../images/rge.jpg')",
   content: `<div class="intro">
-                <h2>Améliorez durablement votre habitat</h2>
-                <p>La rénovation globale est la solution idéale pour optimiser la performance énergétique de votre logement tout en bénéficiant des aides financières les plus avantageuses.</p>
+                <h2>Évaluez précisément la performance de votre logement</h2>
+                <p>L’audit énergétique RGE permet de connaître les faiblesses de votre maison et de définir un plan de rénovation efficace, tout en profitant d’aides financières spécifiques.</p>
             </div>
 
             <div class="expertise">
                 <p>
-                Chez <strong>Eco Evolution</strong>, nous vous accompagnons de A à Z dans votre projet de rénovation globale. 
-                Nos experts certifiés RGE basés à Nancy et dans toute la Lorraine assurent des travaux de qualité, 
-                conformes aux normes en vigueur et pensés pour maximiser vos économies d’énergie.
+                Avec <strong>Eco Evolution</strong>, vous bénéficiez d’un audit réalisé par des professionnels certifiés RGE en Lorraine. 
+                Notre équipe vous accompagne pas à pas, avec des conseils clairs et un rapport complet qui vous guide vers les meilleures solutions pour <span>économiser l’énergie</span> et <span>valoriser votre patrimoine</span>.
                 </p>
             </div>
 
             <div class="description">
                 <p>
-                La <strong>rénovation globale</strong> consiste à regrouper plusieurs actions de rénovation énergétique 
-                en un seul projet cohérent : isolation thermique, chauffage performant, ventilation… 
-                Cette approche permet d’obtenir des gains énergétiques importants et d’accéder 
-                aux aides les plus élevées comme <em>MaPrimeRénov’ Sérénité</em> et les <em>Certificats d’Économies d’Énergie (CEE)</em>. 
-                Résultat : un logement plus confortable, plus économe et valorisé sur le marché immobilier.
+                L’<strong>audit énergétique RGE</strong> est une analyse approfondie de la performance de votre habitation : 
+                isolation, chauffage, ventilation, consommation globale. 
+                Il propose différents scénarios de rénovation chiffrés et hiérarchisés, en mettant en avant les gains énergétiques possibles et les aides mobilisables (<em>MaPrimeRénov’</em>, <em>CEE</em>). 
+                Cet audit est souvent <span>obligatoire pour obtenir certaines subventions</span>, en particulier dans le cadre d’une rénovation globale.
                 </p>
             </div>
+            <h1>Pourquoi réaliser un audit énergétique ?</h1>
+            <div class="second second-card">
+                
+                <div class="card red" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="title-card">
+                        <h1>Aides accessibles avec l’audit</h1>
+                        <hr>
+                        <span class="legend">Un prérequis pour bénéficier de certaines subventions importantes</span>
+                        <hr>
+                    </div>
+                    <div class="card-description">
+                        <p>L’<span>audit énergétique RGE</span> est indispensable pour débloquer certaines <span>aides nationales</span> comme <span>MaPrimeRénov’ Sérénité</span>. 
+                        Il vous ouvre également l’accès aux <span>CEE</span> et peut réduire fortement le coût de vos futurs travaux.</p>
+                    </div>
+                    <a class="button button-first" href="contact.html#aides">Vérifier mes aides</a>
+                </div>
 
-            <div class="cards">
-                <h1>Pourquoi Rénover ?</h1>
-                <div class="card">
-                <h3>Aides financières renforcées</h3>
-                <p>Bénéficiez de subventions couvrant jusqu’à 50 % de vos travaux grâce à MaPrimeRénov’ Sérénité et aux CEE.</p>
+                <div class="card yellow" data-aos="zoom-in-up" data-aos-duration="1000">
+                    <div class="title-card">
+                        <h1>Un plan clair et chiffré</h1>
+                        <hr>
+                        <span class="legend">Des scénarios précis pour guider vos décisions</span>
+                        <hr>
+                    </div>
+                    <div class="card-description">
+                        <p>Chaque audit fournit <span>plusieurs solutions de rénovation</span> avec <span>chiffrage détaillé</span>. 
+                        Vous pouvez comparer les <span>économies attendues</span>, choisir un parcours de rénovation adapté à votre budget et avancer avec une vision claire.</p>
+                    </div>
+                    <a class="button" href="contact.html#plan">Découvrir un exemple d’audit</a>
                 </div>
-                <div class="card">
-                <h3>Économies d’énergie</h3>
-                <p>Divisez vos factures de chauffage par deux grâce à une maison mieux isolée et plus performante.</p>
+
+                <div class="card yellow" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="title-card">
+                        <h1>Valorisation de votre bien</h1>
+                        <hr>
+                        <span class="legend">Un atout pour la revente ou la location</span>
+                        <hr>
+                    </div>
+                    <div class="card-description">
+                        <p>En réalisant un audit, vous mettez en lumière les <span>points forts et faibles</span> de votre logement. 
+                        Un rapport clair et un projet de rénovation global valorisent votre <span>étiquette énergétique</span> et augmentent la <span>valeur patrimoniale</span> de votre bien.</p>
+                    </div>
+                    <a class="button" href="contact.html#valorisation">Améliorer la valeur de mon logement</a>
                 </div>
-                <div class="card">
-                <h3>Confort durable</h3>
-                <p>Profitez d’une température stable toute l’année, sans courants d’air ni zones froides.</p>
-                </div>
-            </div>`};
+            </div>`
+};
+
+
 
 const isolation = {
-  title: `<h1 class="prestation-title">Isolation Intérieure & Extérieure</h1>`,
-  content: `<div class="intro">
-                <h2>Une maison bien isolée, des économies assurées</h2>
-                <p>L’isolation thermique est la clé pour limiter les pertes de chaleur et améliorer le confort de votre habitat.</p>
-            </div>
+  title: `<h1 class="prestation-title" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Isolation Intérieure & Extérieure</h1>`,
+  backgroundImage: "url('../images/isolation-2.jpg')",
+  content: `
+    <div class="intro">
+        <h2>Une maison bien isolée, des économies assurées</h2>
+        <p>L’isolation thermique est la solution idéale pour limiter les pertes de chaleur, améliorer le confort et réduire durablement vos factures énergétiques.</p>
+    </div>
 
-            <div class="expertise">
-                <p>
-                Avec <strong>Eco Evolution</strong>, vos travaux d’isolation intérieure et extérieure sont réalisés par des professionnels certifiés RGE. 
-                Nous utilisons des matériaux performants et durables, adaptés aux spécificités de chaque bâtiment de Lorraine et du Grand Est. 
-                Nos équipes assurent une pose soignée garantissant des résultats mesurables immédiatement.
-                </p>
-            </div>
+    <div class="expertise">
+        <p>
+        Avec <strong>Eco Evolution</strong>, vos travaux d’isolation sont réalisés par des professionnels certifiés RGE. 
+        Nous sélectionnons des matériaux performants et durables, adaptés à chaque type de bâtiment en Lorraine et dans le Grand Est. 
+        Nos équipes garantissent une pose soignée pour des résultats mesurables et immédiats, tout en respectant les normes en vigueur.
+        </p>
+    </div>
 
-            <div class="description">
-                <p>
-                L’isolation par l’intérieur est idéale pour réduire vos factures de chauffage rapidement, 
-                tandis que l’isolation par l’extérieur permet de traiter efficacement les ponts thermiques 
-                tout en rénovant la façade. Dans les deux cas, vos murs deviennent de véritables barrières thermiques. 
-                Ces solutions ouvrent droit aux aides comme <em>MaPrimeRénov’</em> et les <em>CEE</em>.
-                </p>
-            </div>
+    <div class="description">
+        <p>
+        L’isolation par l’intérieur permet de réduire rapidement vos dépenses de chauffage, tandis que l’isolation par l’extérieur traite efficacement les ponts thermiques et valorise la façade de votre logement. 
+        Ces solutions optimisent la performance énergétique de vos murs et ouvrent droit aux aides financières telles que <em>MaPrimeRénov’</em> et les <em>Certificats d’Économies d’Énergie (CEE)</em>. 
+        Vous bénéficiez ainsi d’un habitat plus confortable, économique et respectueux de l’environnement.
+        </p>
+    </div>
 
-            <div class="cards">
-                <h1>Pourquoi Isoler ?</h1>
-                <div class="card">
-                <h3>Aides disponibles</h3>
-                <p>Profitez de subventions couvrant jusqu’à 40 €/m² pour l’isolation extérieure et 25 €/m² pour l’intérieur.</p>
-                </div>
-                <div class="card">
-                <h3>Économies immédiates</h3>
-                <p>Réduisez jusqu’à 30 % vos dépenses énergétiques dès la première année.</p>
-                </div>
-                <div class="card">
-                <h3>Confort thermique</h3>
-                <p>Fini les murs froids et l’humidité, votre maison devient plus agréable à vivre.</p>
-                </div>
-            </div>`};
+    <h1>Pourquoi Isoler ?</h1>
+    <div class="second second-card">
+
+        <div class="card red" data-aos="fade-right" data-aos-duration="1000">
+            <div class="title-card">
+                <h1>Aides financières accessibles</h1>
+                <hr>
+                <span class="legend">Profitez d’un soutien financier pour alléger le coût de vos travaux</span>
+                <hr>
+            </div>
+            <div class="card-description">
+                <p>En réalisant vos travaux d’isolation avec <span>Eco Evolution</span>, vous pouvez mobiliser <span>MaPrimeRénov’</span>, les <span>CEE</span> et certaines aides locales en Lorraine. 
+                Ces subventions peuvent couvrir une part significative de vos investissements, réduisant ainsi votre <span>reste à charge</span> tout en vous permettant d’opter pour des matériaux de haute qualité.</p>
+            </div>
+            <a class="button button-first" href="contact.html#aides">Vérifier mes aides</a>
+        </div>
+
+        <div class="card yellow" data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="title-card">
+                <h1>Économies d’énergie immédiates</h1>
+                <hr>
+                <span class="legend">Réduisez vos factures dès la première année</span>
+                <hr>
+            </div>
+            <div class="card-description">
+                <p>Une isolation efficace permet de diminuer jusqu’à <span>30 % vos dépenses de chauffage</span> dès la première année. 
+                Vous profitez d’une maîtrise durable de votre consommation énergétique, d’une meilleure régulation thermique et d’un impact positif sur vos <span>factures</span> et sur l’environnement.</p>
+            </div>
+            <a class="button" href="contact.html#eco">Découvrir les économies</a>
+        </div>
+
+        <div class="card yellow" data-aos="fade-left" data-aos-duration="1000">
+            <div class="title-card">
+                <h1>Confort et bien-être améliorés</h1>
+                <hr>
+                <span class="legend">Un habitat agréable toute l’année, hiver comme été</span>
+                <hr>
+            </div>
+            <div class="card-description">
+                <p>Avec une isolation renforcée, vos murs restent chauds en hiver et frais en été. 
+                L’humidité et les sensations de paroi froide disparaissent, votre maison devient plus confortable et agréable à vivre. 
+                Cette amélioration thermique contribue également à la valorisation de votre bien sur le marché immobilier.</p>
+            </div>
+            <a class="button" href="contact.html#confort">Améliorer mon confort</a>
+        </div>
+    </div>`
+};
+
 
 const calorifugeage = {
-  title: `<h1 class="prestation-title">Calorifugeage</h1>`,
-  content: `<div class="intro">
-                <h2>Protégez vos canalisations et économisez</h2>
-                <p>Le calorifugeage limite les pertes de chaleur de vos réseaux de tuyauterie et optimise votre installation.</p>
+  title: `<h1 class="prestation-title" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Calorifugeage</h1>`,
+  backgroundImage: "url('../images/calorifugeage.jpg')",
+  content: `
+    <div class="intro">
+        <h2>Protégez vos canalisations et économisez</h2>
+        <p>Le calorifugeage limite les pertes de chaleur de vos réseaux de tuyauterie, améliore l’efficacité énergétique de votre installation et réduit vos factures.</p>
+    </div>
+
+    <div class="expertise">
+        <p>
+        Les spécialistes <strong>Eco Evolution</strong> réalisent le calorifugeage dans les règles de l’art. 
+        Certifiés RGE, nous intervenons sur des installations individuelles ou collectives en Lorraine et dans le Grand Est, 
+        en garantissant une pose conforme aux normes environnementales et aux bonnes pratiques pour un résultat durable et performant.
+        </p>
+    </div>
+
+    <div class="description">
+        <p>
+        Le <strong>calorifugeage</strong> consiste à entourer les canalisations d’eau chaude, les conduits ou les réservoirs d’un isolant adapté. 
+        Cette technique réduit les pertes d’énergie jusqu’à 20 %, optimise la distribution de chaleur et permet de réaliser des économies substantielles sur vos charges. 
+        Elle est particulièrement efficace dans les immeubles collectifs où les réseaux sont longs et complexes. 
+        De plus, ces travaux sont éligibles aux <em>Certificats d’Économies d’Énergie (CEE)</em>.
+        </p>
+    </div>
+
+    <h1>Pourquoi Calorifuger ?</h1>
+    <div class="second second-card">
+
+        <div class="card red" data-aos="fade-right" data-aos-duration="1000">
+            <div class="title-card">
+                <h1>Aides financières disponibles</h1>
+                <hr>
+                <span class="legend">Profitez d’un financement jusqu’à 100 % grâce aux CEE</span>
+                <hr>
             </div>
-
-            <div class="expertise">
-                <p>
-                Les spécialistes <strong>Eco Evolution</strong> réalisent le calorifugeage dans les règles de l’art. 
-                Notre savoir-faire RGE permet d’assurer des interventions efficaces et conformes aux normes environnementales, 
-                pour les particuliers comme pour les copropriétés en Lorraine.
-                </p>
+            <div class="card-description">
+                <p>Le <span>calorifugeage</span> peut être pris en charge totalement ou partiellement via les <span>Certificats d’Économies d’Énergie</span>, 
+                vous permettant de réaliser ces travaux sans impact sur votre budget. <span>Eco Evolution</span> vous accompagne dans le montage des dossiers pour maximiser vos aides.</p>
             </div>
+            <a class="button button-first" href="contact.html#aides">Vérifier mes aides</a>
+        </div>
 
-            <div class="description">
-                <p>
-                Le <strong>calorifugeage</strong> consiste à poser un isolant autour des canalisations d’eau chaude, des conduits ou des réservoirs. 
-                Cette technique simple permet de réduire vos pertes d’énergie jusqu’à 20 % et d’alléger vos factures. 
-                Elle est particulièrement efficace dans les immeubles collectifs où les longueurs de tuyaux sont importantes. 
-                Le dispositif est éligible aux <em>CEE</em>.
-                </p>
+        <div class="card yellow" data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="title-card">
+                <h1>Économies d’énergie immédiates</h1>
+                <hr>
+                <span class="legend">Réduisez vos pertes de chaleur et vos charges rapidement</span>
+                <hr>
             </div>
-
-            <div class="cards">
-                <h1>Pourquoi Calorifuger ?</h1>
-                <div class="card">
-                <h3>Aides financières</h3>
-                <p>Le calorifugeage peut être financé jusqu’à 100 % via les Certificats d’Économies d’Énergie.</p>
-                </div>
-                <div class="card">
-                <h3>Économie immédiate</h3>
-                <p>Baissez vos charges collectives grâce à une diminution significative des pertes de chaleur.</p>
-                </div>
-                <div class="card">
-                <h3>Durabilité</h3>
-                <p>Une installation protégée et isolée résiste mieux au temps et nécessite moins d’entretien.</p>
-                </div>
-            </div>`};
-
-const auditEnergetique = {
-  title: `<h1 class="prestation-title">Audit Énergétique RGE</h1>`,
-  content: `<div class="intro">
-                <h2>Analysez la performance de votre maison</h2>
-                <p>L’audit énergétique identifie précisément les faiblesses de votre logement et propose des solutions adaptées.</p>
+            <div class="card-description">
+                <p>En isolant efficacement vos canalisations, vous diminuez jusqu’à <span>20 % vos pertes de chaleur</span> et optimisez la distribution de l’énergie. 
+                Cela se traduit par des <span>économies immédiates</span> sur vos factures et une meilleure performance de votre installation sur le long terme.</p>
             </div>
+            <a class="button" href="contact.html#eco">Découvrir les économies</a>
+        </div>
 
-            <div class="expertise">
-                <p>
-                Avec <strong>Eco Evolution</strong>, vos audits sont réalisés par des experts certifiés RGE. 
-                Nous garantissons une analyse claire, des conseils personnalisés et un accompagnement pour mettre en œuvre les améliorations. 
-                Un service complet à Nancy et dans toute la Lorraine.
-                </p>
+        <div class="card yellow" data-aos="fade-left" data-aos-duration="1000">
+            <div class="title-card">
+                <h1>Durabilité et entretien simplifié</h1>
+                <hr>
+                <span class="legend">Une installation protégée qui dure dans le temps</span>
+                <hr>
             </div>
-
-            <div class="description">
-                <p>
-                L’<strong>audit énergétique RGE</strong> est un diagnostic détaillé de votre maison : isolation, chauffage, ventilation, consommation. 
-                Il permet de prioriser les travaux les plus efficaces. 
-                Les ménages peuvent bénéficier d’aides financières avec <em>MaPrimeRénov’</em>, 
-                variant de 300 à 500 € selon les revenus.
-                </p>
+            <div class="card-description">
+                <p>Le calorifugeage protège vos canalisations contre les variations de température et l’usure, ce qui réduit les risques de corrosion et de maintenance. 
+                Une installation isolée est plus durable et nécessite moins d’entretien, assurant un confort durable et des performances optimales pour votre habitat ou copropriété.</p>
             </div>
+            <a class="button" href="contact.html#confort">Assurer la durabilité</a>
+        </div>
+    </div>`
+};
 
-            <div class="cards">
-                <h1>Pourquoi Faire un Audit ?</h1>
-                <div class="card">
-                <h3>Aide MaPrimeRénov’</h3>
-                <p>Recevez jusqu’à 500 € de financement selon votre niveau de revenus.</p>
-                </div>
-                <div class="card">
-                <h3>Plan d’action clair</h3>
-                <p>Identifiez les priorités pour réduire votre consommation et cibler les bons travaux.</p>
-                </div>
-                <div class="card">
-                <h3>Valorisation</h3>
-                <p>Un logement mieux classé au DPE prend de la valeur sur le marché immobilier.</p>
-                </div>
-            </div>`};
 
 const ballonThermodynamique = {
-  title: `<h1 class="prestation-title">Ballon Thermodynamique</h1>`,
-  content: `<div class="intro">
-                <h2>Une eau chaude économique et écologique</h2>
-                <p>Le ballon thermodynamique utilise les calories de l’air pour chauffer l’eau sanitaire efficacement.</p>
-            </div>
+  title: `<h1 class="prestation-title" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Ballon Thermo<span> dynamique</span></h1>`,
+  backgroundImage: "url('../images/energie.jpg')",
+  content: `
+    <div class="intro">
+        <h2>Une eau chaude économique et écologique</h2>
+        <p>Le ballon thermodynamique utilise les calories de l’air pour chauffer l’eau sanitaire de manière efficace et durable, tout en réduisant vos consommations électriques.</p>
+    </div>
 
-            <div class="expertise">
-                <p>
-                Les équipes <strong>Eco Evolution</strong> installent des ballons thermodynamiques adaptés à vos besoins. 
-                Nos installateurs RGE assurent une mise en service optimisée, avec un matériel performant et durable.
-                </p>
-            </div>
+    <div class="expertise">
+        <p>
+        Les équipes <strong>Eco Evolution</strong> installent des ballons thermodynamiques adaptés à votre habitation. 
+        Nos installateurs certifiés RGE assurent une mise en service optimisée avec un matériel performant et durable, 
+        vous garantissant une production d’eau chaude fiable et un confort quotidien amélioré.
+        </p>
+    </div>
 
-            <div class="description">
-                <p>
-                Le <strong>ballon thermodynamique</strong> permet de diviser par 3 votre consommation d’électricité pour l’eau chaude sanitaire. 
-                Il récupère l’énergie de l’air ambiant ou extérieur pour chauffer l’eau, tout en ouvrant droit à des aides telles que <em>MaPrimeRénov’</em> 
-                (jusqu’à 1 200 € selon vos revenus) et les <em>CEE</em>. 
-                Un choix écologique et rentable.
-                </p>
-            </div>
+    <div class="description">
+        <p>
+        Le <strong>ballon thermodynamique</strong> capte l’énergie de l’air ambiant ou extérieur via une pompe à chaleur intégrée pour chauffer votre eau sanitaire. 
+        Il permet de diviser par trois votre consommation électrique par rapport à un chauffe-eau classique. 
+        Cette solution écologique ouvre droit à des aides financières telles que <em>MaPrimeRénov’</em> (jusqu’à 1 200 € selon vos revenus) et les <em>Certificats d’Économies d’Énergie (CEE)</em>. 
+        Allier économies, confort et respect de l’environnement devient simple et rentable.
+        </p>
+    </div>
 
-            <div class="cards">
-                <h1>Pourquoi Installer un Ballon Thermodynamique ?</h1>
-                <div class="card">
-                <h3>Aides financières</h3>
-                <p>Bénéficiez jusqu’à 1 200 € de subventions cumulables avec les CEE.</p>
-                </div>
-                <div class="card">
-                <h3>Économies d’énergie</h3>
-                <p>Réduisez vos factures d’eau chaude de près de 70 %.</p>
-                </div>
-                <div class="card">
-                <h3>Respect de l’environnement</h3>
-                <p>Un système utilisant les calories de l’air réduit vos émissions de CO₂.</p>
-                </div>
-            </div>`};
+    <h1>Pourquoi Installer un Ballon Thermodynamique ?</h1>
+    <div class="second second-card">
+
+        <div class="card red" data-aos="fade-right" data-aos-duration="1000">
+            <div class="title-card">
+                <h1>Aides financières avantageuses</h1>
+                <hr>
+                <span class="legend">Bénéficiez de subventions pour réduire le coût d’installation</span>
+                <hr>
+            </div>
+            <div class="card-description">
+                <p>Grâce aux <span>aides MaPrimeRénov’</span> et aux <span>CEE</span>, l’installation de votre <span>ballon thermodynamique</span> peut être largement financée. 
+                <span>Eco Evolution</span> vous accompagne dans le montage des dossiers et la gestion des subventions, afin de maximiser vos économies dès le départ.</p>
+            </div>
+            <a class="button button-first" href="contact.html#aides">Vérifier mes aides</a>
+        </div>
+
+        <div class="card green" data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="title-card">
+                <h1>Installation rapide et simple</h1>
+                <hr>
+                <span class="legend">Un ballon thermodynamique installé sans tracas</span>
+                <hr>
+            </div>
+            <div class="card-description">
+                <p>Le <span>ballon thermodynamique</span> s’intègre facilement à votre <span>logement</span>, même existant, et son installation est rapide. 
+                Une mise en service optimisée par nos experts RGE assure un fonctionnement immédiat et fiable, avec un entretien minimal pour un confort durable.</p>
+            </div>
+            <a class="button" href="contact.html#installation">En savoir plus</a>
+        </div>
+
+        <div class="card green" data-aos="fade-left" data-aos-duration="1000">
+            <div class="title-card">
+                <h1>Économies et écologie</h1>
+                <hr>
+                <span class="legend">Réduisez votre consommation d’électricité et votre empreinte carbone</span>
+                <hr>
+            </div>
+            <div class="card-description">
+                <p>En utilisant l’énergie de l’air pour chauffer l’eau, votre <span>ballon thermodynamique</span> réduit fortement vos <span>factures d’électricité</span> tout en limitant votre impact environnemental. 
+                Cette solution permet de concilier <span>économies financières</span> et <span>transition énergétique</span> de manière concrète et durable.</p>
+            </div>
+            <a class="button" href="contact.html#eco">Profiter des économies</a>
+        </div>
+    </div>`
+};
+
 
 const pompeAirAir = {
-  title: `<h1 class="prestation-title">Pompe à Chaleur Air-Air</h1>`,
-  content: `<div class="intro">
-                <h2>Chauffez et rafraîchissez en toute simplicité</h2>
-                <p>La pompe à chaleur air-air capte l’air extérieur pour chauffer ou climatiser votre logement efficacement.</p>
-            </div>
+  title: `<h1 class="prestation-title" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Pompe à Chaleur Air-Air</h1>`,
+  backgroundImage: "url('../images/airair.jpg')",
+  content: `
+    <div class="intro">
+        <h2>Chauffez et rafraîchissez en toute simplicité</h2>
+        <p>La pompe à chaleur air-air capte l’air extérieur pour chauffer ou climatiser votre logement de manière efficace et économique, tout en améliorant votre confort toute l’année.</p>
+    </div>
 
-            <div class="expertise">
-                <p>
-                <strong>Eco Evolution</strong> installe des pompes à chaleur air-air avec un savoir-faire reconnu. 
-                Nous vous conseillons pour dimensionner correctement votre installation et garantissons une pose conforme et durable.
-                </p>
-            </div>
+    <div class="expertise">
+        <p>
+        <strong>Eco Evolution</strong> installe des pompes à chaleur air-air avec un savoir-faire reconnu. 
+        Nos experts RGE vous conseillent sur le dimensionnement optimal de votre installation et garantissent une pose conforme aux normes, durable et performante. 
+        Chaque installation est réalisée pour maximiser les économies et le confort de votre habitat.
+        </p>
+    </div>
 
-            <div class="description">
-                <p>
-                La <strong>PAC air-air</strong> est une solution réversible qui chauffe l’hiver et rafraîchit l’été. 
-                Bien qu’elle ne soit pas éligible à MaPrimeRénov’, elle permet d’accéder à certaines primes CEE selon le projet. 
-                C’est une alternative économique aux convecteurs électriques traditionnels.
-                </p>
-            </div>
+    <div class="description">
+        <p>
+        La <strong>PAC air-air</strong> est une solution réversible qui chauffe l’hiver et rafraîchit l’été. 
+        Bien qu’elle ne soit pas éligible à <em>MaPrimeRénov’</em>, elle peut bénéficier de certaines primes <em>CEE</em> selon votre projet. 
+        Elle constitue une alternative économique aux convecteurs électriques traditionnels, en réduisant significativement vos consommations et en offrant un confort thermique optimal.
+        </p>
+    </div>
 
-            <div class="cards">
-                <h1>Pourquoi Installer une PAC Air-Air ?</h1>
-                <div class="card">
-                <h3>Polyvalence</h3>
-                <p>Un seul système assure chauffage et climatisation selon la saison.</p>
-                </div>
-                <div class="card">
-                <h3>Économies</h3>
-                <p>Consommez jusqu’à 3 fois moins d’électricité que des radiateurs classiques.</p>
-                </div>
-                <div class="card">
-                <h3>Confort</h3>
-                <p>Bénéficiez d’une température idéale toute l’année, été comme hiver.</p>
-                </div>
-            </div>`};
+    <h1>Pourquoi Installer une PAC Air-Air ?</h1>
+    <div class="second second-card">
+
+        <div class="card red" data-aos="fade-right" data-aos-duration="1000">
+            <div class="title-card">
+                <h1>Polyvalence saisonnière</h1>
+                <hr>
+                <span class="legend">Une seule installation pour chauffage et climatisation</span>
+                <hr>
+            </div>
+            <div class="card-description">
+                <p>La <span>PAC air-air</span> est réversible et s’adapte à toutes les saisons. 
+                Elle chauffe votre logement en hiver et le rafraîchit en été, offrant un <span>confort constant</span> sans avoir besoin de plusieurs équipements distincts.</p>
+            </div>
+            <a class="button button-first" href="contact.html#confort">Améliorer mon confort</a>
+        </div>
+
+        <div class="card yellow" data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="title-card">
+                <h1>Économies d’énergie</h1>
+                <hr>
+                <span class="legend">Consommez jusqu’à 3 fois moins qu’avec des radiateurs électriques</span>
+                <hr>
+            </div>
+            <div class="card-description">
+                <p>Grâce à l’utilisation de l’air comme source d’énergie, la <span>PAC air-air</span> réduit significativement votre consommation d’électricité par rapport aux systèmes classiques. 
+                Vous réalisez <span>des économies immédiates</span> tout en profitant d’une installation performante et durable.</p>
+            </div>
+            <a class="button" href="contact.html#eco">Découvrir les économies</a>
+        </div>
+
+        <div class="card yellow" data-aos="fade-left" data-aos-duration="1000">
+            <div class="title-card">
+                <h1>Confort toute l’année</h1>
+                <hr>
+                <span class="legend">Température idéale été comme hiver</span>
+                <hr>
+            </div>
+            <div class="card-description">
+                <p>La <span>PAC air-air</span> garantit un confort thermique optimal, en maintenant une température agréable dans toutes les pièces de votre logement. 
+                Profitez d’un climat intérieur équilibré, hiver comme été, tout en réduisant votre empreinte énergétique.</p>
+            </div>
+            <a class="button" href="contact.html#confort">Profiter du confort</a>
+        </div>
+    </div>`
+};
+
 
 const pompeAirEau = {
-  title: `<h1 class="prestation-title">Pompe à Chaleur Air-Eau</h1>`,
-  content: `<div class="intro">
-                <h2>Une solution de chauffage économique et performante</h2>
-                <p>La pompe à chaleur air-eau remplace ou complète votre chaudière pour chauffer votre logement et votre eau.</p>
-            </div>
+  title: `<h1 class="prestation-title" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Pompe à Chaleur Air-Eau</h1>`,
+  backgroundImage: "url('../images/aireau.jpg')",
+  content: `
+    <div class="intro">
+        <h2>Une solution de chauffage économique et performante</h2>
+        <p>La pompe à chaleur air-eau remplace ou complète votre chaudière pour chauffer votre logement et votre eau sanitaire tout en réduisant vos consommations énergétiques.</p>
+    </div>
 
-            <div class="expertise">
-                <p>
-                Chez <strong>Eco Evolution</strong>, nous installons des pompes à chaleur air-eau avec une précision technique reconnue. 
-                Nos experts RGE garantissent un dimensionnement optimal et un suivi personnalisé pour des performances maximales.
-                </p>
-            </div>
+    <div class="expertise">
+        <p>
+        Chez <strong>Eco Evolution</strong>, nous installons des pompes à chaleur air-eau avec une expertise technique reconnue. 
+        Nos installateurs certifiés RGE garantissent un dimensionnement précis et un suivi personnalisé pour des performances maximales, 
+        tout en assurant un confort optimal dans votre habitation.
+        </p>
+    </div>
 
-            <div class="description">
-                <p>
-                La <strong>PAC air-eau</strong> puise les calories de l’air extérieur pour chauffer votre logement via un circuit d’eau. 
-                Elle peut alimenter vos radiateurs ou votre plancher chauffant. 
-                Cette solution est éligible à <em>MaPrimeRénov’</em> (jusqu’à 5 000 € selon vos revenus) et aux <em>CEE</em>. 
-                Une alternative écologique et économique au fioul ou au gaz.
-                </p>
-            </div>
+    <div class="description">
+        <p>
+        La <strong>PAC air-eau</strong> puise les calories de l’air extérieur pour chauffer votre logement via un circuit d’eau. 
+        Elle alimente vos radiateurs ou votre plancher chauffant de manière efficace et écologique. 
+        Cette solution est éligible à <em>MaPrimeRénov’</em> (jusqu’à 5 000 € selon vos revenus) et aux <em>Certificats d’Économies d’Énergie (CEE)</em>, 
+        offrant ainsi une alternative économique et respectueuse de l’environnement par rapport au fioul ou au gaz.
+        </p>
+    </div>
 
-            <div class="cards">
-                <h1>Pourquoi Installer une PAC Air-Eau ?</h1>
-                <div class="card">
-                <h3>Aides financières</h3>
-                <p>Recevez jusqu’à 5 000 € de MaPrimeRénov’ et cumulez avec les CEE.</p>
-                </div>
-                <div class="card">
-                <h3>Économies d’énergie</h3>
-                <p>Divisez vos factures de chauffage par deux ou trois selon votre ancien système.</p>
-                </div>
-                <div class="card">
-                <h3>Confort & écologie</h3>
-                <p>Un chauffage homogène et respectueux de l’environnement grâce aux énergies renouvelables.</p>
-                </div>
-            </div>`};
+    <h1>Pourquoi Installer une PAC Air-Eau ?</h1>
+    <div class="second second-card">
+
+        <div class="card red" data-aos="fade-right" data-aos-duration="1000">
+            <div class="title-card">
+                <h1>Aides financières attractives</h1>
+                <hr>
+                <span class="legend">Jusqu’à 5 000 € avec MaPrimeRénov’ et cumulable avec les CEE</span>
+                <hr>
+            </div>
+            <div class="card-description">
+                <p>La <span>PAC air-eau</span> bénéficie de subventions importantes telles que <span>MaPrimeRénov’</span> et les <span>CEE</span>. 
+                <span>Eco Evolution</span> vous accompagne dans le montage des dossiers et la récupération des aides pour maximiser vos économies sur l’installation.</p>
+            </div>
+            <a class="button button-first" href="contact.html#aides">Vérifier mes aides</a>
+        </div>
+
+        <div class="card yellow" data-aos="zoom-in-up" data-aos-duration="1000">
+            <div class="title-card">
+                <h1>Économies d’énergie significatives</h1>
+                <hr>
+                <span class="legend">Réduisez vos factures de chauffage jusqu’à 2 ou 3 fois</span>
+                <hr>
+            </div>
+            <div class="card-description">
+                <p>En exploitant les calories de l’air extérieur, la <span>PAC air-eau</span> permet de diminuer considérablement vos dépenses énergétiques. 
+                Selon votre ancien système de chauffage, vous pouvez diviser vos factures de <span>chauffage par deux ou trois</span> dès la première saison.</p>
+            </div>
+            <a class="button" href="contact.html#eco">Découvrir les économies</a>
+        </div>
+
+        <div class="card yellow" data-aos="fade-left" data-aos-duration="1000">
+            <div class="title-card">
+                <h1>Confort & respect de l’environnement</h1>
+                <hr>
+                <span class="legend">Un chauffage homogène et écologique toute l’année</span>
+                <hr>
+            </div>
+            <div class="card-description">
+                <p>La <span>PAC air-eau</span> assure un chauffage homogène et agréable dans toutes les pièces de votre logement. 
+                Elle utilise les énergies renouvelables pour réduire l’empreinte carbone de votre habitation tout en garantissant un confort thermique optimal.</p>
+            </div>
+            <a class="button" href="contact.html#confort">Profiter du confort</a>
+        </div>
+    </div>`
+};
 
 
 
@@ -315,6 +551,10 @@ if( prestation !=null){
         console.log(prestation);
         document.querySelector(".slogan").innerHTML = prestations[prestation].title;
         document.querySelector(".service-section").innerHTML =prestations[prestation].content;
+        
+        document.querySelector(".hole").style.backgroundImage = prestations[prestation].backgroundImage;
+
+        // document.body.style.backgroundImage = "url('img_tree.png')";
     }else{
         console.log("Pas de clés valide");
     }
