@@ -27,7 +27,7 @@ function holeEffect(){
 
 const renovationGlobale = {
   title: `<h1 class="prestation-title" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Rénovation Globale</h1>`,
-  backgroundImage: "url('../images/renovation.jpg')",
+  backgroundImage: "url('./images/renovation.jpg')",
   content: `
     <div class="intro">
         <h2>Améliorez durablement votre habitat</h2>
@@ -100,7 +100,7 @@ const renovationGlobale = {
 };
 const auditEnergetique = {
   title: `<h1 class="prestation-title" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Audit Énergétique RGE</h1>`,
-  backgroundImage:"url('../images/rge.jpg')",
+  backgroundImage:"url('./images/rge.jpg')",
   content: `<div class="intro">
                 <h2>Évaluez précisément la performance de votre logement</h2>
                 <p>L’audit énergétique RGE permet de connaître les faiblesses de votre maison et de définir un plan de rénovation efficace, tout en profitant d’aides financières spécifiques.</p>
@@ -172,7 +172,7 @@ const auditEnergetique = {
 
 const isolation = {
   title: `<h1 class="prestation-title" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Isolation Intérieure & Extérieure</h1>`,
-  backgroundImage: "url('../images/isolation-2.jpg')",
+  backgroundImage: "url('./images/isolation-2.jpg')",
   content: `
     <div class="intro">
         <h2>Une maison bien isolée, des économies assurées</h2>
@@ -246,7 +246,7 @@ const isolation = {
 
 const calorifugeage = {
   title: `<h1 class="prestation-title" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Calorifugeage</h1>`,
-  backgroundImage: "url('../images/calorifugeage.jpg')",
+  backgroundImage: "url('./images/calorifugeage.jpg')",
   content: `
     <div class="intro">
         <h2>Protégez vos canalisations et économisez</h2>
@@ -320,7 +320,7 @@ const calorifugeage = {
 
 const ballonThermodynamique = {
   title: `<h1 class="prestation-title" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Ballon Thermo<span> dynamique</span></h1>`,
-  backgroundImage: "url('../images/energie.jpg')",
+  backgroundImage: "url('./images/energie.jpg')",
   content: `
     <div class="intro">
         <h2>Une eau chaude économique et écologique</h2>
@@ -394,7 +394,7 @@ const ballonThermodynamique = {
 
 const pompeAirAir = {
   title: `<h1 class="prestation-title" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Pompe à Chaleur Air-Air</h1>`,
-  backgroundImage: "url('../images/airair.jpg')",
+  backgroundImage: "url('./images/airair.jpg')",
   content: `
     <div class="intro">
         <h2>Chauffez et rafraîchissez en toute simplicité</h2>
@@ -467,7 +467,7 @@ const pompeAirAir = {
 
 const pompeAirEau = {
   title: `<h1 class="prestation-title" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Pompe à Chaleur Air-Eau</h1>`,
-  backgroundImage: "url('../images/aireau.jpg')",
+  backgroundImage: "url('./images/aireau.jpg')",
   content: `
     <div class="intro">
         <h2>Une solution de chauffage économique et performante</h2>
