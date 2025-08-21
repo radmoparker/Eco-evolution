@@ -109,7 +109,7 @@ const auditEnergetique = {
             </div>
 
             <div class="expertise">
-                <h2>Notre Expertise</h2>
+                <h1>Notre Expertise</h1>
                 <p>
                 Avec <strong>Eco Evolution</strong>, vous bénéficiez d’un audit réalisé par des professionnels certifiés RGE en Lorraine. 
                 Notre équipe vous accompagne pas à pas, avec des conseils clairs et un rapport complet qui vous guide vers les meilleures solutions pour <span>économiser l’énergie</span> et <span>valoriser votre patrimoine</span>.
@@ -122,7 +122,7 @@ const auditEnergetique = {
                 <p>
                 L’<strong>audit énergétique RGE</strong> est une analyse approfondie de la performance de votre habitation : 
                 isolation, chauffage, ventilation, consommation globale. 
-                Il propose différents scénarios de rénovation chiffrés et hiérarchisés, en mettant en avant les gains énergétiques possibles et les aides mobilisables (<em>MaPrimeRénov’</em>, <em>CEE</em>). 
+                Il propose différents scénarios de rénovation chiffrés et hiérarchisés, en mettant en avant les gains énergétiques possibles et les aides mobilisables ( <em>MaPrimeRénov’</em>, <em>CEE</em> ). 
                 Cet audit est souvent <span>obligatoire pour obtenir certaines subventions</span>, en particulier dans le cadre d’une rénovation globale.
                 </p>
             </div>
@@ -185,6 +185,7 @@ const isolation = {
     </div>
 
     <div class="expertise">
+        <h1>Notre Expertise</h1>
         <p>
         Avec <strong>Eco Evolution</strong>, vos travaux d’isolation sont réalisés par des professionnels certifiés RGE. 
         Nous sélectionnons des matériaux performants et durables, adaptés à chaque type de bâtiment en Lorraine et dans le Grand Est. 
@@ -193,6 +194,7 @@ const isolation = {
     </div>
 
     <div class="description">
+        <h1>Quel impact sur votre logement ?</h1>
         <p>
         L’isolation par l’intérieur permet de réduire rapidement vos dépenses de chauffage, tandis que l’isolation par l’extérieur traite efficacement les ponts thermiques et valorise la façade de votre logement. 
         Ces solutions optimisent la performance énergétique de vos murs et ouvrent droit aux aides financières telles que <em>MaPrimeRénov’</em> et les <em>Certificats d’Économies d’Énergie (CEE)</em>. 
@@ -259,7 +261,7 @@ const calorifugeage = {
     </div>
 
     <div class="expertise">
-        <h2>Notre Expertise</h2>
+        <h1>Notre Expertise</h1>
         <p>
         Les spécialistes <strong>Eco Evolution</strong> réalisent le calorifugeage dans les règles de l’art. 
         Certifiés RGE, nous intervenons sur des installations individuelles ou collectives en Lorraine et dans le Grand Est, 
@@ -412,7 +414,7 @@ const pompeAirAir = {
     </div>
 
     <div class="expertise">        
-        <h2>Notre Expertise</h2>
+        <h1>Notre Expertise</h1>
         <p>
         <strong>Eco Evolution</strong> installe des pompes à chaleur air-air avec un savoir-faire reconnu. 
         Nos experts RGE vous conseillent sur le dimensionnement optimal de votre installation et garantissent une pose conforme aux normes, durable et performante. 
@@ -487,7 +489,7 @@ const pompeAirEau = {
     </div>
 
     <div class="expertise">
-        <h2>Notre Expertise</h2>
+        <h1>Notre Expertise</h1>
         <p>
         Chez <strong>Eco Evolution</strong>, nous installons des pompes à chaleur air-eau avec une expertise technique reconnue. 
         Nos installateurs certifiés RGE garantissent un dimensionnement précis et un suivi personnalisé pour des performances maximales, 

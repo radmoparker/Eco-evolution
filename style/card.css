@@ -1,6 +1,16 @@
 .intro, .expertise, .description, .title-cards{
     padding:0 2rem  0 2rem;
-    /* box-sizing: border-box !important; */
+    width:90%;
+    box-sizing: border-box !important;
+}
+.intro h1, .description h1, .expertise h1, .title-cards{
+    font-size:3rem;
+    font-family: 'Lato-blackitalic';
+    color:rgb(216, 6, 6);
+    color:rgb(5, 84, 84);
+}
+.intro p, .description p, .expertise p{
+    font-size:1.5rem ;
 }
 .second{
     background-repeat: no-repeat;
@@ -14,7 +24,7 @@
 
     column-gap: 0;
     gap:2vw;
-    padding-top: 4rem;
+    padding-top: 0;
     overflow-x: hidden;
 }
 
@@ -30,10 +40,12 @@
     flex-wrap: wrap;
     flex-direction:column;
     text-align: center;
-    color:#165049;
+    /* color:#165049; */
+
     padding: 20px;
 
     background: linear-gradient(90deg,rgb(186, 196, 186),rgb(238, 241, 238),  rgb(238, 241, 238));
+    background:linear-gradient(70deg,rgb(179, 181, 181),rgb(235, 238, 238),rgb(179, 181, 181));
     box-shadow: 2px 2px 2px 2px rgba(44, 42, 42, 0.75);
     margin-bottom: 2rem;
 }
@@ -59,6 +71,13 @@
     font-size:2.3rem;
     text-align: center;
     font-family: 'Lato-blackitalic';
+}
+.card:not(.card.red) h1{
+    color:#b80202;
+}
+.card:not(.card.red) .legend{
+    color:#b80202;
+
 }
 /* .card a{
 
@@ -139,8 +158,6 @@
 @media(max-width:1499px){
     .card{
         width: 270px;
-
- 
     }
 }
 @media(max-width:1000px){
@@ -153,10 +170,7 @@
         height:auto !important;
         gap:2rem;
         align-items: center !important;
-        justify-content: center !important;
-
-        /* margin:auto; */
- 
+        justify-content: center !important; 
     }
     .card p {
         font-size: 1rem;
@@ -165,21 +179,14 @@
         margin: 0 5% 0 5%;
     }
 }
-@media(max-width:900px){
-    /* .card{
-
-      
-    } */
-    .second.second-card{
-        padding-top:2rem;
+@media(max-width:800px){
+    .intro, .expertise, .description, .title-cards{
+        width:100%;
     }
 }
-
 @media(max-width:500px){
     .card{
         min-width: 75vw;
     }
-    .second.second-card{
-        padding-top:1rem;
-    }
+    
 }

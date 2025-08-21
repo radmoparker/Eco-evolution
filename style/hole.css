@@ -31,7 +31,7 @@
 
     will-change: transform;
     min-height: 50vh;
-    /* clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%); */
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
 
 }
 
@@ -155,9 +155,12 @@
         background-size: 250% !important;
         background-size: cover !important;
     }
+    .hole.service{
+        background-size:150% !important;
+    }
     .hole-service-bottom{
-        background-size: 200% !important;
-        background-size: cover !important;
+        background-size: 150% !important;
+        /* background-size: cover !important; */
         min-height: 40vh;
 
     }
@@ -165,14 +168,22 @@
         font-size:4rem;    
     }
 }
-/*Gestion des petits écran (iphone SE) */
-@media(max-width:600px){
 
+@media(max-width:600px){
     .slogan h1{
         font-size:3rem;    
     }
 }
 
+@media(max-width:500px){
+    .card{
+        min-width: 75vw;
+    }
+    .hole.service{
+        background-size:200% !important;
+    }
+
+}
 /* @media(max-width:400px){
     .slogan h1{
         font-size:4rem;    
