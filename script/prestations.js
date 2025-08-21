@@ -68,7 +68,7 @@ const renovationGlobale = {
                 <p>Avec <span>MaPrimeRénov’ Sérénité</span>, les <span>CEE</span> et certaines aides <span>locales en Lorraine</span>, vos travaux peuvent être <span>subventionnés jusqu’à 50 %</span>. 
                 C’est l’opportunité idéale pour réduire fortement votre <span>reste à charge</span> et engager des travaux complets sans compromis.</p>
             </div>
-            <a class="button button-first" href="contact.html#devis">Demander une estimation</a>
+            <a class="button button-first" href="contact.html">Demander une estimation</a>
         </div>
 
         <div class="card yellow" data-aos="zoom-in-up" data-aos-duration="1000">
@@ -82,7 +82,7 @@ const renovationGlobale = {
                 <p>Une <span>maison rénovée globalement</span> peut diviser par deux ses <span>dépenses de chauffage</span>. 
                 Cela signifie plus de <span>pouvoir d’achat</span>, une <span>maîtrise</span> de vos consommations et une <span>résilience</span> face à l’augmentation des prix de l’énergie.</p>
             </div>
-            <a class="button" href="contact.html#eco">Découvrir les économies</a>
+            <a class="button" href="contact.html">Découvrir les économies</a>
         </div>
 
         <div class="card yellow" data-aos="fade-left" data-aos-duration="1000">
@@ -96,7 +96,7 @@ const renovationGlobale = {
                 <p>Grâce à une <span>isolation renforcée</span> et un <span>système de chauffage performant</span>, votre habitat garde une <span>température stable</span> toute l’année. 
                 De plus, une rénovation globale augmente la <span>valeur patrimoniale</span> de votre bien et améliore son <span>étiquette énergétique</span>.</p>
             </div>
-            <a class="button" href="contact.html#confort">Améliorer mon confort</a>
+            <a class="button" href="contact.html">Améliorer mon confort</a>
         </div>
     </div>`
 };
@@ -140,7 +140,7 @@ const auditEnergetique = {
                         <p>L’<span>audit énergétique RGE</span> est indispensable pour débloquer certaines <span>aides nationales</span> comme <span>MaPrimeRénov’ Sérénité</span>. 
                         Il vous ouvre également l’accès aux <span>CEE</span> et peut réduire fortement le coût de vos futurs travaux.</p>
                     </div>
-                    <a class="button button-first" href="contact.html#aides">Vérifier mes aides</a>
+                    <a class="button button-first" href="contact.html">Vérifier mes aides</a>
                 </div>
 
                 <div class="card yellow" data-aos="zoom-in-up" data-aos-duration="1000">
@@ -154,7 +154,7 @@ const auditEnergetique = {
                         <p>Chaque audit fournit <span>plusieurs solutions de rénovation</span> avec <span>chiffrage détaillé</span>. 
                         Vous pouvez comparer les <span>économies attendues</span>, choisir un parcours de rénovation adapté à votre budget et avancer avec une vision claire.</p>
                     </div>
-                    <a class="button" href="contact.html#plan">Découvrir un exemple d’audit</a>
+                    <a class="button" href="contact.html">Découvrir un exemple d’audit</a>
                 </div>
 
                 <div class="card yellow" data-aos="fade-left" data-aos-duration="1000">
@@ -168,7 +168,7 @@ const auditEnergetique = {
                         <p>En réalisant un audit, vous mettez en lumière les <span>points forts et faibles</span> de votre logement. 
                         Un rapport clair et un projet de rénovation global valorisent votre <span>étiquette énergétique</span> et augmentent la <span>valeur patrimoniale</span> de votre bien.</p>
                     </div>
-                    <a class="button" href="contact.html#valorisation">Améliorer la valeur de mon logement</a>
+                    <a class="button" href="contact.html">Améliorer la valeur de mon logement</a>
                 </div>
             </div>`
 };
@@ -216,7 +216,7 @@ const isolation = {
                 <p>En réalisant vos travaux d’isolation avec <span>Eco Evolution</span>, vous pouvez mobiliser <span>MaPrimeRénov’</span>, les <span>CEE</span> et certaines aides locales en Lorraine. 
                 Ces subventions peuvent couvrir une part significative de vos investissements, réduisant ainsi votre <span>reste à charge</span> tout en vous permettant d’opter pour des matériaux de haute qualité.</p>
             </div>
-            <a class="button button-first" href="contact.html#aides">Vérifier mes aides</a>
+            <a class="button button-first" href="contact.html">Vérifier mes aides</a>
         </div>
 
         <div class="card yellow" data-aos="zoom-in-up" data-aos-duration="1000">
@@ -230,7 +230,7 @@ const isolation = {
                 <p>Une isolation efficace permet de diminuer jusqu’à <span>30 % vos dépenses de chauffage</span> dès la première année. 
                 Vous profitez d’une maîtrise durable de votre consommation énergétique, d’une meilleure régulation thermique et d’un impact positif sur vos <span>factures</span> et sur l’environnement.</p>
             </div>
-            <a class="button" href="contact.html#eco">Découvrir les économies</a>
+            <a class="button" href="contact.html">Découvrir les économies</a>
         </div>
 
         <div class="card yellow" data-aos="fade-left" data-aos-duration="1000">
@@ -245,7 +245,7 @@ const isolation = {
                 L’humidité et les sensations de paroi froide disparaissent, votre maison devient plus confortable et agréable à vivre. 
                 Cette amélioration thermique contribue également à la valorisation de votre bien sur le marché immobilier.</p>
             </div>
-            <a class="button" href="contact.html#confort">Améliorer mon confort</a>
+            <a class="button" href="contact.html">Améliorer mon confort</a>
         </div>
     </div>`
 };
@@ -294,7 +294,7 @@ const calorifugeage = {
                 <p>Le <span>calorifugeage</span> peut être pris en charge totalement ou partiellement via les <span>Certificats d’Économies d’Énergie</span>, 
                 vous permettant de réaliser ces travaux sans impact sur votre budget. <span>Eco Evolution</span> vous accompagne dans le montage des dossiers pour maximiser vos aides.</p>
             </div>
-            <a class="button button-first" href="contact.html#aides">Vérifier mes aides</a>
+            <a class="button button-first" href="contact.html">Vérifier mes aides</a>
         </div>
 
         <div class="card yellow" data-aos="zoom-in-up" data-aos-duration="1000">
@@ -308,7 +308,7 @@ const calorifugeage = {
                 <p>En isolant efficacement vos canalisations, vous diminuez jusqu’à <span>20 % vos pertes de chaleur</span> et optimisez la distribution de l’énergie. 
                 Cela se traduit par des <span>économies immédiates</span> sur vos factures et une meilleure performance de votre installation sur le long terme.</p>
             </div>
-            <a class="button" href="contact.html#eco">Découvrir les économies</a>
+            <a class="button" href="contact.html">Découvrir les économies</a>
         </div>
 
         <div class="card yellow" data-aos="fade-left" data-aos-duration="1000">
@@ -322,7 +322,7 @@ const calorifugeage = {
                 <p>Le calorifugeage protège vos canalisations contre les variations de température et l’usure, ce qui réduit les risques de corrosion et de maintenance. 
                 Une installation isolée est plus durable et nécessite moins d’entretien, assurant un confort durable et des performances optimales pour votre habitat ou copropriété.</p>
             </div>
-            <a class="button" href="contact.html#confort">Assurer la durabilité</a>
+            <a class="button" href="contact.html">Assurer la durabilité</a>
         </div>
     </div>`
 };
@@ -370,7 +370,7 @@ const ballonThermodynamique = {
                 <p>Grâce aux <span>aides MaPrimeRénov’</span> et aux <span>CEE</span>, l’installation de votre <span>ballon thermodynamique</span> peut être largement financée. 
                 <span>Eco Evolution</span> vous accompagne dans le montage des dossiers et la gestion des subventions, afin de maximiser vos économies dès le départ.</p>
             </div>
-            <a class="button button-first" href="contact.html#aides">Vérifier mes aides</a>
+            <a class="button button-first" href="contact.html">Vérifier mes aides</a>
         </div>
 
         <div class="card green" data-aos="zoom-in-up" data-aos-duration="1000">
@@ -384,7 +384,7 @@ const ballonThermodynamique = {
                 <p>Le <span>ballon thermodynamique</span> s’intègre facilement à votre <span>logement</span>, même existant, et son installation est rapide. 
                 Une mise en service optimisée par nos experts RGE assure un fonctionnement immédiat et fiable, avec un entretien minimal pour un confort durable.</p>
             </div>
-            <a class="button" href="contact.html#installation">En savoir plus</a>
+            <a class="button" href="contact.html">En savoir plus</a>
         </div>
 
         <div class="card green" data-aos="fade-left" data-aos-duration="1000">
@@ -398,7 +398,7 @@ const ballonThermodynamique = {
                 <p>En utilisant l’énergie de l’air pour chauffer l’eau, votre <span>ballon thermodynamique</span> réduit fortement vos <span>factures d’électricité</span> tout en limitant votre impact environnemental. 
                 Cette solution permet de concilier <span>économies financières</span> et <span>transition énergétique</span> de manière concrète et durable.</p>
             </div>
-            <a class="button" href="contact.html#eco">Profiter des économies</a>
+            <a class="button" href="contact.html">Profiter des économies</a>
         </div>
     </div>`
 };
@@ -445,7 +445,7 @@ const pompeAirAir = {
                 <p>La <span>PAC air-air</span> est réversible et s’adapte à toutes les saisons. 
                 Elle chauffe votre logement en hiver et le rafraîchit en été, offrant un <span>confort constant</span> sans avoir besoin de plusieurs équipements distincts.</p>
             </div>
-            <a class="button button-first" href="contact.html#confort">Améliorer mon confort</a>
+            <a class="button button-first" href="contact.html">Améliorer mon confort</a>
         </div>
 
         <div class="card yellow" data-aos="zoom-in-up" data-aos-duration="1000">
@@ -459,7 +459,7 @@ const pompeAirAir = {
                 <p>Grâce à l’utilisation de l’air comme source d’énergie, la <span>PAC air-air</span> réduit significativement votre consommation d’électricité par rapport aux systèmes classiques. 
                 Vous réalisez <span>des économies immédiates</span> tout en profitant d’une installation performante et durable.</p>
             </div>
-            <a class="button" href="contact.html#eco">Découvrir les économies</a>
+            <a class="button" href="contact.html">Découvrir les économies</a>
         </div>
 
         <div class="card yellow" data-aos="fade-left" data-aos-duration="1000">
@@ -473,7 +473,7 @@ const pompeAirAir = {
                 <p>La <span>PAC air-air</span> garantit un confort thermique optimal, en maintenant une température agréable dans toutes les pièces de votre logement. 
                 Profitez d’un climat intérieur équilibré, hiver comme été, tout en réduisant votre empreinte énergétique.</p>
             </div>
-            <a class="button" href="contact.html#confort">Profiter du confort</a>
+            <a class="button" href="contact.html">Profiter du confort</a>
         </div>
     </div>`
 };
@@ -521,7 +521,7 @@ const pompeAirEau = {
                 <p>La <span>PAC air-eau</span> bénéficie de subventions importantes telles que <span>MaPrimeRénov’</span> et les <span>CEE</span>. 
                 <span>Eco Evolution</span> vous accompagne dans le montage des dossiers et la récupération des aides pour maximiser vos économies sur l’installation.</p>
             </div>
-            <a class="button button-first" href="contact.html#aides">Vérifier mes aides</a>
+            <a class="button button-first" href="contact.html">Vérifier mes aides</a>
         </div>
 
         <div class="card yellow" data-aos="zoom-in-up" data-aos-duration="1000">
@@ -535,7 +535,7 @@ const pompeAirEau = {
                 <p>En exploitant les calories de l’air extérieur, la <span>PAC air-eau</span> permet de diminuer considérablement vos dépenses énergétiques. 
                 Selon votre ancien système de chauffage, vous pouvez diviser vos factures de <span>chauffage par deux ou trois</span> dès la première saison.</p>
             </div>
-            <a class="button" href="contact.html#eco">Découvrir les économies</a>
+            <a class="button" href="contact.html">Découvrir les économies</a>
         </div>
 
         <div class="card yellow" data-aos="fade-left" data-aos-duration="1000">
@@ -549,7 +549,7 @@ const pompeAirEau = {
                 <p>La <span>PAC air-eau</span> assure un chauffage homogène et agréable dans toutes les pièces de votre logement. 
                 Elle utilise les énergies renouvelables pour réduire l’empreinte carbone de votre habitation tout en garantissant un confort thermique optimal.</p>
             </div>
-            <a class="button" href="contact.html#confort">Profiter du confort</a>
+            <a class="button" href="contact.html">Profiter du confort</a>
         </div>
     </div>`
 };
