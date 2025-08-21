@@ -25,11 +25,13 @@
     
     /* background-size: 250%; */
     background-repeat: no-repeat;
-    background-size: cover !important;
+    background-size: cover;
+    /* background-size: 250%; */
+
 
     will-change: transform;
     min-height: 50vh;
-    clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
+    /* clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%); */
 
 }
 
@@ -146,9 +148,6 @@
         font-size:7rem;    
     }
 
-     .hole{
-        /* background-size: 150%; */
-    }
 
 }
 @media(max-width:800px){

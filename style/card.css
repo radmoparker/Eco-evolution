@@ -1,3 +1,7 @@
+.intro, .expertise, .description, .title-cards{
+    padding:0 2rem  0 2rem;
+    /* box-sizing: border-box !important; */
+}
 .second{
     background-repeat: no-repeat;
     background-size: cover;

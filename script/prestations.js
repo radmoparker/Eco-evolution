@@ -30,11 +30,12 @@ const renovationGlobale = {
   backgroundImage: "url('./images/renovation.jpg')",
   content: `
     <div class="intro">
-        <h2>Améliorez durablement votre habitat</h2>
+        <h1>Améliorez durablement votre habitat</h1>
         <p>La rénovation globale est la solution idéale pour optimiser la performance énergétique de votre logement tout en bénéficiant des aides financières les plus avantageuses.</p>
     </div>
 
     <div class="expertise">
+        <h1>Notre Expertise</h1>
         <p>
         Chez <strong>Eco Evolution</strong>, nous vous accompagnons de A à Z dans votre projet de rénovation globale. 
         Nos experts certifiés RGE basés à Nancy et dans toute la Lorraine assurent des travaux de qualité, 
@@ -43,6 +44,7 @@ const renovationGlobale = {
     </div>
 
     <div class="description">
+        <h1>La Rénovation Globale c'est quoi ?</h1>
         <p>
         La <strong>rénovation globale</strong> consiste à regrouper plusieurs actions de rénovation énergétique 
         en un seul projet cohérent : isolation thermique, chauffage performant, ventilation… 
@@ -52,7 +54,7 @@ const renovationGlobale = {
         </p>
     </div>
 
-    <h1>Pourquoi Rénover ?</h1>
+    <h1 class="title-cards">Pourquoi Rénover ?</h1>
     <div class="second second-card">
         
         <div class="card red" data-aos="fade-right" data-aos-duration="1000">
@@ -102,11 +104,12 @@ const auditEnergetique = {
   title: `<h1 class="prestation-title" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Audit Énergétique RGE</h1>`,
   backgroundImage:"url('./images/rge.jpg')",
   content: `<div class="intro">
-                <h2>Évaluez précisément la performance de votre logement</h2>
+                <h1>Évaluez précisément la performance de votre logement</h1>
                 <p>L’audit énergétique RGE permet de connaître les faiblesses de votre maison et de définir un plan de rénovation efficace, tout en profitant d’aides financières spécifiques.</p>
             </div>
 
             <div class="expertise">
+                <h2>Notre Expertise</h2>
                 <p>
                 Avec <strong>Eco Evolution</strong>, vous bénéficiez d’un audit réalisé par des professionnels certifiés RGE en Lorraine. 
                 Notre équipe vous accompagne pas à pas, avec des conseils clairs et un rapport complet qui vous guide vers les meilleures solutions pour <span>économiser l’énergie</span> et <span>valoriser votre patrimoine</span>.
@@ -114,6 +117,8 @@ const auditEnergetique = {
             </div>
 
             <div class="description">
+                <h1>Qu'est ce qu'un Audit Énergetique ?</h1>
+
                 <p>
                 L’<strong>audit énergétique RGE</strong> est une analyse approfondie de la performance de votre habitation : 
                 isolation, chauffage, ventilation, consommation globale. 
@@ -121,7 +126,7 @@ const auditEnergetique = {
                 Cet audit est souvent <span>obligatoire pour obtenir certaines subventions</span>, en particulier dans le cadre d’une rénovation globale.
                 </p>
             </div>
-            <h1>Pourquoi réaliser un audit énergétique ?</h1>
+            <h1 class="title-cards">Pourquoi réaliser un audit énergétique ?</h1>
             <div class="second second-card">
                 
                 <div class="card red" data-aos="fade-right" data-aos-duration="1000">
@@ -175,7 +180,7 @@ const isolation = {
   backgroundImage: "url('./images/isolation-2.jpg')",
   content: `
     <div class="intro">
-        <h2>Une maison bien isolée, des économies assurées</h2>
+        <h1>Une maison bien isolée, des économies assurées</h1>
         <p>L’isolation thermique est la solution idéale pour limiter les pertes de chaleur, améliorer le confort et réduire durablement vos factures énergétiques.</p>
     </div>
 
@@ -195,7 +200,7 @@ const isolation = {
         </p>
     </div>
 
-    <h1>Pourquoi Isoler ?</h1>
+    <h1 class="title-cards">Pourquoi Isoler ?</h1>
     <div class="second second-card">
 
         <div class="card red" data-aos="fade-right" data-aos-duration="1000">
@@ -249,11 +254,12 @@ const calorifugeage = {
   backgroundImage: "url('./images/calorifugeage.jpg')",
   content: `
     <div class="intro">
-        <h2>Protégez vos canalisations et économisez</h2>
+        <h1>Protégez vos canalisations et économisez</h1>
         <p>Le calorifugeage limite les pertes de chaleur de vos réseaux de tuyauterie, améliore l’efficacité énergétique de votre installation et réduit vos factures.</p>
     </div>
 
     <div class="expertise">
+        <h2>Notre Expertise</h2>
         <p>
         Les spécialistes <strong>Eco Evolution</strong> réalisent le calorifugeage dans les règles de l’art. 
         Certifiés RGE, nous intervenons sur des installations individuelles ou collectives en Lorraine et dans le Grand Est, 
@@ -261,7 +267,9 @@ const calorifugeage = {
         </p>
     </div>
 
-    <div class="description">
+    <div class="description">        
+        <h1>Qu'est ce que le Calorifugeage ?</h1>
+
         <p>
         Le <strong>calorifugeage</strong> consiste à entourer les canalisations d’eau chaude, les conduits ou les réservoirs d’un isolant adapté. 
         Cette technique réduit les pertes d’énergie jusqu’à 20 %, optimise la distribution de chaleur et permet de réaliser des économies substantielles sur vos charges. 
@@ -270,7 +278,7 @@ const calorifugeage = {
         </p>
     </div>
 
-    <h1>Pourquoi Calorifuger ?</h1>
+    <h1 class="title-cards">Pourquoi Calorifuger ?</h1>
     <div class="second second-card">
 
         <div class="card red" data-aos="fade-right" data-aos-duration="1000">
@@ -323,11 +331,12 @@ const ballonThermodynamique = {
   backgroundImage: "url('./images/energie.jpg')",
   content: `
     <div class="intro">
-        <h2>Une eau chaude économique et écologique</h2>
+        <h1>Une eau chaude économique et écologique</h1>
         <p>Le ballon thermodynamique utilise les calories de l’air pour chauffer l’eau sanitaire de manière efficace et durable, tout en réduisant vos consommations électriques.</p>
     </div>
 
     <div class="expertise">
+        <h1>Notre Expertise</h1>
         <p>
         Les équipes <strong>Eco Evolution</strong> installent des ballons thermodynamiques adaptés à votre habitation. 
         Nos installateurs certifiés RGE assurent une mise en service optimisée avec un matériel performant et durable, 
@@ -336,6 +345,7 @@ const ballonThermodynamique = {
     </div>
 
     <div class="description">
+        <h1>Comment fonctionne un ballon thermodynamique ?</h1>
         <p>
         Le <strong>ballon thermodynamique</strong> capte l’énergie de l’air ambiant ou extérieur via une pompe à chaleur intégrée pour chauffer votre eau sanitaire. 
         Il permet de diviser par trois votre consommation électrique par rapport à un chauffe-eau classique. 
@@ -344,7 +354,7 @@ const ballonThermodynamique = {
         </p>
     </div>
 
-    <h1>Pourquoi Installer un Ballon Thermodynamique ?</h1>
+    <h1 class="title-cards">Pourquoi Installer un Ballon Thermodynamique ?</h1>
     <div class="second second-card">
 
         <div class="card red" data-aos="fade-right" data-aos-duration="1000">
@@ -397,11 +407,12 @@ const pompeAirAir = {
   backgroundImage: "url('./images/airair.jpg')",
   content: `
     <div class="intro">
-        <h2>Chauffez et rafraîchissez en toute simplicité</h2>
+        <h1>Chauffez et rafraîchissez en toute simplicité</h1>
         <p>La pompe à chaleur air-air capte l’air extérieur pour chauffer ou climatiser votre logement de manière efficace et économique, tout en améliorant votre confort toute l’année.</p>
     </div>
 
-    <div class="expertise">
+    <div class="expertise">        
+        <h2>Notre Expertise</h2>
         <p>
         <strong>Eco Evolution</strong> installe des pompes à chaleur air-air avec un savoir-faire reconnu. 
         Nos experts RGE vous conseillent sur le dimensionnement optimal de votre installation et garantissent une pose conforme aux normes, durable et performante. 
@@ -410,6 +421,7 @@ const pompeAirAir = {
     </div>
 
     <div class="description">
+        <h1>Comment fonctionne une Pompe À Chaleur (PAC) Air Air ?</h1>
         <p>
         La <strong>PAC air-air</strong> est une solution réversible qui chauffe l’hiver et rafraîchit l’été. 
         Bien qu’elle ne soit pas éligible à <em>MaPrimeRénov’</em>, elle peut bénéficier de certaines primes <em>CEE</em> selon votre projet. 
@@ -417,7 +429,7 @@ const pompeAirAir = {
         </p>
     </div>
 
-    <h1>Pourquoi Installer une PAC Air-Air ?</h1>
+    <h1 class="title-cards">Pourquoi Installer une PAC Air-Air ?</h1>
     <div class="second second-card">
 
         <div class="card red" data-aos="fade-right" data-aos-duration="1000">
@@ -470,11 +482,12 @@ const pompeAirEau = {
   backgroundImage: "url('./images/aireau.jpg')",
   content: `
     <div class="intro">
-        <h2>Une solution de chauffage économique et performante</h2>
+        <h1>Une solution de chauffage économique et performante</h1>
         <p>La pompe à chaleur air-eau remplace ou complète votre chaudière pour chauffer votre logement et votre eau sanitaire tout en réduisant vos consommations énergétiques.</p>
     </div>
 
     <div class="expertise">
+        <h2>Notre Expertise</h2>
         <p>
         Chez <strong>Eco Evolution</strong>, nous installons des pompes à chaleur air-eau avec une expertise technique reconnue. 
         Nos installateurs certifiés RGE garantissent un dimensionnement précis et un suivi personnalisé pour des performances maximales, 
@@ -482,7 +495,8 @@ const pompeAirEau = {
         </p>
     </div>
 
-    <div class="description">
+    <div class="description">        
+        <h1>Comment fonctionne une Pompe À Chaleur (PAC) Air Eau ?</h1>
         <p>
         La <strong>PAC air-eau</strong> puise les calories de l’air extérieur pour chauffer votre logement via un circuit d’eau. 
         Elle alimente vos radiateurs ou votre plancher chauffant de manière efficace et écologique. 
@@ -491,7 +505,7 @@ const pompeAirEau = {
         </p>
     </div>
 
-    <h1>Pourquoi Installer une PAC Air-Eau ?</h1>
+    <h1 class="title-cards">Pourquoi Installer une PAC Air-Eau ?</h1>
     <div class="second second-card">
 
         <div class="card red" data-aos="fade-right" data-aos-duration="1000">
