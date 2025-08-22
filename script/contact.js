@@ -53,8 +53,8 @@ form.addEventListener('click', function(e){
 
     const currentStep = e.target.closest('.step');
     allValid = true;
-
-    if(!e.target.matches('.prev-btn')){ //Pas la peine de vérifier si le bouton est prev
+    //Pour ne pas contrôlerlorsqu'on passe d'un input à l'autre
+    if(!e.target.matches('.prev-btn') && !(e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA" || e.target.tagName === "SELECT")){ //Pas la peine de vérifier si le bouton est prev
         allValid = checkRequiredField(currentStep);
     }
   if(allValid){
@@ -124,14 +124,24 @@ form.addEventListener('click', function(e){
 // Soumission du formulaire
 form.addEventListener('submit', function(e){
   e.preventDefault();
+
   const currentStep = form.querySelector('.step.active');
+
+  // Sauvegarde de la dernière valeur
+  // const inputs = currentStep.querySelectorAll('textarea');
+  // inputs.forEach(input => {
+  //   if(input.value.trim() !== ""){
+  //     reponses[input.name] = input.value;
+  //   }
+  // });
+
+  // Envoie du formulaire ici
   currentStep.classList.remove('active');
   const finalStep = form.querySelector('.step[data-step="13"]');
   finalStep.classList.add('active');
 
   console.log("Réponses finales :", reponses);
 });
-
 
 const holeContact = document.getElementById("hole-service");
 

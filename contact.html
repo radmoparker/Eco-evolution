@@ -46,8 +46,8 @@
                 <img id="logo" class="logo logo-visible" src="./images/ecoevolution-logo-green-red-white.png">
                 <nav id="navigation" class="desactive" data-page="contact">
                     <a id="accueil" class="link link-visible" href="index.html"><div class="link-box">Acceuil</div></a>
-                    <a id="service" class="link link-visible" href="service.html"><div class="link-box">Service</div></a>
-                    <a id="subvention" class="link link-visible" href="subvention.html"><div class="link-box">Subventions</div></a>
+                    <a id="service" class="link link-visible" href="service.html"><div class="link-box">Services</div></a>
+                    <!-- <a id="subvention" class="link link-visible" href="subvention.html"><div class="link-box">Subventions</div></a> -->
                     <a id="contact" class="link link-visible" href="contact.html"><div>Contact</div class="link-box"></a>
                     <!-- <a href="#" class="localisation-link"><img class="localisation-gif" src="./images/location-pin-2.gif"> </a>   -->
                     <a href="#" ><div id="home-devis" class="home-devis " >Devis Gratuit</div></a>       
@@ -117,6 +117,7 @@
                 <div class="step active" data-step="1">
                     <div class="form-final-msg"><h1>Eco <span>Evolution</span></h1></div>
                     <p>Votre projet concerne quel type de logement ?</p>
+
                     <button type="button" data-next="2">Une maison</button>
                     <button type="button" data-next="2">Un appartement</button>
                 </div>
@@ -125,6 +126,7 @@
                 <div class="step" data-step="2">
                     <div class="form-final-msg"><h1>Eco <span>Evolution</span></h1></div>
                     <p>Votre habitation a été construite en quelle période ?</p>
+
 
                     <button type="button" data-prev data-next="3">Moins de 2 ans</button>
                     <button type="button" data-next="3">Entre 2 ans et 15 ans</button>
@@ -286,7 +288,7 @@
                     <div class="form-final-msg"><h1>Eco <span>Evolution</span></h1></div>
                     <p>Ajoutez ici toute information que vous souhaitez partager</p>
                     
-                    <input type="textarea" name="description" placeholder="Décrivez votre situation">
+                    <textarea type="text" name="description"  rows="4"  placeholder="Décrivez votre situation"></textarea>
                     <button type="submit">Envoyer</button>
                     <button type="button" class="prev-btn">Précédent</button>
                 </div>
