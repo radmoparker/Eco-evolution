@@ -208,11 +208,14 @@ button:hover{
 @media(max-width:1000px){
     .contact-card-text{
         background-color: white;
-        width:90%;
+        width:100%;
         background: none;
     }
     .card-img-container-contact{
         max-width:90%
+    }
+    .contact-card-text{
+        max-width:100%;
     }
     
 
@@ -226,10 +229,11 @@ button:hover{
 }
 @media(max-width:600px){
     .contact-card-text{
-
-    border: none;
-
-}
+        border: none;
+    }
+    .step.active p{
+        font-size: 1.8rem !important;
+    }
     .contact-card{
 
 
@@ -237,7 +241,7 @@ button:hover{
         margin:0 1rem 2rem 1rem;
         /* border: 3px dashed #165049; */
         /* padding: 2rem; */
-        border-radius: 1rem;
+        /* border-radius: 1rem; */
         /* margin-top:0; */
         overflow-x:hidden;
 

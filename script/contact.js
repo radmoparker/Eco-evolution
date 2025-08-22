@@ -16,19 +16,23 @@ form.addEventListener('keydown', function(e){
     const input = e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA" || e.target.tagName === "SELECT";
 
     let allValid = true;
-    if(input){
-        e.preventDefault(); 
+    //Empêche le blockage du passage à la ligne dans le text area (avant dernière étape du questionnaire)
+    if(currentStep.dataset.step !="12B"){
+      if(input){
+          e.preventDefault(); 
 
-        // Vérification des champs valides
-        allValid = checkRequiredField(currentStep);
-        // sinon le navigateur bloque l'Étape suivante
+          // Vérification des champs valides
+          allValid = checkRequiredField(currentStep);
+          // sinon le navigateur bloque l'Étape suivante
+      }
+      if(allValid){
+          const nextBtn = currentStep.querySelector('button[data-next]');
+          if(nextBtn){
+              nextBtn.click();
+          }
+      }
     }
-    if(allValid){
-        const nextBtn = currentStep.querySelector('button[data-next]');
-        if(nextBtn){
-            nextBtn.click();
-        }
-    }
+
   }
 });
 
@@ -83,7 +87,7 @@ form.addEventListener('click', function(e){
         nextStep.classList.add('active');
     } 
 
-    console.log("Réponses actuelles :", reponses);
+    // console.log("Réponses actuelles :", reponses);
   }
 
   // Bouton Précédent 
