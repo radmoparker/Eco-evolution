@@ -25,8 +25,10 @@
 
 
 
+
     <script src="./script/index.js" defer></script>
     <script src="./script/contact.js" defer></script>
+
 
 
 
@@ -61,28 +63,75 @@
 
         <div class="hole service" id="hole-service">
             <div class="slogan">
-                <h1 class="prestation-title" data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000"><h1>Contact</h1>
+                <h1 data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Contactez Nous</h1>
             </div>
         </div>
 
+    <div class="accroche">
+        <div class="accroche-large accroche-contact">
+            <h2>Un projet ? Une question ? Parlons-en.</h2>
+
+            <p>
+            Vous souhaitez <span>améliorer l’isolation</span> de votre logement, 
+            <span>réduire vos factures d’énergie</span> ou connaître 
+            <span>les aides de l’État</span> auxquelles vous pouvez prétendre ?  
+            L’équipe <span>Eco Evolution</span> est à votre écoute pour vous informer, 
+            vous conseiller et vous proposer un <span>devis personnalisé, sans engagement</span>.
+            </p>
+            <p> Nous vous accompagnons dans vos <span>démarches</span> et vos 
+                <span>travaux de rénovation énergétique</span>, en mettant à profit 
+                notre <span>expertise</span> et en tenant compte des dispositifs de 
+                <span>financement disponibles</span>. </p>
+
+            <!-- <p>
+            Nous vous accompagnons dans vos <span>démarches</span> et vos 
+            <span>travaux de rénovation énergétique</span>, en mettant à profit 
+            notre <span>expertise</span> et en tenant compte des dispositifs de 
+            <span>financement disponibles</span>.  
+            Que vous soyez <span>propriétaire</span>, <span>locataire</span> ou 
+            <span>bailleur</span>, nous vous guidons pas à pas pour trouver 
+            la <span>solution la plus adaptée</span> à votre logement et à votre budget.
+            </p> -->
+        </div>
+    </div>
+
 
     <div class="contact-card">
-        <div class="card-img-container ">
+        <div class="card-img-container-contact ">
             <img  class="contact-card-img" src="./images/energie.jpg" alt="">
+            <div class="accroche-large accroche-contact">
+                <!-- <h2>Un projet ? Une question ? Parlons-en.</h2> -->
+
+
+            <p class="container-contact-p"> 
+            Que vous soyez <span>propriétaire</span>, <span>locataire</span> ou 
+            <span>bailleur</span>, nous vous guidons pas à pas pour trouver 
+            la <span>solution la plus adaptée</span> à votre logement et à votre budget.
+            </p>
+        </div>
         </div>
         <div class="contact-card-text " >
             
             <form id="dynamicForm">
                 <!-- Étape 1 -->
                 <div class="step active" data-step="1">
+                    <div class="form-final-msg"><h1>Eco <span>Evolution</span></h1></div>
                     <p>Votre projet concerne quel type de logement ?</p>
+                    <select name="civilite">
+                    <option value="Monsieur">Monsieur</option>
+                    <option value="Madame">Madame</option>
+                    </select>
+                    <input type="number" name="surface" placeholder="Surface en m²">
+
                     <button type="button" data-next="2">Une maison</button>
                     <button type="button" data-next="2">Un appartement</button>
                 </div>
 
                 <!-- Étape 2 -->
                 <div class="step" data-step="2">
+                    <div class="form-final-msg"><h1>Eco <span>Evolution</span></h1></div>
                     <p>Votre habitation a été construite en quelle période ?</p>
+
                     <button type="button" data-prev data-next="3">Moins de 2 ans</button>
                     <button type="button" data-next="3">Entre 2 ans et 15 ans</button>
                     <button type="button" data-next="3">Plus de 15 ans</button>
@@ -91,7 +140,9 @@
 
                 <!-- Étape 3 -->
                 <div class="step" data-step="3">
+                    <div class="form-final-msg"><h1>Eco <span>Evolution</span></h1></div>
                     <p>Quelle est la surface habitable approximative de votre logement (en m²) ?</p>
+
                     <input type="number" name="surface" placeholder="Surface en m²">
                     <button type="button" data-next="4">Suivant</button>
                     <button type="button" class="prev-btn">Précédent</button>
@@ -99,7 +150,9 @@
 
                 <!-- Étape 4 -->
                 <div class="step" data-step="4">
+                    <div class="form-final-msg"><h1>Eco <span>Evolution</span></h1></div>
                     <p>De quel type de chauffage principal disposez vous ?</p>
+
                     <button type="button" data-next="5A">Chauffage au fioul</button>
                     <button type="button" data-next="5B">Chauffage électrique</button>
                     <button type="button" data-next="5C">Chauffage au gaz</button>
@@ -111,7 +164,9 @@
 
                 <!-- Étape 5A -->
                 <div class="step" data-step="5A">
+                    <div class="form-final-msg"><h1>Eco <span>Evolution</span></h1></div>
                     <p>Quel est l'équipement au fioul installé ?</p>
+
                     <button type="button" data-next="6">Chaudière à condensation</button>
                     <button type="button" data-next="6">Chaudière classique</button>
                     <button type="button" data-next="6">Poêle</button>
@@ -121,7 +176,9 @@
 
                 <!-- Étape 5B -->
                 <div class="step" data-step="5B">
+                    <div class="form-final-msg"><h1>Eco <span>Evolution</span></h1></div>
                     <p>Quel type de chauffage électrique utilisez-vous ?</p>
+
                     <button type="button" data-next="6">Chaudière électrique</button>
                     <button type="button" data-next="6">Plafonds ou planchers chauffants</button>
                     <button type="button" data-next="6">Radiateurs électriques</button>
@@ -129,7 +186,9 @@
                 </div>
                 <!-- Étape 5C -->
                 <div class="step" data-step="5C">
+                    <div class="form-final-msg"><h1>Eco <span>Evolution</span></h1></div>
                     <p>Quel est votre mode de chauffage principal ?</p>
+
                     <button type="button" data-next="6">Chaudière à condensation</button>
                     <button type="button" data-next="6">Chaudière classique</button>
                     <button type="button" data-next="6">Poêle</button>
@@ -139,8 +198,9 @@
 
                 <!-- Étape 6 -->
                 <div class="step" data-step="6">
+                    <div class="form-final-msg"><h1>Eco <span>Evolution</span></h1></div>
                     <p>Quelle est la performance énergétique actuelle de votre logement (classe énergie du DPE) ?</p>
-                    <!-- <p>Saviez-vous qu’1 propriétaire sur 2 ne connait pas le DPE de son logement ? Nous sommes là pour vous aider.</p> -->
+                    
                     <button type="button" data-next="7">A</button>
                     <button type="button" data-next="7">B</button>
                     <button type="button" data-next="7">C</button>
@@ -154,7 +214,9 @@
 
                 <!-- Étape 7 -->
                 <div class="step" data-step="7">
+                    <div class="form-final-msg"><h1>Eco <span>Evolution</span></h1></div>
                     <p>Quels travaux souhaitez-vous réaliser en priorité ?</p>
+
                     <button type="button" data-next="8">Rénovation globale</button>
                     <button type="button" data-next="8">Isolation Intérieur ou extérieur</button>
                     <button type="button" data-next="8">Audit RGE</button>
@@ -167,7 +229,9 @@
 
                 <!-- Étape 8 -->
                 <div class="step" data-step="8">
+                    <div class="form-final-msg"><h1>Eco <span>Evolution</span></h1></div>
                     <p>Vous êtes dans ce logement en tant que :</p>
+
                     <button type="button" data-next="9">Propriétaire occupant</button>
                     <button type="button" data-next="9">Propriétaire d’une résidence secondaire</button>
                     <button type="button" data-next="9">Propriétaire bailleur</button>
@@ -177,7 +241,9 @@
 
                 <!-- Étape 9 -->
                 <div class="step" data-step="9">
+                    <div class="form-final-msg"><h1>Eco <span>Evolution</span></h1></div>
                     <p>Quel est le code postal de votre résidence ?</p>
+
                     <input type="text" name="codepostal" placeholder="Code postal">
                     <button type="button" data-next="10">Suivant</button>
                     <button type="button" class="prev-btn">Précédent</button>
@@ -185,7 +251,9 @@
 
                 <!-- Étape 10 -->
                 <div class="step" data-step="10">
+                    <div class="form-final-msg"><h1>Eco <span>Evolution</span></h1></div>
                     <p>Combien de personnes vivent dans votre foyer ?</p>
+
                     <input type="number" name="personnes" placeholder="Nombre de personnes">
                     <button type="button" data-next="11">Suivant</button>
                     <button type="button" class="prev-btn">Précédent</button>
@@ -193,8 +261,9 @@
 
                 <!-- Étape 11 -->
                 <div class="step" data-step="11">
+                    <div class="form-final-msg"><h1>Eco <span>Evolution</span></h1></div>
                     <p>Indiquez l'estimation des revenus de votre foyer ?</p>
-                    <!-- <p>Nous vous demandons uniquement les informations nécessaires pour vous fournir un résultat personnalisé.</p> -->
+
                     <button type="button" data-next="12">Inférieur à 17 173 €</button>
                     <button type="button" data-next="12">Entre 17 173 € et 22 015 €</button>
                     <button type="button" data-next="12">Entre 22 015 € et 30 844 €</button>
@@ -204,7 +273,9 @@
 
                 <!-- Étape 12 -->
                 <div class="step" data-step="12">
+                    <div class="form-final-msg"><h1>Eco <span>Evolution</span></h1></div>
                     <p>Merci de renseigner vos coordonnées pour recevoir votre étude personnalisée :</p>
+                    
                     <select name="civilite">
                     <option value="Monsieur">Monsieur</option>
                     <option value="Madame">Madame</option>
@@ -218,7 +289,9 @@
                 </div>
 
                 <div class="step" data-step="12B">
+                    <div class="form-final-msg"><h1>Eco <span>Evolution</span></h1></div>
                     <p>Ajoutez ici toute information que vous souhaitez partager</p>
+                    
                     <input type="textarea" name="description" placeholder="Décrivez votre situation">
                     <button type="submit">Envoyer</button>
                     <button type="button" class="prev-btn">Précédent</button>
@@ -226,6 +299,7 @@
 
                 <!-- Message de fin -->
                 <div class="step" data-step="13">
+                    <div class="form-final-msg"><h1>Eco <span>Evolution</span> vous remercie de votre confiance</h1></div>
                     <p>Votre demande est en cours de traitement. Vous recevrez bientôt vos informations détaillées.</p>
                 </div>
 
@@ -238,8 +312,9 @@
 
        
         
-        <footer>
-            <div class="contenu-footer">
+    <footer>
+            
+        <div class="contenu-footer">
                 
                 <div class="footer-part footer-services">
                     <a href="./service.html"><h3>Rénovation</h3></a>
@@ -291,14 +366,19 @@
 
                 </div>
 
-            </div>
+        </div>
             <p style="margin-bottom:0px; color:white; text-align:center; font-size:1.5rem; padding-bottom:1rem;" ><span>© www.ecoevolution.fr, Tous droits réservés.</span></p>
-        </footer>
+    </footer>
 </div>
 
     
 </body>
+<script>
+    AOS.init({
+  once: true
+});
+</script>
 
 
 
-</html></html>
+</html>

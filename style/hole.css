@@ -16,7 +16,9 @@
     background-repeat: no-repeat;
     will-change: transform;
     overflow-x:hidden;
+    
 }
+
 .hole.service{
     background: url("../images/renovation.jpg");
 
@@ -32,7 +34,7 @@
     will-change: transform;
     min-height: 50vh;
     clip-path: polygon(0 0, 100% 0, 100% 84%, 0 100%);
-
+    margin-top:0 !important;
 }
 
 /* .hole.contact{

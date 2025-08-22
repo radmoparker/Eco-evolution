@@ -51,8 +51,12 @@ function checkRequiredField(currentStep){
 form.addEventListener('click', function(e){
 
 
-  const currentStep = e.target.closest('.step');
-  let allValid = checkRequiredField(currentStep);
+    const currentStep = e.target.closest('.step');
+    allValid = true;
+
+    if(!e.target.matches('.prev-btn')){ //Pas la peine de vérifier si le bouton est prev
+        allValid = checkRequiredField(currentStep);
+    }
   if(allValid){
       // Bouton Suivant
   if(e.target.matches('button[data-next]')){
@@ -127,3 +131,29 @@ form.addEventListener('submit', function(e){
 
   console.log("Réponses finales :", reponses);
 });
+
+
+const holeContact = document.getElementById("hole-service");
+
+
+window.addEventListener("scroll",holeEffect);
+uptaded = false;
+function updatePicture(){
+    
+    holeContact.style.backgroundPosition = `center calc(50% - ${window.scrollY * 0.3}px)`;
+    scrollRate=0.15;
+
+
+    uptaded = false;
+}
+
+function holeEffect(){
+    
+    if(!uptaded){
+        window.requestAnimationFrame(updatePicture);
+        uptaded = true;
+
+    }
+    
+
+}
