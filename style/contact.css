@@ -152,7 +152,24 @@ button:hover{
 
 }
 .container-contact-p{
-    /* width:200px !important; */
+    max-width: 90% !important;
+    margin: 0px !important;
+    padding: 0;
+    /* background:red; */
+    text-align: center;
+    width:500px !important;
+      font-family: 'Lato-black';
+           color:#165049;
+    font-weight: none;
+    font-size:1.4rem;
+
+
+
+}
+.container-contact-p span{
+    font-weight: bold;
+    max-width: 100%;
+    color:rgb(164, 6, 6);
 }
 
 .contact-card-img{
@@ -183,6 +200,7 @@ button:hover{
     .card-img-container-contact{
         width:90%
     }
+    
 
 
 }
@@ -233,6 +251,7 @@ button:hover{
     align-items: center;
     justify-content: center;
     width:100%;
+    MARGIN-BOTTOM:3REM;
 }
 .accroche-large{
 
