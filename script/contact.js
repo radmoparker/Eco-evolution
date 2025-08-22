@@ -3,10 +3,58 @@ const steps = form.querySelectorAll('.step');
 let stepHistory = [];
 let reponses = {};
 
-form.addEventListener('click', function(e){
-  const currentStep = e.target.closest('.step');
+//Désactivation de la validation du formulaire par touche nentrée
+// form.addEventListener('keydown', function(e){
+//     if(e.key === "Enter"){
+//         e.preventDefault();
+//     }
+// });
 
-  // Bouton Suivant
+form.addEventListener('keydown', function(e){
+  if(e.key === "Enter"){
+    const currentStep = e.target.closest('.step');
+    const input = e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA" || e.target.tagName === "SELECT";
+
+    let allValid = true;
+    if(input){
+        e.preventDefault(); 
+
+        // Vérification des champs valides
+        allValid = checkRequiredField(currentStep);
+        // sinon le navigateur bloque l'Étape suivante
+    }
+    if(allValid){
+        const nextBtn = currentStep.querySelector('button[data-next]');
+        if(nextBtn){
+            nextBtn.click();
+        }
+    }
+  }
+});
+
+function checkRequiredField(currentStep){
+    const requiredFields = currentStep.querySelectorAll('input[required], select[required], textarea[required]');
+    let allValid = true;
+
+    requiredFields.forEach(field => {
+        if(!field.checkValidity()){
+        allValid = false;
+        field.reportValidity(); // affiche un message (natif) de validation
+        }
+    });
+      return allValid;
+
+
+}
+
+
+form.addEventListener('click', function(e){
+
+
+  const currentStep = e.target.closest('.step');
+  let allValid = checkRequiredField(currentStep);
+  if(allValid){
+      // Bouton Suivant
   if(e.target.matches('button[data-next]')){
     e.preventDefault();
     const nextStepNum = e.target.dataset.next;
@@ -63,6 +111,10 @@ form.addEventListener('click', function(e){
       }
     }
   }
+
+  }
+
+
 });
 
 // Soumission du formulaire
