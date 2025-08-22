@@ -1,7 +1,4 @@
 
-
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -29,6 +26,8 @@
 
 
     <script src="./script/index.js" defer></script>
+    <script src="./script/contact.js" defer></script>
+
 
 
 
@@ -76,14 +75,14 @@
             <form id="dynamicForm">
                 <!-- Étape 1 -->
                 <div class="step active" data-step="1">
-                    <p>Votre projet concerne :</p>
+                    <p>Votre projet concerne quel type de logement ?</p>
                     <button type="button" data-next="2">Une maison</button>
                     <button type="button" data-next="2">Un appartement</button>
                 </div>
 
                 <!-- Étape 2 -->
                 <div class="step" data-step="2">
-                    <p>La construction date de :</p>
+                    <p>Votre habitation a été construite en quelle période ?</p>
                     <button type="button" data-prev data-next="3">Moins de 2 ans</button>
                     <button type="button" data-next="3">Entre 2 ans et 15 ans</button>
                     <button type="button" data-next="3">Plus de 15 ans</button>
@@ -92,7 +91,7 @@
 
                 <!-- Étape 3 -->
                 <div class="step" data-step="3">
-                    <p>Quelle est la surface habitable approximative de votre logement ?</p>
+                    <p>Quelle est la surface habitable approximative de votre logement (en m²) ?</p>
                     <input type="number" name="surface" placeholder="Surface en m²">
                     <button type="button" data-next="4">Suivant</button>
                     <button type="button" class="prev-btn">Précédent</button>
@@ -100,10 +99,10 @@
 
                 <!-- Étape 4 -->
                 <div class="step" data-step="4">
-                    <p>Aujourd’hui, quel est votre mode de chauffage principal ?</p>
+                    <p>De quel type de chauffage principal disposez vous ?</p>
                     <button type="button" data-next="5A">Chauffage au fioul</button>
                     <button type="button" data-next="5B">Chauffage électrique</button>
-                    <button type="button" data-next="5A">Chauffage au gaz</button>
+                    <button type="button" data-next="5C">Chauffage au gaz</button>
                     <button type="button" data-next="6">Chauffage au bois</button>
                     <button type="button" data-next="6">Pompe à chaleur</button>
                     <button type="button" data-next="6">Chauffage au charbon</button>
@@ -122,16 +121,25 @@
 
                 <!-- Étape 5B -->
                 <div class="step" data-step="5B">
-                    <p>Quel est le système de chauffage électrique installé ?</p>
+                    <p>Quel type de chauffage électrique utilisez-vous ?</p>
                     <button type="button" data-next="6">Chaudière électrique</button>
                     <button type="button" data-next="6">Plafonds ou planchers chauffants</button>
                     <button type="button" data-next="6">Radiateurs électriques</button>
                     <button type="button" class="prev-btn">Précédent</button>
                 </div>
+                <!-- Étape 5C -->
+                <div class="step" data-step="5C">
+                    <p>Quel est votre mode de chauffage principal ?</p>
+                    <button type="button" data-next="6">Chaudière à condensation</button>
+                    <button type="button" data-next="6">Chaudière classique</button>
+                    <button type="button" data-next="6">Poêle</button>
+                    <button type="button" data-next="6">Je ne sais pas</button>
+                    <button type="button" class="prev-btn">Précédent</button>
+                </div>
 
                 <!-- Étape 6 -->
                 <div class="step" data-step="6">
-                    <p>Quelle est sa classe énergétique ?</p>
+                    <p>Quelle est la performance énergétique actuelle de votre logement (classe énergie du DPE) ?</p>
                     <!-- <p>Saviez-vous qu’1 propriétaire sur 2 ne connait pas le DPE de son logement ? Nous sommes là pour vous aider.</p> -->
                     <button type="button" data-next="7">A</button>
                     <button type="button" data-next="7">B</button>
@@ -146,7 +154,7 @@
 
                 <!-- Étape 7 -->
                 <div class="step" data-step="7">
-                    <p>Quels travaux envisagez-vous ?</p>
+                    <p>Quels travaux souhaitez-vous réaliser en priorité ?</p>
                     <button type="button" data-next="8">Rénovation globale</button>
                     <button type="button" data-next="8">Isolation Intérieur ou extérieur</button>
                     <button type="button" data-next="8">Audit RGE</button>
@@ -159,7 +167,7 @@
 
                 <!-- Étape 8 -->
                 <div class="step" data-step="8">
-                    <p>Dans ce logement, vous êtes :</p>
+                    <p>Vous êtes dans ce logement en tant que :</p>
                     <button type="button" data-next="9">Propriétaire occupant</button>
                     <button type="button" data-next="9">Propriétaire d’une résidence secondaire</button>
                     <button type="button" data-next="9">Propriétaire bailleur</button>
@@ -169,7 +177,7 @@
 
                 <!-- Étape 9 -->
                 <div class="step" data-step="9">
-                    <p>Indiquez votre code postal :</p>
+                    <p>Quel est le code postal de votre résidence ?</p>
                     <input type="text" name="codepostal" placeholder="Code postal">
                     <button type="button" data-next="10">Suivant</button>
                     <button type="button" class="prev-btn">Précédent</button>
@@ -177,7 +185,7 @@
 
                 <!-- Étape 10 -->
                 <div class="step" data-step="10">
-                    <p>Combien de personnes composent votre foyer, y compris vous-même ?</p>
+                    <p>Combien de personnes vivent dans votre foyer ?</p>
                     <input type="number" name="personnes" placeholder="Nombre de personnes">
                     <button type="button" data-next="11">Suivant</button>
                     <button type="button" class="prev-btn">Précédent</button>
@@ -185,7 +193,7 @@
 
                 <!-- Étape 11 -->
                 <div class="step" data-step="11">
-                    <p>Quel est le revenu approximatif de votre foyer fiscal ?</p>
+                    <p>Indiquez l'estimation des revenus de votre foyer ?</p>
                     <!-- <p>Nous vous demandons uniquement les informations nécessaires pour vous fournir un résultat personnalisé.</p> -->
                     <button type="button" data-next="12">Inférieur à 17 173 €</button>
                     <button type="button" data-next="12">Entre 17 173 € et 22 015 €</button>
@@ -196,7 +204,7 @@
 
                 <!-- Étape 12 -->
                 <div class="step" data-step="12">
-                    <p>Coordonnées de contact :</p>
+                    <p>Merci de renseigner vos coordonnées pour recevoir votre étude personnalisée :</p>
                     <select name="civilite">
                     <option value="Monsieur">Monsieur</option>
                     <option value="Madame">Madame</option>
@@ -205,13 +213,20 @@
                     <input type="text" name="nom" placeholder="Nom">
                     <input type="email" name="email" placeholder="Email">
                     <input type="text" name="telephone" placeholder="Téléphone">
+                    <button type="button" data-next="12B">Suivant</button>
+                    <button type="button" class="prev-btn">Précédent</button>
+                </div>
+
+                <div class="step" data-step="12B">
+                    <p>Ajoutez ici toute information que vous souhaitez partager</p>
+                    <input type="textarea" name="description" placeholder="Décrivez votre situation">
                     <button type="submit">Envoyer</button>
                     <button type="button" class="prev-btn">Précédent</button>
                 </div>
 
                 <!-- Message de fin -->
                 <div class="step" data-step="13">
-                    <p>Nous traitons votre devis, vous recevrez bientôt vos informations.</p>
+                    <p>Votre demande est en cours de traitement. Vous recevrez bientôt vos informations détaillées.</p>
                 </div>
 
             </form>
@@ -283,45 +298,7 @@
 
     
 </body>
-<script>
-const form = document.getElementById('dynamicForm');
-const steps = form.querySelectorAll('.step');
-let stepHistory = [];
 
-form.addEventListener('click', function(e){
-  const currentStep = e.target.closest('.step');
 
-  // Bouton Suivant
-  if(e.target.matches('button[data-next]')){
-    e.preventDefault();
-    const nextStepNum = e.target.dataset.next;
-    stepHistory.push(currentStep.dataset.step);
-    currentStep.classList.remove('active');
-    const nextStep = form.querySelector(`.step[data-step="${nextStepNum}"]`);
-    if(nextStep) nextStep.classList.add('active');
-  }
-
-  // Bouton Précédent
-  if(e.target.matches('.prev-btn')){
-    e.preventDefault();
-    const prevStepNum = stepHistory.pop();
-    if(prevStepNum){
-      currentStep.classList.remove('active');
-      const prevStep = form.querySelector(`.step[data-step="${prevStepNum}"]`);
-      if(prevStep) prevStep.classList.add('active');
-    }
-  }
-});
-
-// Soumission du formulaire
-form.addEventListener('submit', function(e){
-  e.preventDefault();
-  const currentStep = form.querySelector('.step.active');
-  currentStep.classList.remove('active');
-  const finalStep = form.querySelector('.step[data-step="13"]');
-  finalStep.classList.add('active');
-  console.log(form);
-});
-</script>
 
 </html></html>
