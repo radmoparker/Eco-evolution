@@ -1,0 +1,91 @@
+.unfold-menu h1{
+        font-family: 'Lato-black';
+        /* font-family: 'Roboto'; */
+        font-family: 'Lato-blackitalic';
+        font-size: 2rem;
+        width:80%;
+        color:rgb(5, 56, 50);
+        color:rgb(196, 0, 0);
+
+        margin:0;
+            color:white;
+    text-shadow: 4px 3px 5px rgb(0, 0, 0); 
+
+
+}
+.unfold-menu{
+    border:2px solid black;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width:400px;
+    max-width:90%;
+    border-radius:1rem;
+    overflow: hidden;
+    /* gap:1rem; */
+}
+.unfold-menu-container{
+    display:flex;
+    justify-content: center;
+}
+
+.unfold-menu-arrow{
+    height:4rem;
+    transform: rotate(90deg);
+    margin-top:1rem;
+}
+.unfold-menu-arrow-active{
+    transform: rotate(-90deg);
+}
+.prime-menu{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    width:100%;
+
+    background:blue;
+        background:linear-gradient(45deg,#450707,#c81c1c,#5a0d0d);
+
+    padding:0.5rem;
+
+
+
+}
+.second-menu{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: flex-end;
+    width:100%;
+    /* background:yellow; */
+    overflow: hidden;
+    height:5rem;
+    /* gap:1rem; */
+    transition: all 1s ease;
+}
+.second-menu-active{
+    height:auto;
+}
+.second-menu a{
+        font-family: 'Lato-black';
+        /* font-family: 'Roboto'; */
+        font-family: 'Lato-blackitalic';
+        font-size: 1.5rem;
+        /* width:80%; */
+        color:rgb(5, 56, 50);
+
+}
+.second-menu div{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    /* background:red; */
+    border-bottom:1px solid black;
+    padding:0.6rem;
+}
+.second-menu div:hover{
+    background: rgb(166, 194, 197) ;
+
+
+}
