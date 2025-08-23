@@ -55,9 +55,16 @@
     height:4rem;
     transform: rotate(90deg);
     margin-top:2rem;
+    transition:all 0.3s ease;
+    cursor: pointer;
 }
 .unfold-menu-arrow-active{
     transform: rotate(-90deg);
+}
+.unfold-menu-arrow:hover{
+    height:4.5rem;
+        margin-top:1.5rem;
+
 }
 .prime-menu{
     display:flex;
@@ -184,6 +191,10 @@
     
 }
 .contact-us img{
+    width:3.5rem;
+    transition:all 0.3s ease;
+}
+.contact-us img:hover{
     width:4rem;
 }
 
