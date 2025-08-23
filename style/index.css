@@ -120,7 +120,48 @@ header{
     left:1rem;
     z-index:3000;
     transition: all 0.4s ease;
+
+    /* animation: shake 3s infinite; */
+
 }
+
+@keyframes shake{
+    0%{
+        width:7rem;
+
+        /* padding-top:0rem; */
+        /* background-color: rgba(0, 3, 3, 0.45); */
+        /* background-color: rgba(6, 6, 6, 0.65); */
+
+
+
+
+    }
+    25%{
+        width:8rem;
+
+    }
+    50%{
+        width:7rem;
+
+    
+        /* background-color: rgba(241, 241, 241, 0.15); */
+        /* background-color: rgba(76, 73, 73, 0.55); */
+        /* background-color: rgba(76, 73, 73, 0.45); BEFORE !!!*/
+        /* background-color: rgba(241, 241, 241, 0.15);
+        background-color: rgba(76, 73, 73, 0.45); */
+
+    }
+    /* 75%{
+                width:8rem;
+
+    } */
+    100%{
+        width:7rem;
+
+    }
+}
+
 .logo-visible{
     height:10rem !important;
     width:auto !important;

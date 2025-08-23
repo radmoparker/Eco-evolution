@@ -170,9 +170,9 @@
 
 }
 .inf-img{
-    width:25%;
-    min-width:300Px;
-    height:300px;
+    min-width:25vw;
+    /* min-width:300Px; */
+    height:25vw;
     margin:0.5rem;
     object-fit: cover;
     border-radius: 1rem;
