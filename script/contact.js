@@ -132,12 +132,12 @@ form.addEventListener('submit', function(e){
   const currentStep = form.querySelector('.step.active');
 
   // Sauvegarde de la dernière valeur
-  // const inputs = currentStep.querySelectorAll('textarea');
-  // inputs.forEach(input => {
-  //   if(input.value.trim() !== ""){
-  //     reponses[input.name] = input.value;
-  //   }
-  // });
+  const inputs = currentStep.querySelectorAll('textarea');
+  inputs.forEach(input => {
+    if(input.value.trim() !== ""){
+      reponses[input.name] = input.value;
+    }
+  });
 
   // Envoie du formulaire ici
   currentStep.classList.remove('active');
