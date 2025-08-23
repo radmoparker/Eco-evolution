@@ -91,10 +91,10 @@
     overflow: hidden;
     height:5rem;
     /* gap:1rem; */
-    transition: all 1s ease;
 }
 .second-menu-active{
     height:auto;
+
 }
 .second-menu a{
         font-family: 'Lato-blackitalic';
@@ -123,6 +123,8 @@
     font-family: 'Lato-blackitalic';
     font-size: 1.5rem;
     color:#b80404;
+            color:rgb(5, 56, 50);
+
 
     
 }

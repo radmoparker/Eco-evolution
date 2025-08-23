@@ -98,6 +98,10 @@ const renovationGlobale = {
             </div>
             <a class="button" href="contact.html">Améliorer mon confort</a>
         </div>
+    </div>
+    <div class="intro">
+        <h1>En Conclusion</h1>
+        <p>En optant pour la <span>rénovation globale</span>, vous réduisez vos <span>factures d’énergie</span>, valorisez votre <span>patrimoine immobilier</span> et contribuez à la <span>réduction de votre empreinte carbone</span>. Un investissement durable et largement <span>financé</span> pour un habitat plus <span>économe</span> et plus <span>confortable</span>.</p>
     </div>`
 };
 const auditEnergetique = {
@@ -170,6 +174,10 @@ const auditEnergetique = {
                     </div>
                     <a class="button" href="contact.html">Améliorer la valeur de mon logement</a>
                 </div>
+            </div>
+            <div class="intro">
+                <h1>En Conclusion</h1>
+                <p>À la clé : <span>économies d’énergie</span>, <span>confort thermique</span> accru, <span>valorisation</span> de votre bien et <span>réduction de l’empreinte carbone</span>. Bénéficiez des <span>aides</span> comme <span>MaPrimeRénov’</span> (jusqu’à <span>500 €</span> selon vos <span>revenus</span>) pour financer votre audit, et passez à l’action avec un <span>rapport détaillé</span> et un <span>accompagnement</span> pas à pas par <span>Eco Evolution</span>.</p>
             </div>`
 };
 
@@ -247,7 +255,11 @@ const isolation = {
             </div>
             <a class="button" href="contact.html">Améliorer mon confort</a>
         </div>
-    </div>`
+    </div>
+        <div class="intro">
+        <h1>En Conclusion</h1>
+        <p>Avec une <span>isolation performante</span>, vous bénéficiez d’un <span>confort durable</span>, réduisez vos <span>factures de chauffage</span>, valorisez votre <span>patrimoine immobilier</span> et contribuez à la <span>réduction de votre empreinte carbone</span>. Un choix à la fois économique, écologique et durable.</p>
+        </div>`
 };
 
 
@@ -324,6 +336,10 @@ const calorifugeage = {
             </div>
             <a class="button" href="contact.html">Assurer la durabilité</a>
         </div>
+    </div>
+    <div class="intro">
+        <h1>En Conclusion</h1>
+        <p>En choisissant le <span>calorifugeage</span>, vous optimisez votre <span>confort thermique</span>, prolongez la <span>durée de vie</span> de vos équipements et contribuez à la <span>réduction de votre consommation énergétique</span>. Une solution simple, efficace et largement <span>rentable</span>.</p>
     </div>`
 };
 
@@ -400,6 +416,10 @@ const ballonThermodynamique = {
             </div>
             <a class="button" href="contact.html">Profiter des économies</a>
         </div>
+    </div>
+    <div class="intro">
+        <h1>En Conclusion</h1>
+        <p>Durable et à <span>faible entretien</span>, le <span>ballon thermodynamique</span> assure un <span>confort optimal</span> tout en diminuant vos <span>factures</span> et votre <span>empreinte carbone</span>. Une solution <span>économique</span>, <span>écologique</span> et adaptée aux <span>propriétaires</span> souhaitant un système d’<span>eau chaude</span> moderne et respectueux de l’environnement.</p>
     </div>`
 };
 
@@ -475,6 +495,10 @@ const pompeAirAir = {
             </div>
             <a class="button" href="contact.html">Profiter du confort</a>
         </div>
+    </div>
+    <div class="intro">
+        <h1>En Conclusion</h1>
+        <p>Choisir une <span>PAC air-air</span>, c’est profiter d’une <span>installation simple</span>, d’un <span>rendement énergétique élevé</span> et d’une <span>longévité</span> pouvant aller jusqu’à 20 ans. Vous divisez vos <span>dépenses énergétiques</span> par trois et réalisez jusqu’à <span>1 000 € d’économies par an</span>, tout en réduisant votre <span>empreinte carbone</span>. Un investissement <span>rentable</span> et respectueux de l’environnement.</p>
     </div>`
 };
 
@@ -551,8 +575,13 @@ const pompeAirEau = {
             </div>
             <a class="button" href="contact.html">Profiter du confort</a>
         </div>
-    </div>`
-};
+    </div>
+    <div class="intro">
+        <h1>En Conclusion</h1>
+        <p>La <span>PAC air-eau</span> assure un <span>chauffage constant et homogène</span>, améliore votre <span>confort thermique</span> et divise vos <span>factures d’énergie</span> par quatre. Durable, polyvalente et <span>écologique</span>, elle est la solution idéale pour un habitat plus <span>économique</span> et respectueux de l’<span>environnement</span>.</p>
+
+    </div>
+    `};
 
 
 
