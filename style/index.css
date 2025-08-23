@@ -524,7 +524,8 @@ nav a.desactive{
 
 .home-devis{
     /* opacity: ; */
-    position:fixed;
+    font-family: 'Lato-blackitalic';
+
     position:fixed;
     top:1rem;
     right:0rem;
@@ -537,47 +538,47 @@ nav a.desactive{
     font-size:1.5rem;
     margin-left:5rem;
 
-    /* height:3; */
-    
-    /* background:linear-gradient(60deg,rgb(96, 22, 22),rgb(96, 22, 22), rgb(179, 119, 119)); */
-    /* background: linear-gradient(90deg, #a03434,#d75353,#c76060); */
 
-    /* background: linear-gradient(90deg, #a03434,#d75353,#ec8989); */
-    background:#ea4545;
-    background:#ea4545;
+
     background:linear-gradient(270deg,#dd3434,#c81c1c,#b40c0c);
 
-
-    /* background:linear-gradient(90deg,#dd3434,#dd3434,#e66c6c); */
-
-    /* background:linear-gradient(270deg,#dd3434,#c81c1c,#660909); */
-
-
-    /* color:rgb(205, 204, 204); */
     color:white;
-    /* text-shadow: 3px 3px 5px rgb(62, 55, 55); */
     text-shadow: 6px 5px 5px rgb(0, 0, 0);    
     text-shadow: 4px 3px 5px rgb(0, 0, 0); 
     text-align:center;
-    /* padding:20px 12px 20px 20px; */
+
     height: 80px;
     padding: 0 20px 0 20px;
     border-radius: 3px;
     clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
-    font-family: 'Lato-blackitalic';
     top:1.5rem;
-    pointer-events: none;
+    /* pointer-events: none; */
     opacity:0;
+
 }
 
 .home-devis-active{
+    /* pointer-events: auto; */
     opacity:1;
+    cursor: pointer;
+
 }
+.home-devis:hover{
+    /* background:#000000 !important; */
+    background:linear-gradient(270deg,#b50404,#8b0202,#900202);
+
+
+}
+
+/* .home-devis:hover{
+    background:linear-gradient(270deg,#cc0c0c,#b70b0b,#b40c0c);
+} */
 
 .home-devis:hover{
     /* background:linear-gradient(60deg,rgb(111, 43, 43),rgb(98, 45, 45), rgb(224, 224, 224));
     background:linear-gradient(60deg,rgb(96, 22, 22),rgb(96, 22, 22), rgb(96, 22, 22)); */
-    background:#ef5e5e;
+    /* background:#000000 !important;
+    font-size: 5rem; */
 
 
 }

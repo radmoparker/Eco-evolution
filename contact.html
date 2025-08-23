@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="./style/hole.css">
     <link rel="stylesheet" href="./style/card.css">
     <link rel="stylesheet" href="./style/contact.css">
+    <link rel="stylesheet" href="./style/unfold-menu.css">
+    <link rel="stylesheet" href="./style/service.css">
+
 
 
 
@@ -28,6 +31,11 @@
 
     <script src="./script/index.js" defer></script>
     <script src="./script/contact.js" defer></script>
+    <script src="./script/unfold-menu.js" defer></script>
+
+    
+    <!-- <script src="./script/prestations.js" defer></script> -->
+
 
 
 
@@ -50,7 +58,7 @@
                     <!-- <a id="subvention" class="link link-visible" href="subvention.html"><div class="link-box">Subventions</div></a> -->
                     <a id="contact" class="link link-visible" href="contact.html"><div>Contact</div class="link-box"></a>
                     <!-- <a href="#" class="localisation-link"><img class="localisation-gif" src="./images/location-pin-2.gif"> </a>   -->
-                    <a href="#" ><div id="home-devis" class="home-devis " >Devis Gratuit</div></a>       
+                    <a href="contact.html#devis"><div id="home-devis" class="home-devis " >Devis Gratuit</div></a>       
     
                 </nav>
 
@@ -61,7 +69,7 @@
             </header>
         
 
-        <div class="hole service" id="hole-service">
+        <div class="hole service" id="hole-service" style="background:url('./images/contact.jpg'); background-position:center center;">
             <div class="slogan">
                 <h1 data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000">Contactez Nous</h1>
             </div>
@@ -96,7 +104,7 @@
     </div>
 
 
-    <div class="contact-card">
+    <div class="contact-card" id="devis">
         <div class="card-img-container-contact ">
             <img  class="contact-card-img" src="./images/energie.jpg" alt="">
          <p class="container-contact-p"> 
@@ -110,7 +118,7 @@
            
         </div> -->
         </div>
-        <div class="contact-card-text " >
+        <div class="contact-card-text">
             
             <form id="dynamicForm">
                 <!-- Étape 1 -->
@@ -303,6 +311,45 @@
 
 
         </div>
+    </div>
+
+    <section class="menu-part" style="border-top:none;">
+        <h1 class="service-title">Vous avez une Questions ?</h1>
+    </section>
+    <div class="unfold-menu-container">
+        <div class="contact-menu">
+            <div class="contact-prime-menu">
+                <h1>Nos conseillers répondent en moins de 24h</h1>
+            </div>
+            <div class="contact-us">
+
+                <div class="contact-us-part">
+                    <a href="tel:0668881167"><img src="./images/phone-call.png" alt=""></a>
+                    <h2>Ligne Directe</h2>
+                </div>
+                
+            </div>
+
+        </div>
+        
+        <div class="ou"><h1 >OU</h1></div>
+
+        <div class="unfold-menu">
+            <div class="prime-menu">
+                <h1>Découvrez toutes nos Prestations en Détails</h1>
+            </div>
+            <div class="second-menu" id="second-menu">
+                <div><a href="renovation.html">Rénovation</a></div>
+                <div><a href="isolation.html">Isolation</a></div>
+                <div><a href="calorifugeage.html">Calorifugeage</a></div>
+                <div><a href="rge.html">Audit RGE</a></div>
+                <div><a  href="airair.html">PAC Air-Air</a></div>
+                <div><a href="aireau.html">PAC Air-Eau</a></div>
+                <div><a href="ballon.html">Ballon</a></div>
+                <img src="./images/right-arrow.png" alt="" class="unfold-menu-arrow" id="unfold-menu-arrow">
+            </div>
+        </div>  
+
     </div>
 
 

@@ -148,7 +148,7 @@ form.addEventListener('submit', function(e){
 });
 
 const holeContact = document.getElementById("hole-service");
-
+console.log(holeContact);
 
 window.addEventListener("scroll",holeEffect);
 uptaded = false;

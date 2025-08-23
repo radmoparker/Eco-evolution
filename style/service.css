@@ -162,20 +162,25 @@ background:linear-gradient(130deg,rgb(120, 124, 124),rgb(235, 238, 238),rgb(120,
 }
 .half-part-one a{
     width:100%;
-    border:5px solid rgb(1, 66, 58); 
+    height:100%;
+    border:5px solid rgb(6, 92, 82); 
     border-radius:1rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .half-part-one a:hover{
     border-color:red;
-    border:5px solid red;
+    border:7px solid red;
 
 }
 .half-part-one a:hover h1 {
-  color: red ;
-  font-size: 2.6rem;
+  /* color: red ; */
+  font-size: 2.8rem;
 }
 .half-part-one a:hover span {
-  color: red ;
+  /* color: red ; */
 }
 .half-part-one span{
     color:rgb(6, 81, 74);

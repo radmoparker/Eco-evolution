@@ -99,8 +99,12 @@
 .second-menu a{
         font-family: 'Lato-blackitalic';
         font-size: 1.5rem;
-        /* width:80%; */
-        color:rgb(5, 56, 50);
+        width:100%;
+        height: 100%;
+        color:rgb(4, 72, 72);
+        /* background-color: #f08808; */
+        text-align: center;
+        padding:0.6rem;
 
 }
 .second-menu div{
@@ -110,7 +114,7 @@
     justify-content: center;
     /* background:red; */
     border-bottom:1px solid black;
-    padding:0.6rem;
+    
 }
 .second-menu div:hover{
     background: rgb(166, 194, 197) ;
@@ -164,6 +168,8 @@
     background:linear-gradient(45deg,#450707,#c81c1c,#5a0d0d);
     background:#f08808;
     background:#034234;
+    background:rgb(5, 84, 84);
+    background: linear-gradient(270deg,rgb(2, 34, 34),rgb(5, 84, 84),rgb(3, 53, 53));
 
 
     padding:0.5rem;
