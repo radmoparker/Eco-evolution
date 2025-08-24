@@ -58,12 +58,14 @@ form.addEventListener('click', function(e){
     const nextStepNum = e.target.dataset.next;
     const stepNum = currentStep.dataset.step;
 
-    // Vérifier si le step contient un input (pour les m^2)
-    const input = currentStep.querySelector('input, select, textarea');
-    if(input){
-      reponses[stepNum] = input.value.trim();
-    } else {
-      // Sinon on prend le texte du bouton cliqué (comme avant)
+    // Vérifier si le step contient un input 
+    
+    const inputs = currentStep.querySelectorAll('input, select, textarea');
+    if(inputs.length > 0){
+      inputs.forEach(input => {
+        reponses[input.name] = input.value.trim();
+      });
+    } else {  // Sinon on prend le texte du bouton cliqué (comme avant)
       reponses[stepNum] = e.target.textContent.trim();
     }
 
@@ -72,6 +74,7 @@ form.addEventListener('click', function(e){
 
     // Navigation
     currentStep.classList.remove('active');
+
     const nextStep = form.querySelector(`.step[data-step="${nextStepNum}"]`);
     if(nextStep){
         nextStep.classList.add('active');
@@ -132,7 +135,8 @@ form.addEventListener('submit', function(e){
   const finalStep = form.querySelector('.step[data-step="13"]');
   finalStep.classList.add('active');
 
-  console.log("Réponses finales :", reponses);
+  //Envoi du formaulaire via emailjs
+  sendMail(reponses);
 });
 
 /*Partie pour parralax effect */
@@ -152,4 +156,71 @@ function holeEffect(){
         window.requestAnimationFrame(updatePicture);
         uptaded = true;
     }
+}
+
+
+function sendMail(reponses){
+    let logement = reponses["1"];
+    let dateLogement = reponses["2"];
+    let surface = reponses["surface"]
+    let chauffage = reponses["4"];
+    let chaudiere = "Non demandé";
+    if("5A" in reponses){
+      chaudiere = reponses["5A"];
+    }
+    if("5B" in reponses){
+      chaudiere = reponses["5B"];
+    }
+    if("5C" in reponses){
+      chaudiere = reponses["5C"];
+    }
+    let performance = reponses["6"];
+    let demande = reponses["7"];
+    let statut = reponses["8"];
+    let postal = reponses["codepostal"];
+    let personnes = reponses["personnes"];
+    let revenus = reponses["11"];
+    let civilite = reponses["civilite"];
+    let email = reponses["email"];
+    let nom = reponses["nom"];
+    let prenom = reponses["prenom"];
+    let tel = reponses["telephone"];
+    
+    let description = reponses["description"];
+    if(!description){
+      description ="Aucune description";
+    }
+
+    let templateParams = {
+      logement: logement,
+      dateLogement: dateLogement,
+      surface: surface,
+      chauffage: chauffage,
+      chaudiere: chaudiere,
+      performance: performance,
+      demande: demande,
+      statut: statut,
+      postal: postal,
+      personnes: personnes,
+      revenus: revenus,
+      civilite: civilite,
+      email: email,
+      nom: nom,
+      prenom: prenom,
+      tel: tel,
+      description: description
+    };
+     let serviceId = "service_d7f7xzr";
+     let templateId = "template_mvbkstf";
+
+
+    emailjs.send(serviceId, templateId, templateParams).then(
+      (response) => {
+        console.log('SUCCESS!', response.status, response.text);
+      },
+      (error) => {
+        console.log('FAILED...', error);
+      },
+    );
+
 }
