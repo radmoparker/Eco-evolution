@@ -125,7 +125,7 @@ button:hover{
     align-items: flex-start;
 
     max-width:100%;
-    gap:5%;
+    gap:5rem;
     margin-bottom:2rem;
 
     /* margin:2rem; */
@@ -134,14 +134,19 @@ button:hover{
     /* border-radius: 1rem; */
     margin-top:0;
     overflow-x:hidden;
-    border-top:8px dashed rgb(164, 6, 6);
-    border-bottom:8px dashed rgb(164, 6, 6);
+    border-top:10px dashed rgb(164, 6, 6);
+    border-bottom:10px dashed rgb(164, 6, 6);
 
 }
+/*
+flex-grow: 1 → peut s’agrandir si la place le permet.
+flex-shrink: 1 → peut se réduire si la place manque.
+flex-basis: 200px → sa largeur de base est 200px.
+*/
 
 .contact-card-text{
 
-
+    flex: 0 0 45%; 
     max-width:45%;
     background: none;
     color:#165049;
@@ -156,6 +161,7 @@ button:hover{
 
 .card-img-container-contact{
     /* background-color: red; */
+    flex: 0 0 48%; 
     max-width:48%;
     display:flex;
     flex-direction: column;

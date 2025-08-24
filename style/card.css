@@ -103,8 +103,11 @@
     background: linear-gradient(90deg,#fdb100, #ffc642, #ffe7a7 );
 } */
 .button-first{
-    /* color:#165049 !important; */
-    /* background:linear-gradient(270deg,#300808,#c81c1c,#300808); */
+
+    background:linear-gradient(270deg,rgb(5, 56, 58),rgb(9, 92, 93),rgb(7, 61, 61)) !important;
+    box-shadow: 2px 2px 2px 2px rgb(91, 85, 85);
+}
+ .button-first:hover{
 
     background:linear-gradient(270deg,rgb(2, 27, 28),rgb(7, 71, 72),rgb(2, 22, 22)) !important;
  }
