@@ -183,7 +183,7 @@ flex-basis: 200px → sa largeur de base est 200px.
 }
 
 .contact-card-img{
-    width:70%;
+    width:80%;
     min-width:100%;
     border-radius: 1rem;
     margin-bottom: 2rem;
@@ -195,10 +195,15 @@ flex-basis: 200px → sa largeur de base est 200px.
         object-fit: cover;
         object-position: center;
         width:100%;
-        max-width:800px;
+        width:40%;
 
+        max-width: 200px;
+        min-width: none;
         height:35rem;
         height: 40%;
+    }
+    .card-img-container-contact{
+        max-width:40%;
     }
 }
 
