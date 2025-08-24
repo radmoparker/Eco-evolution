@@ -14,9 +14,6 @@ const srcLogo = "images/ecoevolution-logo-ver4-new.png";
 const srcBlackLogo = "images/ecoevolution-logo-green-red-white.png";
 
 
-// experiences.textContent = 5;
-
-
 menu.addEventListener("click", menuSlide);
 window.addEventListener('resize',manageResize);
 window.addEventListener("scroll",manageScroll);
@@ -28,10 +25,9 @@ var slided = false;
 menu.classList.add("desactive");
 activePage.firstChild.classList.add("nav-active");
 
-//ON INIT FUNCTION FIRST CALL
+//ON INIT FUNCTIONS FIRST CALL
 manageScroll();
 manageResize();
-
 
 function manageScroll(){
     if(window.scrollY>100){
@@ -57,69 +53,40 @@ function manageScroll(){
 
 }
 
-
-
-
-
-
 function menuSlide(){
     if (!slided){
+
         nav.classList.remove("desactive");
         nav.classList.add("active");
         document.body.classList.add('body-unscroll');
+
         nav.classList.add("nav-scroll");
         menu.src = cancelSrc;
-        // logo.classList.remove("logo-visible");  //increase logo size
-        // title.classList.remove("title-visible");
         slided = true;
 
     }else {
+
         nav.classList.add("desactive");
         nav.classList.remove("active");
         document.body.classList.remove('body-unscroll');
         nav.classList.remove("nav-scroll");
-        menu.src = menuSrc;
-        // logo.classList.add("logo-visible");
-        
-        // if(parseInt(window.scrollY) > 100){
-        //     logo.classList.add("logo-visible"); //decrease logo size
-        //     title.classList.add("title-visible");
-        // }else{
-        //     title.classList.remove("title-visible");
-        // }
 
+        menu.src = menuSrc;
         slided = false;
-        console.log("Menu désactivé");
     }
 
 }
 function manageResize(){
     if (slided){
+
         nav.classList.remove("active");
         nav.classList.add("desactive");
         nav.classList.remove("nav-scroll");
+
         menu.src = menuSrc;
         document.body.classList.remove('body-unscroll');
-        
-        if(parseInt(window.scrollY) > 100){
-            // logo.classList.add("logo-visible"); //decrease logo size
-            // title.classList.add("title-visible");
-        }
-        
         slided = false;
-        // console.log("Navbar : Menu désactivé");
 
     }
     
 }
-
-
-
-// Maisons rénovées
-
-
-// Calorifugeage
-
-
-// Audit énergétique RGE
-

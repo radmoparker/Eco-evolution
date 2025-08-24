@@ -1,34 +1,12 @@
 
-.hole{
-   
-
-    min-height: 100vh;
-    max-height: 950px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-bottom: 0px;
-
-    background: url("../images/demenagement-hq-2.jpg");
-    background-position: center center;
-    background-attachment: scroll;
-    /* background-size: 100%; */
-    background-repeat: no-repeat;
-    will-change: transform;
-    overflow-x:hidden;
-    
-}
 
 .hole.service{
     background: url("../images/renovation.jpg");
 
     background-position: center center;
     background-attachment: scroll;
-    
-    /* background-size: 250%; */
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-size: 250%; */
 
 
     will-change: transform;
@@ -37,29 +15,13 @@
     margin-top:0 !important;
 }
 
-/* .hole.contact{
-    background: url("../images/call-2.jpg");
-    background-position: center center;
-    background-attachment: scroll;
-    background-size: 100%;
-    background-repeat: no-repeat;
-
-    will-change: transform;
-    min-height: 80vh;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-} */
-
 .hole-service-bottom{
-    
-    background: url("../images/house-constructor.jpg");
     background: url("../images/isolation-2.jpg");
-
     min-height: 50vh;
     
     background-repeat: no-repeat;
     background-attachment:scroll ;
     background-size:cover !important;
-    /* background-size: 150% !important; */
     clip-path: polygon(0 16%, 100% 0, 100% 100%, 0 100%);
 
     display: flex;
@@ -67,55 +29,28 @@
     justify-content: flex-start;
     background-position: center center ;
     will-change: transform;
-
 }
 
-
-.parallax{
-    background-color:#165049;
-    
-    background-position: center center;
-    background-attachment: fixed;
-    /* background-size: 250%; */
-    background-repeat: no-repeat;
-     will-change: transform;
-    margin-bottom: 0px;
-
-    z-index:-1; /*Sinon la bande est dèrrière*/
-    
-    /* positionne le bloc manuellement, indépendamment du reste  , mais n'a pas de taille par défaut d'où : top: 0; left: 0; right: 0; bottom: 0;*/
-    position:absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    will-change: transform;
-    margin-bottom: 0px;
-    
-
-
-
-    
-
-}
 .slogan{
     display: flex;
     margin-left:8vw;
     
-    
     flex-direction: column;
     justify-content: flex-start;
     will-change: transform;
-
 }
 .slogan h1{
 
     color:#ffffff;
     font-size:8rem;
     max-width: 80%;
-        font-family: 'Lato-blackitalic';
+    font-family: 'Lato-blackitalic';
 
     text-shadow: 3px 8px 20px #0a0808;
     margin-top:50px;
     margin-bottom: 3rem;
     opacity: 1;
+
     margin-bottom: 100px;
     margin-top: 150px;
     will-change: transform;
@@ -126,31 +61,21 @@
     .pancarte{
         margin-bottom:3rem;
     }
-    .hole{
-        /* background: url("../images/constructeur.png"); */
-        /* background-size: 180%; */
-    
+    .hole{    
         background-position: center center;
         background-attachment: scroll;
         background-repeat: no-repeat;
         will-change: transform;
     }
     .hole.service{
-        /* background-size: 150%; */
         min-height: 70vh;
     }
-    .hole-service-bottom{
-        /* background-size: 100% !important; */
-    }
-
 }
 
 @media(max-width:1150px){
     .slogan h1{
         font-size:7rem;    
     }
-
-
 }
 @media(max-width:800px){
     .hole{
@@ -162,9 +87,7 @@
     }
     .hole-service-bottom{
         background-size: 150% !important;
-        /* background-size: cover !important; */
         min-height: 40vh;
-
     }
     .slogan h1{
         font-size:4rem;    
@@ -186,45 +109,39 @@
     }
 
 }
-/* @media(max-width:400px){
-    .slogan h1{
-        font-size:4rem;    
-    }
-    
-} */
-
 .button{
     max-width:11rem;
     padding:16px;
     padding-right:30px;
     padding-left:30px;
+
     margin-top:5px;
     margin-left:5px;
     margin-right:5px;
+    margin-bottom:20px;
+
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
 
-
     border-radius:2px;
-
     background: linear-gradient(45deg,#ffb300, #fdc951 , #ffe3a2);
     color:#165049;
-    cursor: pointer;
-    margin-bottom:20px;
     box-shadow: 2px 2px 2px 2px rgba(44, 42, 42, 0.75);
+    cursor: pointer;
 }
 
 .button:active{
     margin-top: 7px ;
     margin-left:9px;
     margin-right:7px;
+
     padding:15px;
     padding-right:28px;
     padding-left:28px;
+
     transition: O.5s;
     box-shadow: none;
-
 }
 
 .shadow{
@@ -233,24 +150,20 @@
     padding-bottom:6px;
     padding-left:13px;
     padding-right:13px;
+    margin-bottom:5px;
+
     border-radius:1px;
-
-
     background: linear-gradient(90deg,#165049,#165049,  #41988e);  
     border-radius:0px;
-    /* opacity:0.8; */
     cursor:pointer;
     color:white;
 
-    transition: opacity 0.3s;
     transition:box-shadow 0.2s;
-
     box-shadow: 2px 2px 3px rgba(39, 37, 37,0.75);
-    margin-bottom:5px;
     font-size: 1.5rem;
+    transition: opacity 0.3s;
 }
 .shadow:hover{
-    
     opacity:0.8;
 }
 .shadow:active{

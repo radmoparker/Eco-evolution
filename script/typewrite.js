@@ -16,8 +16,10 @@ const cities = [
 ];
 
 function typeWrite(buffer, elements, currentElement, currentLetter, deleting) {
+
     if(!deleting){
-        if ( currentLetter <= elements[currentElement].length - 1) {
+
+        if (currentLetter <= elements[currentElement].length - 1) {
             buffer.innerHTML = "&nbsp;"+elements[currentElement].substring(0, currentLetter + 1);
             setTimeout(typeWrite,150,buffer, elements, currentElement, currentLetter + 1, deleting);
         }else{
@@ -25,6 +27,7 @@ function typeWrite(buffer, elements, currentElement, currentLetter, deleting) {
             currentLetter-=1;
             setTimeout(typeWrite,300,buffer, elements, currentElement, currentLetter + 1, deleting);
         }
+
     }else{
         if(currentLetter >=0){
             buffer.innerHTML = "&nbsp;"+elements[currentElement].substring(0, currentLetter );
@@ -39,7 +42,6 @@ function typeWrite(buffer, elements, currentElement, currentLetter, deleting) {
             setTimeout(typeWrite,200,buffer, elements, currentElement, currentLetter, deleting);
         }
     }
-
 }
 
 typeWrite(citySpan, cities, 0, 0, false);

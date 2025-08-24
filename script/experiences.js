@@ -19,9 +19,7 @@ let observer = new IntersectionObserver((entries) =>{
 },options);
 
 allExperiences.forEach((experience)=>{
-    // console.log("Experience",experience.children[0],experience.children[0].dataset.limit);
     observer.observe(experience.children[0]);
-    
 })
 
 function manageExperiences(entry,a,b){

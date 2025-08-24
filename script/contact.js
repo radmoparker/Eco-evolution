@@ -3,36 +3,27 @@ const steps = form.querySelectorAll('.step');
 let stepHistory = [];
 let reponses = {};
 
-//Désactivation de la validation du formulaire par touche nentrée
-// form.addEventListener('keydown', function(e){
-//     if(e.key === "Enter"){
-//         e.preventDefault();
-//     }
-// });
-
 form.addEventListener('keydown', function(e){
-  if(e.key === "Enter"){
-    const currentStep = e.target.closest('.step');
-    const input = e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA" || e.target.tagName === "SELECT";
+    if(e.key === "Enter"){
+      const currentStep = e.target.closest('.step');
+      const input = e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA" || e.target.tagName === "SELECT";
 
-    let allValid = true;
-    //Empêche le blockage du passage à la ligne dans le text area (avant dernière étape du questionnaire)
+      let allValid = true;
+      //Empêche le blockage du passage à la ligne dans le text area (avant dernière étape du questionnaire)
     if(currentStep.dataset.step !="12B"){
-      if(input){
-          e.preventDefault(); 
-
-          // Vérification des champs valides
-          allValid = checkRequiredField(currentStep);
-          // sinon le navigateur bloque l'Étape suivante
-      }
-      if(allValid){
-          const nextBtn = currentStep.querySelector('button[data-next]');
-          if(nextBtn){
-              nextBtn.click();
-          }
-      }
+        if(input){
+            e.preventDefault(); 
+            // Vérification des champs valides
+            allValid = checkRequiredField(currentStep);
+            // sinon le navigateur bloque l'Étape suivante
+        }
+        if(allValid){
+            const nextBtn = currentStep.querySelector('button[data-next]');
+            if(nextBtn){
+                nextBtn.click();
+            }
+        }
     }
-
   }
 });
 
@@ -46,8 +37,7 @@ function checkRequiredField(currentStep){
         field.reportValidity(); // affiche un message (natif) de validation
         }
     });
-      return allValid;
-
+  return allValid;
 
 }
 
@@ -57,12 +47,12 @@ form.addEventListener('click', function(e){
 
     const currentStep = e.target.closest('.step');
     allValid = true;
-    //Pour ne pas contrôlerlorsqu'on passe d'un input à l'autre
+    //Pour ne pas contrôler lorsqu'on passe d'un input à l'autre
     if(!e.target.matches('.prev-btn') && !(e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA" || e.target.tagName === "SELECT")){ //Pas la peine de vérifier si le bouton est prev
         allValid = checkRequiredField(currentStep);
     }
   if(allValid){
-      // Bouton Suivant
+  // Bouton Suivant
   if(e.target.matches('button[data-next]')){
     e.preventDefault();
     const nextStepNum = e.target.dataset.next;
@@ -86,8 +76,6 @@ form.addEventListener('click', function(e){
     if(nextStep){
         nextStep.classList.add('active');
     } 
-
-    // console.log("Réponses actuelles :", reponses);
   }
 
   // Bouton Précédent 
@@ -147,8 +135,8 @@ form.addEventListener('submit', function(e){
   console.log("Réponses finales :", reponses);
 });
 
+/*Partie pour parralax effect */
 const holeContact = document.getElementById("hole-service");
-console.log(holeContact);
 
 window.addEventListener("scroll",holeEffect);
 uptaded = false;
@@ -156,18 +144,12 @@ function updatePicture(){
     
     holeContact.style.backgroundPosition = `center calc(50% - ${window.scrollY * 0.3}px)`;
     scrollRate=0.15;
-
-
     uptaded = false;
 }
 
 function holeEffect(){
-    
     if(!uptaded){
         window.requestAnimationFrame(updatePicture);
         uptaded = true;
-
     }
-    
-
 }
