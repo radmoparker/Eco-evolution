@@ -29,7 +29,8 @@ html{
     font-family: sans-serif;
 
     font-family: 'Lato';
-    margin-bottom: 0;    
+    margin-bottom: 0;   
+    overflow-y: scroll; 
 }
 p{
     line-height:1.8rem;
@@ -39,7 +40,14 @@ body{
     margin-right: 0px;
     margin-top: 0;
     margin-bottom: 0;
+  
 
+}
+[data-aos] {
+  overflow: hidden; 
+}
+body {
+  overflow-x: hidden;
 }
 a{
     text-decoration: none;
