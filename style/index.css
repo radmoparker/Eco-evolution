@@ -331,12 +331,29 @@ nav a{
 nav.active{
     background-color: white;
     margin-top:0px;
-    padding-top:120px;
+    padding-top:150px;
+    background:url('../images/house-constructor-2.jpg');
+    background-size: cover;
+}
+.nav-logo{
+    display:none;
+    margin-top:1rem;
+    width:14rem;
+}
+.nav-logo-active{
+    display:block;
 }
 nav.active a{
-    margin:1rem;
-    color:black !important;
-    text-shadow: none;
+    font-size: 1.5rem;
+    margin:1.5rem;
+    color:rgb(255, 255, 255) !important;
+    text-shadow: 3px 3px 10px rgb(44, 44, 44),-3px -3px 10px rgb(46, 45, 45);
+    margin-bottom: 0.5rem;
+}
+
+nav.active a .nav-active{
+
+    padding: 0.5rem 2.5rem!important;
 }
 
 .burger-icon{
@@ -623,4 +640,19 @@ a.button:active{
 }
 a.button:hover{
     background:linear-gradient(270deg,#bc2b2b,#9f1515,#8e0808);
+}
+
+@media(max-width:350px){
+    html{
+        font-size:14px;   
+    }
+    .nav.active a {
+        font-size:1.5rem !important;
+    }
+    nav.active a .nav-active{
+        padding: 0.5rem 1.5rem!important;
+    }
+    nav.active{
+        padding-top:120px;
+    }
 }

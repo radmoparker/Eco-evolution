@@ -6,6 +6,8 @@ const activePage = document.getElementById(nav.dataset.page);
 const header = document.getElementById("header");
 const logo = document.getElementById("logo");
 const homeDevis = document.getElementById("home-devis");
+const navLogo = document.getElementById("nav-logo");
+console.log(navLogo);
 
 
 const menuSrc = "images/barre-de-menu-2.png"
@@ -33,8 +35,8 @@ function manageScroll(){
     if(window.scrollY>100){
         header.classList.add("header-visible");
         logo.classList.remove("logo-visible");
-        homeDevis.classList.add("home-devis-active");
         logo.src = srcLogo;
+        homeDevis.classList.add("home-devis-active");
         navElements.forEach(link => {
             link.classList.remove("link-visible");
         });
@@ -55,10 +57,14 @@ function manageScroll(){
 
 function menuSlide(){
     if (!slided){
+        homeDevis.classList.remove("home-devis-active");
 
         nav.classList.remove("desactive");
         nav.classList.add("active");
+        navLogo.classList.add("nav-logo-active");
         document.body.classList.add('body-unscroll');
+        logo.classList.add("logo-visible");
+        logo.src = srcBlackLogo;
 
         nav.classList.add("nav-scroll");
         menu.src = cancelSrc;
@@ -68,6 +74,14 @@ function menuSlide(){
 
         nav.classList.add("desactive");
         nav.classList.remove("active");
+        if(window.scrollY>100){
+            homeDevis.classList.add("home-devis-active");
+            logo.classList.remove("logo-visible");
+            logo.src = srcLogo;
+        }
+        
+
+        navLogo.classList.remove("nav-logo-active");
         document.body.classList.remove('body-unscroll');
         nav.classList.remove("nav-scroll");
 
@@ -82,6 +96,7 @@ function manageResize(){
         nav.classList.remove("active");
         nav.classList.add("desactive");
         nav.classList.remove("nav-scroll");
+        navLogo.classList.remove("nav-logo-active");
 
         menu.src = menuSrc;
         document.body.classList.remove('body-unscroll');
