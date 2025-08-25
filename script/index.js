@@ -7,7 +7,6 @@ const header = document.getElementById("header");
 const logo = document.getElementById("logo");
 const homeDevis = document.getElementById("home-devis");
 const navLogo = document.getElementById("nav-logo");
-console.log(navLogo);
 
 
 const menuSrc = "images/barre-de-menu-2.png"
