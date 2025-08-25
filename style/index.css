@@ -352,11 +352,21 @@ nav.active{
     display:block;
 }
 nav.active a{
-    font-size: 1.5rem;
-    margin-top:1.5rem;
-    color:rgb(255, 255, 255) !important;
+    font-size: 2rem;
+    margin-bottom:2rem;
+    color:rgb(255, 255, 255);
     text-shadow: 3px 3px 10px rgb(44, 44, 44),-3px -3px 10px rgb(46, 45, 45);
-    margin-bottom: 0.5rem;
+    font-family: 'Lato-blackitalic';
+}
+nav.active a:hover{
+    font-size: 2.5rem;
+}
+nav.active a  .nav-active{
+    /* background: blue; */
+    /* clip-path: none; */
+    /* border-radius: 1rem; */
+    background: none;
+    
 }
 
 nav.active a .nav-active{
