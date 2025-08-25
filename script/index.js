@@ -102,6 +102,11 @@ function manageResize(){
         nav.classList.add("desactive");
         nav.classList.remove("nav-scroll");
         navLogo.classList.remove("nav-logo-active");
+        if(window.scrollY>100){
+            homeDevis.classList.add("home-devis-active");
+            logo.classList.remove("logo-visible");
+            logo.src = srcLogo;
+        }
 
         document.body.classList.remove('body-unscroll');
         document.documentElement.classList.remove('body-unscroll');

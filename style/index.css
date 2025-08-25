@@ -31,6 +31,7 @@ html{
     font-family: 'Lato';
     margin-bottom: 0;   
     overflow-y: scroll; 
+    scroll-behavior: smooth;
 }
 p{
     line-height:1.8rem;
@@ -40,8 +41,6 @@ body{
     margin-right: 0px;
     margin-top: 0;
     margin-bottom: 0;
-  
-
 }
 [data-aos] {
   overflow: hidden; 
@@ -345,15 +344,16 @@ nav.active{
 }
 .nav-logo{
     display:none;
-    margin-top:1rem;
-    width:14rem;
+    padding-bottom:10rem;
+    width:13rem;
+    height: auto;
 }
 .nav-logo-active{
     display:block;
 }
 nav.active a{
     font-size: 1.5rem;
-    margin:1.5rem;
+    margin-top:1.5rem;
     color:rgb(255, 255, 255) !important;
     text-shadow: 3px 3px 10px rgb(44, 44, 44),-3px -3px 10px rgb(46, 45, 45);
     margin-bottom: 0.5rem;
@@ -385,9 +385,9 @@ nav.active a .nav-active{
 .body-unscroll{
     overflow: hidden !important;
 }
-/* .nav-scroll{
+.nav-scroll{
     overflow: scroll;
-} */
+}
 
 @media(min-width:1500px){
     .experiences{
@@ -541,22 +541,6 @@ nav.active a .nav-active{
         font-size:1.5rem;
     }
 }
-
-@media(max-height:500px) and (max-width: 1000px) {
-    .home-catchphrase{
-        padding-right: 10rem;;
-        margin-bottom:10rem;
-        margin-top: 0;
-        height:80vh
-    }
-    .home-catchphrase h1{
-        font-size: 3rem;
-    }
-    .home-catchphrase h2{
-        font-size: 2rem;
-    }
-}
-
 
 .experiences{
     padding:2rem 1rem 3rem 0;

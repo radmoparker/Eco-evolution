@@ -160,14 +160,15 @@ flex-basis: 200px → sa largeur de base est 200px.
     display:flex;
     flex-direction: column;
     align-items: center;
+    overflow: visible;
 }
 .container-contact-p{
-    max-width: 90% !important;
-    margin: 0px !important;
+    max-width: 90%;
+    margin: 0px;
     padding: 0;
     text-align: center;
 
-    width:600px !important;
+    width:600px;
     font-family: 'Lato-black';
     color:#165049;
     font-weight: none;
@@ -211,14 +212,31 @@ flex-basis: 200px → sa largeur de base est 200px.
     .contact-card-text{
         background-color: white;
         width:100%;
+        min-width: none;
         background: none;
     }
     .card-img-container-contact{
-        max-width:90%
+        max-width:90%;
+        min-width: 80%;
+        width: 80%;
+        
     }
-    .contact-card-text{
-        max-width:100%;
+    .step.active{
+        max-width:90%;
+        min-width: 80%;
+        width: 80% !important;
+        
     }
+    .step.active p{
+        width: 80vw !important;
+    }
+    .container-contact-p{
+        min-width:90vw;
+    }
+    .contact-card{
+        gap:1rem;
+    }
+
 }
 
 @media(min-width:700px){
