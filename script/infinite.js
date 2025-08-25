@@ -1,35 +1,37 @@
 const infinitePicture = document.querySelector("#infinite-img");
 
-let option = {
-    root:null,
-    rootMargin: "100px",
-    scrollMargin: "0px",
-    threshold: 1.0,
-};
+// let option = {
+//     root:null,
+//     rootMargin: "100px",
+//     scrollMargin: "0px",
+//     threshold: 1.0,
+// };
 
 let lastScrollY = window.scrollY;
 let currentTranslateX = 0;
 
-let observerInfinite = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
+// let observerInfinite = new IntersectionObserver((entries) => {
+//   entries.forEach((entry) => {
 
-    if (entry.isIntersecting) {
+//     if (entry.isIntersecting) {
 
-      lastScrollY = window.scrollY;
-      window.addEventListener("scroll", onScroll);
+//       lastScrollY = window.scrollY;
+//       window.addEventListener("scroll", onScroll);
 
-    } else {
+//     } else {
 
-      // Stoppe l'effet quand il n'est plus visible
-      lastScrollY = window.scrollY;
-      window.removeEventListener("scroll", onScroll);
+//       //Stoppe l'effet quand il n'est plus visible
+//       lastScrollY = window.scrollY;
+//       window.removeEventListener("scroll", onScroll);
 
-    }
+//     }
 
-  });
-});
+//   });
+// });
 
-observerInfinite.observe(infinitePicture);
+// observerInfinite.observe(infinitePicture);
+
+window.addEventListener("scroll", onScroll);
 
 function onScroll() {
 
