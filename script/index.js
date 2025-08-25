@@ -66,6 +66,9 @@ function menuSlide(){
         logo.classList.add("logo-visible");
         logo.src = srcBlackLogo;
 
+        document.body.classList.add('body-unscroll');
+        document.documentElement.classList.add('body-unscroll');
+
         nav.classList.add("nav-scroll");
         menu.src = cancelSrc;
         slided = true;
@@ -74,6 +77,8 @@ function menuSlide(){
 
         nav.classList.add("desactive");
         nav.classList.remove("active");
+        document.body.classList.remove('body-unscroll');
+        document.documentElement.classList.remove('body-unscroll');
         if(window.scrollY>100){
             homeDevis.classList.add("home-devis-active");
             logo.classList.remove("logo-visible");
@@ -97,6 +102,9 @@ function manageResize(){
         nav.classList.add("desactive");
         nav.classList.remove("nav-scroll");
         navLogo.classList.remove("nav-logo-active");
+
+        document.body.classList.remove('body-unscroll');
+        document.documentElement.classList.remove('body-unscroll');
 
         menu.src = menuSrc;
         document.body.classList.remove('body-unscroll');

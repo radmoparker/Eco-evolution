@@ -385,9 +385,9 @@ nav.active a .nav-active{
 .body-unscroll{
     overflow: hidden !important;
 }
-.nav-scroll{
+/* .nav-scroll{
     overflow: scroll;
-}
+} */
 
 @media(min-width:1500px){
     .experiences{
