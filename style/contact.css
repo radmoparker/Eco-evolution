@@ -141,7 +141,12 @@ flex-shrink: 1 → peut se réduire si la place manque.
 flex-basis: 200px → sa largeur de base est 200px.
 */
 
+#dynamicForm{
+    display:flex;
+    justify-content: center;
+}
 .contact-card-text{
+    position: relative;
 
     flex: 0 0 45%; 
     max-width:45%;
@@ -189,7 +194,19 @@ flex-basis: 200px → sa largeur de base est 200px.
     border-radius: 1rem;
     margin-bottom: 2rem;
 }
-
+.progress-bar{
+    display:block;
+    position: absolute;
+    height:10px;
+    width:8%;
+    background:rgb(255, 157, 0);
+    border-radius:1rem;
+    left:0;
+    transition: all 0.3s ease;
+}
+.progress-bar-unvisible{
+    display:none;
+}
 
 @media(min-width: 1001px){
     .contact-card-img{
@@ -212,8 +229,11 @@ flex-basis: 200px → sa largeur de base est 200px.
     .contact-card-text{
         background-color: white;
         width:100%;
+        max-width:100%;
+        box-sizing: border-box;
         min-width: none;
         background: none;
+        align-items: center;
     }
     .card-img-container-contact{
         max-width:90%;
