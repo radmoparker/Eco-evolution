@@ -163,15 +163,19 @@
     font-size: 3rem;
     width:80%;
 
-    color:rgb(5, 56, 50);
+    /* color:rgb(5, 56, 50); */
     color:rgb(196, 0, 0);
     margin:0;
+
 }
 .service-intro{
-    font-family: 'Lato-black';
+    color:rgb(32, 31, 31);
+    font-family: sans-serif;
     font-size: 1.2rem;
     width:80%;
-    color:rgb(5, 56, 50);
+}
+.service-intro span{
+    font-weight: bold;
 }
 @media(max-width:1000px){
     .half-part-two h1{
@@ -211,9 +215,7 @@
         font-size:2.5rem;
         margin:50px 0 0 20px;
     }
-    .service-title{
-        margin:0rem 0 2rem 0;
-    }
+
 }
 
 

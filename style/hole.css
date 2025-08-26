@@ -47,7 +47,7 @@
     max-width: 100%;
     font-family: 'Lato-blackitalic';
 
-    text-shadow: 3px 6px 20px #0a0808;
+    text-shadow: 3px 6px 10px #0a0808;
 
     margin-top:50px;
     margin-bottom: 3rem;
@@ -99,6 +99,8 @@
 @media(max-width:600px){
     .slogan h1{
         font-size:3rem;    
+        text-shadow: 3px 3px 5px #0a0808;
+
     }
 }
 

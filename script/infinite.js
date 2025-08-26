@@ -1,52 +1,25 @@
-const infinitePicture = document.querySelector("#infinite-img");
+const imagesLine = document.getElementById("infinite-img");
 
-let option = {
-    root:null,
-    rootMargin: "100px",
-    scrollMargin: "0px",
-    threshold: 1.0,
-};
+let latestScroll = 0;
+let currentX = 0;
+let ticking = false;
 
-let lastScrollY = window.scrollY;
-let currentTranslateX = 0;
-
-let observerInfinite = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-
-    if (entry.isIntersecting) {
-
-      lastScrollY = window.scrollY;
-      window.addEventListener("scroll", onScroll);
-
-    } else {
-
-      // Stoppe l'effet quand il n'est plus visible
-      lastScrollY = window.scrollY;
-      window.removeEventListener("scroll", onScroll);
-
-    }
-
-  });
-});
-
-observerInfinite.observe(infinitePicture);
-
-function onScroll() {
-
-  let currentScrollY = window.scrollY;
-
-  if (currentScrollY > lastScrollY) {
-
-    // On descend
-    currentTranslateX += 2; // décale vers la droite
-
-  } else if (currentScrollY < lastScrollY) {
-
-    // On monte
-    currentTranslateX -= 2; // décale vers la gauche
-
-  }
-
-  infinitePicture.style.transform = `translateX(${currentTranslateX}px)`;
-  lastScrollY = currentScrollY;
+function update() {
+  // déplacement proportionnel au scroll
+  const targetX = -latestScroll * 0.5; // 0.5 = vitesse (ajuste)
+  
+  // interpolation douce
+  currentX += (targetX - currentX) * 0.1;
+  
+  imagesLine.style.transform = `translateX(${currentX}px)`;
+  ticking = false;
 }
+
+window.addEventListener("scroll", () => {
+  latestScroll = window.scrollY;
+
+  if (!ticking) {
+    requestAnimationFrame(update);
+    ticking = true;
+  }
+});

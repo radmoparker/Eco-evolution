@@ -1,15 +1,51 @@
+.service-section{
+    display:flex;
+    flex-direction: column;
+
+}
 .intro, .expertise, .description, .title-cards{
     padding:0 2rem  0 2rem;
     width:90%;
     box-sizing: border-box !important;
+    margin-bottom:1rem;
+    text-align: center;
+}
+.intro, .expertise, .description, .title-cards{
+    align-self: center;
 }
 .intro h1, .description h1, .expertise h1, .title-cards{
+    position:relative;
     font-size:3rem;
     font-family: 'Lato-blackitalic';
     color:rgb(5, 84, 84);
+    margin: 1.5rem 0 1.5rem 0;
+    width:100%;
+}
+.title-cards{
+    color:#b10a0a;
+    font-size: 4rem;
+    border-top:10px dashed #b10a0a;
+    padding-top: 1rem;
+}
+.intro h1::before,
+.description h1::before,
+.expertise h1::before,
+.title-cards ::before {
+    position: absolute;
+    content: "";
+    display: block; 
+    width: 100px;    
+    height: 4px;    
+    background-color: rgb(5, 84, 84); 
+    background: rgb(5, 84, 84) !important; 
+    top:-1rem;
+    left: calc(50% - 50px);
 }
 .intro p, .description p, .expertise p{
-    font-size:1.2rem ;
+    font-size:1.2rem;
+}
+.intro span, .description span, .expertise span{
+    font-weight: bold;
 }
 .second{
     background-repeat: no-repeat;
@@ -109,6 +145,9 @@
 @media(max-width:800px){
     .intro, .expertise, .description, .title-cards{
         width:100%;
+    }
+    .intro h1, .expertise h1, .description h1, .title-cards h1{
+        margin-bottom:0;
     }
 }
 @media(max-width:500px){
