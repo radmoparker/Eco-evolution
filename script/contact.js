@@ -4,6 +4,8 @@ let stepHistory = [];
 let reponses = {};
 
 const progressBar = document.querySelectorAll(".progress-bar");
+const progressBarContainer = document.querySelectorAll(".progress-bar-container");
+
 let nbReponse = 1;
 let totalReponses = 13;
 
@@ -65,10 +67,8 @@ form.addEventListener('click', function(e){
       
       let nextStepNum = e.target.dataset.next;
       let stepNum = currentStep.dataset.step;
-      console.log(stepNum);
       if (["5A", "5B", "5C"].includes(stepNum)) {
         nbReponse+=0.5; //for progress Bar
-        console.log("Réponse actuelle",nbReponse);
         
         progressBar.forEach(bar => {
           bar.style.width =`${nbReponse/totalReponses*100}%`;
@@ -76,7 +76,6 @@ form.addEventListener('click', function(e){
         nbReponse-=0.5;
       }else{
         nbReponse+=1; //for progress Bar
-        console.log("Réponse actuelle",nbReponse);
         progressBar.forEach(bar => {
           bar.style.width =`${nbReponse/totalReponses*100}%`;
         });
@@ -111,20 +110,15 @@ form.addEventListener('click', function(e){
       e.preventDefault();
       const prevStepNum = stepHistory.pop();
       if(prevStepNum){
-        console.log("prevNumStep",prevStepNum);
           if (!(["5A", "5B", "5C"].includes(prevStepNum))) {
-            console.log("jfnrjienvefijkvrcjeknvefjknec");
             nbReponse-=1;
-            console.log("Réponse actuelle",nbReponse);
             progressBar.forEach(bar => {
-          bar.style.width =`${nbReponse/totalReponses*100}%`;
-        });
+              bar.style.width =`${nbReponse/totalReponses*100}%`;
+            });
           }else{
-            console.log("Réponse actuelle",nbReponse);
             progressBar.forEach(bar => {
           bar.style.width =`${nbReponse/totalReponses*100}%`;
         });
-            console.log("ooooooooooooo");
           }
         
         currentStep.classList.remove('active');
@@ -170,9 +164,11 @@ form.addEventListener('submit', function(e){
       reponses[input.name] = input.value;
     }
   });
-  progressBar.style.width = "0%";
   progressBar.forEach(bar => {
           bar.style.width = "0%";
+        });
+  progressBarContainer.forEach(barContainer => {
+          barContainer.style.display = "none";
         });
 
   // Envoie du formulaire ici
