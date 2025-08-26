@@ -16,21 +16,20 @@ let observerInfinite = new IntersectionObserver((entries) => {
     if (entry.isIntersecting) {
 
       lastScrollY = window.scrollY;
-      
+      window.addEventListener("scroll", onScroll);
+
     } else {
 
-      //Réinitialise la position du groupe d'image lorsque le groupe n'est plus visible
+      // Stoppe l'effet quand il n'est plus visible
       lastScrollY = window.scrollY;
-      infinitePicture.style.transform = `translateX(${0}px)`;
-      currentTranslateX = 0;
+      window.removeEventListener("scroll", onScroll);
+
     }
 
   });
 });
 
 observerInfinite.observe(infinitePicture);
-
-window.addEventListener("scroll", onScroll);
 
 function onScroll() {
 
