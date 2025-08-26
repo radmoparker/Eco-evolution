@@ -3,8 +3,7 @@ const steps = form.querySelectorAll('.step');
 let stepHistory = [];
 let reponses = {};
 
-const progressBar = document.querySelector(".progress-bar");
-// .style.width = "300px";
+const progressBar = document.querySelectorAll(".progress-bar");
 let nbReponse = 1;
 let totalReponses = 13;
 
@@ -70,12 +69,17 @@ form.addEventListener('click', function(e){
       if (["5A", "5B", "5C"].includes(stepNum)) {
         nbReponse+=0.5; //for progress Bar
         console.log("Réponse actuelle",nbReponse);
-        progressBar.style.width =`${nbReponse/totalReponses*100}%`;
+        
+        progressBar.forEach(bar => {
+          bar.style.width =`${nbReponse/totalReponses*100}%`;
+        });
         nbReponse-=0.5;
       }else{
         nbReponse+=1; //for progress Bar
         console.log("Réponse actuelle",nbReponse);
-        progressBar.style.width =`${nbReponse/totalReponses*100}%`;
+        progressBar.forEach(bar => {
+          bar.style.width =`${nbReponse/totalReponses*100}%`;
+        });
       }
       
 
@@ -112,10 +116,14 @@ form.addEventListener('click', function(e){
             console.log("jfnrjienvefijkvrcjeknvefjknec");
             nbReponse-=1;
             console.log("Réponse actuelle",nbReponse);
-            progressBar.style.width =`${nbReponse/totalReponses*100}%`;
+            progressBar.forEach(bar => {
+          bar.style.width =`${nbReponse/totalReponses*100}%`;
+        });
           }else{
             console.log("Réponse actuelle",nbReponse);
-            progressBar.style.width =`${nbReponse/totalReponses*100}%`;
+            progressBar.forEach(bar => {
+          bar.style.width =`${nbReponse/totalReponses*100}%`;
+        });
             console.log("ooooooooooooo");
           }
         
@@ -144,20 +152,8 @@ form.addEventListener('click', function(e){
       }
 
     }
-      //ProgressBar calcul
-      // if(stepNum){
-      //   console.log("on est en train d'annuler");
-      //   if (["5A", "5B", "5C"].includes(stepNum)) {
-          
-      //     nbReponse-=0.5; //for progress Bar
-      //   }
-      // }
-      // console.log("Réponse actuelle",nbReponse);
-      
-      // progressBar.style.width =`${nbReponse/totalReponses*100}%`;
 
   }
-
 
 });
 
@@ -175,6 +171,9 @@ form.addEventListener('submit', function(e){
     }
   });
   progressBar.style.width = "0%";
+  progressBar.forEach(bar => {
+          bar.style.width = "0%";
+        });
 
   // Envoie du formulaire ici
   currentStep.classList.remove('active');
