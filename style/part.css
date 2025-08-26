@@ -112,14 +112,14 @@
 
 .infinite-img {
   display: flex;
-  padding: 3rem 0;
+  padding: 2rem 0;
   will-change: transform; /* Optimisation par le navigateur */
 }
 
 .inf-img {
-  min-width: 30vw;
+  width: 30vw;
   height: 30vw;
-  margin: 0.5rem;
+  margin: 1rem;
   object-fit: cover;
   border-radius: 1rem;
   flex-shrink: 0; /* Évite compression image */
@@ -150,5 +150,10 @@
     .elem-part.intro-part{
         width:80% !important;
         max-width:100% !important;
+    }
+    .inf-img {
+        width: 40vw;
+        height: 40vw;
+        margin: 0.5rem;
     }
 }
