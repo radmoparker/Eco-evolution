@@ -1,7 +1,7 @@
 
 
 .hole.service{
-    background: url("../images/renovation.jpg");
+    background: url("../images/renovation.webp");
 
     background-position: center center;
     background-attachment: scroll;
@@ -16,7 +16,7 @@
 }
 
 .hole-service-bottom{
-    background: url("../images/isolation-2.jpg");
+    background: url("../images/isolation-2.webp");
     min-height: 50vh;
     
     background-repeat: no-repeat;

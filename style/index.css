@@ -33,6 +33,16 @@ html{
     overflow-y: scroll; 
     scroll-behavior: smooth;
 }
+h1{ 
+    font-size: 2rem; 
+}
+h2{ 
+    font-size: 1.75rem; 
+}
+h3{
+    font-size: 1.5rem; 
+}
+
 p{
     line-height:1.8rem;
 }
@@ -120,7 +130,7 @@ nav a{
 
 }
 .first{
-    background:url('../images/house-constructor.jpg');
+    background:url('../images/house-constructor.webp');
     background-size:cover;
     background-position: center center;
     overflow: hidden;
@@ -339,7 +349,7 @@ nav.active{
     background-color: white;
     margin-top:0px;
     padding-top:150px;
-    background:url('../images/house-constructor-2.jpg');
+    background:url('../images/house-constructor-2.webp');
     background-size: cover;
 }
 .nav-logo{
@@ -657,4 +667,16 @@ a.button:hover{
     nav.active{
         padding-top:120px;
     }
+}
+
+/*Pou rendre accessibles les liens sans textes*/
+.access-link {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip: rect(0, 0, 0, 0);
+   border: 0;
 }
